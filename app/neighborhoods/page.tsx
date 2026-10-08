@@ -208,6 +208,21 @@ export default function NeighborhoodsPage() {
           </div>
 
           <LeftoverBand path="/neighborhoods" />
+          <section className="mb-10 max-w-6xl mx-auto">
+            <Link
+              href="/neighborhoods/ascaya"
+              className="block rounded-lg border border-blue-200 bg-blue-50 p-6 hover:border-blue-400"
+            >
+              <h2 className="text-2xl font-bold text-slate-900">
+                Ascaya Henderson
+              </h2>
+              <p className="mt-2 text-slate-700">
+                Guard-gated community at One Ascaya Blvd, Henderson, NV 89012,
+                on the McCullough Mountain Range. Canyon residences, Desert
+                Design Study homes, and homesites with Dr. Jan Duffy.
+              </p>
+            </Link>
+          </section>
           <section className="mb-16 max-w-6xl mx-auto">
             <div className="grid md:grid-cols-2 gap-6">
               {neighborhoods.map((neighborhood) => (

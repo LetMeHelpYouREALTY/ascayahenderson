@@ -87,6 +87,14 @@ export default function Footer() {
             <h2 className="font-bold text-lg mb-4">Explore</h2>
             <ul className="space-y-2">
               {[
+                { href: "/neighborhoods/ascaya", label: "Ascaya Henderson" },
+                { href: "/ascaya/homesites", label: "Ascaya Homesites" },
+                {
+                  href: "/ascaya/canyon-residences",
+                  label: "Canyon Residences",
+                },
+                { href: "/buyers/ascaya", label: "Buy in Ascaya" },
+                { href: "/sellers/ascaya", label: "Sell in Ascaya" },
                 { href: "/listings", label: "Las Vegas Homes for Sale" },
                 { href: "/neighborhoods", label: "Las Vegas Neighborhoods" },
                 { href: "/luxury-homes", label: "Luxury Homes" },

@@ -245,6 +245,54 @@ export default function sitemap(): MetadataRoute.Sitemap {
     },
   ];
 
+  const ascayaPages = [
+    {
+      url: `${baseUrl}/neighborhoods/ascaya`,
+      priority: 0.9,
+      changeFrequency: "weekly" as const,
+    },
+    {
+      url: `${baseUrl}/ascaya/canyon-residences`,
+      priority: 0.8,
+      changeFrequency: "weekly" as const,
+    },
+    {
+      url: `${baseUrl}/ascaya/homesites`,
+      priority: 0.8,
+      changeFrequency: "weekly" as const,
+    },
+    {
+      url: `${baseUrl}/ascaya/desert-design-study`,
+      priority: 0.8,
+      changeFrequency: "weekly" as const,
+    },
+    {
+      url: `${baseUrl}/ascaya/amenities`,
+      priority: 0.7,
+      changeFrequency: "monthly" as const,
+    },
+    {
+      url: `${baseUrl}/buyers/ascaya`,
+      priority: 0.8,
+      changeFrequency: "monthly" as const,
+    },
+    {
+      url: `${baseUrl}/sellers/ascaya`,
+      priority: 0.8,
+      changeFrequency: "monthly" as const,
+    },
+    {
+      url: `${baseUrl}/home-valuation/ascaya`,
+      priority: 0.8,
+      changeFrequency: "monthly" as const,
+    },
+    {
+      url: `${baseUrl}/faq`,
+      priority: 0.6,
+      changeFrequency: "monthly" as const,
+    },
+  ];
+
   const allPages = [
     ...corePages,
     ...servicePages,
@@ -252,6 +300,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     ...sellerPersonaPages,
     ...fiftyPlusCommunityPages,
     ...neighborhoodPages,
+    ...ascayaPages,
   ];
 
   return allPages.map((page) => ({

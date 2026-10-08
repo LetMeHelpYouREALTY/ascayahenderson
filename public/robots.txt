@@ -1,4 +1,4 @@
-# robots.txt for heyberkshire.com
+# robots.txt for www.ascayahenderson.com
 # Real estate site for Dr. Jan Duffy
 
 # Allow all search engines
@@ -20,7 +20,7 @@ Allow: /contact/
 Allow: /blog/
 
 # Sitemap location
-Sitemap: https://www.heyberkshire.com/sitemap.xml
+Sitemap: https://www.ascayahenderson.com/sitemap.xml
 
 # Crawl-delay for aggressive bots (optional)
 User-agent: AhrefsBot
@@ -29,21 +29,62 @@ Crawl-delay: 10
 User-agent: SemrushBot
 Crawl-delay: 10
 
-# Block known bad bots
+# Answer engines may cite public pages. Block private routes above.
 User-agent: GPTBot
-Disallow: /
+Allow: /
 
-User-agent: CCBot
-Disallow: /
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: OAI-SearchBot
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: Claude-User
+Allow: /
+
+User-agent: Claude-SearchBot
+Allow: /
 
 User-agent: anthropic-ai
-Disallow: /
+Allow: /
 
 User-agent: Claude-Web
-Disallow: /
+Allow: /
 
-# Allow Google's AI bot (for SGE - Search Generative Experience)
+User-agent: PerplexityBot
+Allow: /
+
 User-agent: Google-Extended
+Allow: /
+
+User-agent: cohere-ai
+Allow: /
+
+User-agent: Applebot-Extended
+Allow: /
+
+User-agent: Amazonbot
+Allow: /
+
+User-agent: meta-externalagent
+Allow: /
+
+User-agent: meta-externalfetcher
+Allow: /
+
+User-agent: YouBot
+Allow: /
+
+User-agent: Diffbot
+Allow: /
+
+User-agent: CCBot
+Allow: /
+
+User-agent: Bytespider
 Allow: /
 
 # Special handling for image crawlers

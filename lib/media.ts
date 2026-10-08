@@ -282,6 +282,15 @@ export function photoForPath(path: string): SitePhoto {
   }
   if (path.startsWith("/neighborhoods/southern-highlands"))
     return photos.southernHighlands;
+  if (
+    path.startsWith("/ascaya") ||
+    path.startsWith("/neighborhoods/ascaya") ||
+    path.startsWith("/buyers/ascaya") ||
+    path.startsWith("/sellers/ascaya") ||
+    path.startsWith("/home-valuation/ascaya")
+  ) {
+    return photos.henderson;
+  }
   if (path.startsWith("/buyers")) return photos.buyers;
   if (path.startsWith("/sellers") || path.startsWith("/home-valuation"))
     return photos.sellers;

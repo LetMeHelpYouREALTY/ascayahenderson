@@ -100,7 +100,7 @@ export default async function Home() {
           {config.domain === "ascayahenderson.com" ? (
             <>
               <h2 className="text-3xl md:text-4xl font-bold text-slate-900 mb-4 text-center">
-                Ascaya on the McCullough Range in Henderson
+                Where is Ascaya in Henderson?
               </h2>
               <HeadingPhoto
                 path="/"
@@ -118,30 +118,51 @@ export default async function Home() {
                 peaks toward the Strip.
               </p>
               <div className="grid md:grid-cols-3 gap-6">
-                <div className="rounded-xl border border-slate-200 p-6">
+                <Link
+                  href="/ascaya/canyon-residences"
+                  className="rounded-xl border border-slate-200 p-6 hover:border-blue-300"
+                >
                   <h3 className="font-bold text-lg mb-2">
-                    The Canyon Residences
+                    What are the Canyon Residences?
                   </h3>
                   <p className="text-slate-600 text-sm">
-                    Lock-and-leave homes inside the gates, built along the
-                    canyon terraces.
+                    51 lock-and-leave condominiums by Blue Heron, on seven
+                    terraces inside the gates.
                   </p>
-                </div>
-                <div className="rounded-xl border border-slate-200 p-6">
-                  <h3 className="font-bold text-lg mb-2">Homesites</h3>
+                </Link>
+                <Link
+                  href="/ascaya/homesites"
+                  className="rounded-xl border border-slate-200 p-6 hover:border-blue-300"
+                >
+                  <h3 className="font-bold text-lg mb-2">
+                    What homesites does Ascaya offer?
+                  </h3>
                   <p className="text-slate-600 text-sm">
-                    Desert Design Study homes and Estate and Cloud Rock
-                    Collection homesites for custom hillside builds.
+                    Estate lots and 58 Cloud Rock homesites for a custom build,
+                    with no build-deadline requirement.
                   </p>
-                </div>
-                <div className="rounded-xl border border-slate-200 p-6">
-                  <h3 className="font-bold text-lg mb-2">Clubhouse</h3>
+                </Link>
+                <Link
+                  href="/ascaya/amenities"
+                  className="rounded-xl border border-slate-200 p-6 hover:border-blue-300"
+                >
+                  <h3 className="font-bold text-lg mb-2">
+                    What is in the Ascaya clubhouse?
+                  </h3>
                   <p className="text-slate-600 text-sm">
-                    Dining, fitness studios, a zero-edge pool with
-                    Olympic-length lap lanes, tennis, pickleball, and trails.
+                    Dining, fitness, a 50-meter pool, tennis, pickleball, Family
+                    Park, and trails.
                   </p>
-                </div>
+                </Link>
               </div>
+              <p className="mt-6 text-center">
+                <Link
+                  href="/neighborhoods/ascaya"
+                  className="font-semibold text-blue-700 hover:underline"
+                >
+                  Ascaya Henderson guide
+                </Link>
+              </p>
             </>
           ) : (
             <>
