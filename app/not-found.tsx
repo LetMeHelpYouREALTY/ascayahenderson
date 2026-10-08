@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { ctaPhone } from "@/lib/contact";
+import OfficeRealScout from "@/components/realscout/OfficeRealScout";
 
 export default function NotFound() {
   return (
@@ -33,6 +34,7 @@ export default function NotFound() {
             Call {ctaPhone.display}
           </a>
         </div>
+        <OfficeRealScout />
       </div>
     </main>
   );

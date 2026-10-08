@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect } from "react";
+import OfficeRealScout from "@/components/realscout/OfficeRealScout";
 import Link from "next/link";
 import { ctaPhone } from "@/lib/contact";
 
@@ -46,6 +47,7 @@ export default function Error({
             Call {ctaPhone.display}
           </a>
         </div>
+        <OfficeRealScout />
       </div>
     </main>
   );

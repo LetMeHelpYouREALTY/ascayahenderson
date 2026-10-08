@@ -1,4 +1,3 @@
-import RealScoutListings from "@/components/realscout/RealScoutListings";
 import Link from "next/link";
 import Image from "next/image";
 import {
@@ -25,6 +24,7 @@ import LeftoverBand from "@/components/sections/LeftoverBand";
 
 import { maps, googleReviewsUrl } from "@/lib/contact";
 import { mediaUrl, photos } from "@/lib/media";
+import OfficeRealScout from "@/components/realscout/OfficeRealScout";
 
 export const metadata: Metadata = pageMetadata({
   path: "/about",
@@ -126,6 +126,7 @@ export default function AboutPage() {
               <ExpertQuote path="/about" />
             </div>
           </div>
+          <OfficeRealScout />
 
           {/* Agent Profile */}
           <section className="mb-16">
@@ -487,7 +488,6 @@ export default function AboutPage() {
           Last Updated: January 2026
         </div>
       </main>
-      <RealScoutListings />
     </>
   );
 }

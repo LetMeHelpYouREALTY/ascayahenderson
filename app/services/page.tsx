@@ -1,4 +1,3 @@
-import RealScoutListings from "@/components/realscout/RealScoutListings";
 import Link from "next/link";
 import { CheckCircle, ArrowRight } from "lucide-react";
 import type { Metadata } from "next";
@@ -10,6 +9,7 @@ import ExpertQuote from "@/components/sections/ExpertQuote";
 import HeadingPhoto from "@/components/sections/HeadingPhoto";
 import ProcessSteps from "@/components/sections/ProcessSteps";
 import LeftoverBand from "@/components/sections/LeftoverBand";
+import OfficeRealScout from "@/components/realscout/OfficeRealScout";
 
 export const metadata: Metadata = pageMetadata({
   path: "/services",
@@ -135,6 +135,7 @@ export default function ServicesPage() {
               <ExpertQuote path="/services" />
             </div>
           </div>
+          <OfficeRealScout />
 
           <LeftoverBand path="/services" />
 
@@ -229,7 +230,6 @@ export default function ServicesPage() {
           Last Updated: January 2026
         </div>
       </main>
-      <RealScoutListings />
     </>
   );
 }

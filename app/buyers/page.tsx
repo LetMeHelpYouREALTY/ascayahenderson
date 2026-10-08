@@ -1,4 +1,3 @@
-import RealScoutListings from "@/components/realscout/RealScoutListings";
 import Link from "next/link";
 import {
   CheckCircle,
@@ -19,6 +18,7 @@ import BuyerFaqs from "@/components/sections/BuyerFaqs";
 import ProcessSteps from "@/components/sections/ProcessSteps";
 import LeftoverBand from "@/components/sections/LeftoverBand";
 import { pageMetadata } from "@/lib/seo";
+import OfficeRealScout from "@/components/realscout/OfficeRealScout";
 
 export const metadata: Metadata = pageMetadata({
   path: "/buyers",
@@ -134,6 +134,7 @@ export default function BuyersPage() {
               <UniqueInterior path="/buyers" />
             </div>
           </div>
+          <OfficeRealScout />
 
           {/* Value Prop */}
           <section className="mb-16 bg-slate-900 text-white rounded-2xl p-8 md:p-12 max-w-5xl mx-auto">
@@ -378,7 +379,6 @@ export default function BuyersPage() {
           Last Updated: January 2026
         </div>
       </main>
-      <RealScoutListings />
     </>
   );
 }

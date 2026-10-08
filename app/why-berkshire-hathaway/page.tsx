@@ -1,4 +1,3 @@
-import RealScoutListings from "@/components/realscout/RealScoutListings";
 import type { Metadata } from "next";
 import { pageMetadata, absoluteUrl } from "@/lib/seo";
 import CtaActions from "@/components/sections/CtaActions";
@@ -9,6 +8,7 @@ import SupportFaqs from "@/components/sections/SupportFaqs";
 import ExpertQuote from "@/components/sections/ExpertQuote";
 import ProcessSteps from "@/components/sections/ProcessSteps";
 import LeftoverBand from "@/components/sections/LeftoverBand";
+import OfficeRealScout from "@/components/realscout/OfficeRealScout";
 
 export const metadata: Metadata = pageMetadata({
   path: "/why-berkshire-hathaway",
@@ -73,6 +73,7 @@ export default function WhyBerkshireHathawayPage() {
               <ExpertQuote path="/why-berkshire-hathaway" />
             </div>
           </div>
+          <OfficeRealScout />
 
           <LeftoverBand path="/why-berkshire-hathaway" slot={1} />
 
@@ -133,7 +134,6 @@ export default function WhyBerkshireHathawayPage() {
           Last Updated: January 2026
         </div>
       </main>
-      <RealScoutListings />
     </>
   );
 }

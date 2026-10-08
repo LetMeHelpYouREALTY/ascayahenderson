@@ -1,4 +1,3 @@
-import RealScoutListings from "@/components/realscout/RealScoutListings";
 import Link from "next/link";
 import {
   Phone,
@@ -22,6 +21,7 @@ import ExpertQuote from "@/components/sections/ExpertQuote";
 import FiftyFiveAmenities from "@/components/sections/FiftyFiveAmenities";
 import RealScoutSearch from "@/components/realscout/RealScoutSearch";
 import { pageMetadata } from "@/lib/seo";
+import OfficeRealScout from "@/components/realscout/OfficeRealScout";
 
 export const metadata: Metadata = pageMetadata({
   path: "/55-plus-communities/sun-city-aliante",
@@ -98,6 +98,8 @@ export default function SunCityAliantePage() {
               <RealScoutSearch />
             </div>
           </div>
+          <OfficeRealScout />
+
           <OfficeProximity path="/55-plus-communities/sun-city-aliante" />
           <UniqueInterior path="/55-plus-communities/sun-city-aliante" />
 
@@ -229,7 +231,6 @@ export default function SunCityAliantePage() {
           Last Updated: January 2026
         </div>
       </main>
-      <RealScoutListings />
     </>
   );
 }

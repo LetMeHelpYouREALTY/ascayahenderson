@@ -1,4 +1,3 @@
-import RealScoutListings from "@/components/realscout/RealScoutListings";
 import type { Metadata } from "next";
 import { pageMetadata } from "@/lib/seo";
 import CtaActions from "@/components/sections/CtaActions";
@@ -15,6 +14,7 @@ import NeighborhoodFaqs from "@/components/sections/NeighborhoodFaqs";
 import ExpertQuote from "@/components/sections/ExpertQuote";
 import LeftoverBand from "@/components/sections/LeftoverBand";
 import RealScoutSearch from "@/components/realscout/RealScoutSearch";
+import OfficeRealScout from "@/components/realscout/OfficeRealScout";
 
 export const metadata: Metadata = pageMetadata({
   path: "/neighborhoods/inspirada",
@@ -58,6 +58,7 @@ export default function InspiradaPage() {
               <RealScoutSearch />
             </div>
           </div>
+          <OfficeRealScout />
 
           <OfficeProximity path="/neighborhoods/inspirada" />
           <UniqueInterior path="/neighborhoods/inspirada" />
@@ -185,7 +186,6 @@ export default function InspiradaPage() {
           Last Updated: January 2026
         </div>
       </main>
-      <RealScoutListings />
     </>
   );
 }

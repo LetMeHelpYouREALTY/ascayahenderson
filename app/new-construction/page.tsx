@@ -1,4 +1,3 @@
-import RealScoutListings from "@/components/realscout/RealScoutListings";
 import Link from "next/link";
 import {
   Clock,
@@ -17,6 +16,7 @@ import HeadingPhoto from "@/components/sections/HeadingPhoto";
 import IntentFaqs from "@/components/sections/IntentFaqs";
 import LeftoverBand from "@/components/sections/LeftoverBand";
 import RealScoutSearch from "@/components/realscout/RealScoutSearch";
+import OfficeRealScout from "@/components/realscout/OfficeRealScout";
 
 export const metadata: Metadata = pageMetadata({
   path: "/new-construction",
@@ -221,6 +221,7 @@ export default function NewConstructionPage() {
               <RealScoutSearch />
             </div>
           </div>
+          <OfficeRealScout />
 
           <LeftoverBand path="/new-construction" />
 
@@ -486,7 +487,6 @@ export default function NewConstructionPage() {
           Last Updated: January 2026 | Incentives subject to change
         </div>
       </main>
-      <RealScoutListings />
     </>
   );
 }

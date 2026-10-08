@@ -1,4 +1,3 @@
-import RealScoutListings from "@/components/realscout/RealScoutListings";
 import { Phone, Mail, MapPin, Clock, Calendar, Star } from "lucide-react";
 import CalendlyWidget from "@/components/calendly/CalendlyWidget";
 import type { Metadata } from "next";
@@ -20,6 +19,7 @@ import {
   googleReviewsUrl,
   hoursSummary,
 } from "@/lib/contact";
+import OfficeRealScout from "@/components/realscout/OfficeRealScout";
 
 export const metadata: Metadata = pageMetadata({
   path: "/contact",
@@ -83,6 +83,7 @@ export default function ContactPage() {
             <UniqueInterior path="/contact" />
             <ExpertQuote path="/contact" />
           </div>
+          <OfficeRealScout />
 
           <div className="grid lg:grid-cols-2 gap-12 max-w-6xl mx-auto">
             {/* Contact Info & Map */}
@@ -287,7 +288,6 @@ export default function ContactPage() {
           Last Updated: January 2026
         </div>
       </main>
-      <RealScoutListings />
     </>
   );
 }

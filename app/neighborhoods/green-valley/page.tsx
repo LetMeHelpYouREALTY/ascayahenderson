@@ -1,4 +1,3 @@
-import RealScoutListings from "@/components/realscout/RealScoutListings";
 import type { Metadata } from "next";
 import { pageMetadata } from "@/lib/seo";
 import CtaActions from "@/components/sections/CtaActions";
@@ -14,6 +13,7 @@ import NeighborhoodFaqs from "@/components/sections/NeighborhoodFaqs";
 import ExpertQuote from "@/components/sections/ExpertQuote";
 import LeftoverBand from "@/components/sections/LeftoverBand";
 import RealScoutSearch from "@/components/realscout/RealScoutSearch";
+import OfficeRealScout from "@/components/realscout/OfficeRealScout";
 
 export const metadata: Metadata = pageMetadata({
   path: "/neighborhoods/green-valley",
@@ -57,6 +57,7 @@ export default function GreenValleyPage() {
               <RealScoutSearch />
             </div>
           </div>
+          <OfficeRealScout />
 
           <OfficeProximity path="/neighborhoods/green-valley" />
           <UniqueInterior path="/neighborhoods/green-valley" />
@@ -183,7 +184,6 @@ export default function GreenValleyPage() {
           Last Updated: January 2026
         </div>
       </main>
-      <RealScoutListings />
     </>
   );
 }

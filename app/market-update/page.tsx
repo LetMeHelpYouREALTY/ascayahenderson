@@ -1,4 +1,3 @@
-import RealScoutListings from "@/components/realscout/RealScoutListings";
 import { Calendar } from "lucide-react";
 import type { Metadata } from "next";
 import CtaActions from "@/components/sections/CtaActions";
@@ -9,6 +8,7 @@ import SupportFaqs from "@/components/sections/SupportFaqs";
 import ExpertQuote from "@/components/sections/ExpertQuote";
 import LeftoverBand from "@/components/sections/LeftoverBand";
 import { pageMetadata, absoluteUrl } from "@/lib/seo";
+import OfficeRealScout from "@/components/realscout/OfficeRealScout";
 
 export const metadata: Metadata = pageMetadata({
   path: "/market-update",
@@ -83,6 +83,7 @@ export default function MarketUpdatePage() {
               <ExpertQuote path="/market-update" />
             </div>
           </div>
+          <OfficeRealScout />
 
           <LeftoverBand path="/market-update" />
           <LeftoverBand path="/market-update" slot={1} />
@@ -132,7 +133,6 @@ export default function MarketUpdatePage() {
           Last Updated: January 24, 2026 | Data Source: Las Vegas REALTORS® MLS
         </div>
       </main>
-      <RealScoutListings />
     </>
   );
 }

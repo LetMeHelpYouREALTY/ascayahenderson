@@ -1,4 +1,3 @@
-import RealScoutListings from "@/components/realscout/RealScoutListings";
 import Link from "next/link";
 import {
   TrendingUp,
@@ -18,6 +17,7 @@ import HeadingPhoto from "@/components/sections/HeadingPhoto";
 import SellerFaqs from "@/components/sections/SellerFaqs";
 import LeftoverBand from "@/components/sections/LeftoverBand";
 import { pageMetadata } from "@/lib/seo";
+import OfficeRealScout from "@/components/realscout/OfficeRealScout";
 
 export const metadata: Metadata = pageMetadata({
   path: "/sellers/move-up",
@@ -57,6 +57,7 @@ export default function MoveUpSellerPage() {
             <OfficeProximity path="/sellers/move-up" />
             <UniqueInterior path="/sellers/move-up" />
           </div>
+          <OfficeRealScout />
 
           <LeftoverBand path="/sellers/move-up" />
 
@@ -341,7 +342,6 @@ export default function MoveUpSellerPage() {
           Last Updated: January 2026
         </div>
       </main>
-      <RealScoutListings />
     </>
   );
 }

@@ -1,4 +1,3 @@
-import RealScoutListings from "@/components/realscout/RealScoutListings";
 import Link from "next/link";
 import {
   Heart,
@@ -19,6 +18,7 @@ import HeadingPhoto from "@/components/sections/HeadingPhoto";
 import SellerFaqs from "@/components/sections/SellerFaqs";
 import LeftoverBand from "@/components/sections/LeftoverBand";
 import { pageMetadata } from "@/lib/seo";
+import OfficeRealScout from "@/components/realscout/OfficeRealScout";
 
 export const metadata: Metadata = pageMetadata({
   path: "/sellers/downsizing",
@@ -58,6 +58,7 @@ export default function DownsizingPage() {
             <OfficeProximity path="/sellers/downsizing" />
             <UniqueInterior path="/sellers/downsizing" />
           </div>
+          <OfficeRealScout />
 
           <LeftoverBand path="/sellers/downsizing" />
 
@@ -481,7 +482,6 @@ export default function DownsizingPage() {
           Last Updated: January 2026
         </div>
       </main>
-      <RealScoutListings />
     </>
   );
 }

@@ -1,4 +1,3 @@
-import RealScoutListings from "@/components/realscout/RealScoutListings";
 import Link from "next/link";
 import {
   Phone,
@@ -18,6 +17,7 @@ import ExpertQuote from "@/components/sections/ExpertQuote";
 import HeadingPhoto from "@/components/sections/HeadingPhoto";
 import IntentFaqs from "@/components/sections/IntentFaqs";
 import LeftoverBand from "@/components/sections/LeftoverBand";
+import OfficeRealScout from "@/components/realscout/OfficeRealScout";
 
 export const metadata: Metadata = pageMetadata({
   path: "/investment-properties",
@@ -105,6 +105,7 @@ export default function InvestmentPropertiesPage() {
               <UniqueInterior path="/investment-properties" />
             </div>
           </div>
+          <OfficeRealScout />
 
           <LeftoverBand path="/investment-properties" />
 
@@ -462,7 +463,6 @@ export default function InvestmentPropertiesPage() {
           Last Updated: January 2026
         </div>
       </main>
-      <RealScoutListings />
     </>
   );
 }

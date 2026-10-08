@@ -21,6 +21,7 @@ import {
 } from "@/lib/contact";
 
 import { businessInfo, generateLocalBusinessSchema } from "@/lib/gbp-schema";
+import OfficeRealScout from "@/components/realscout/OfficeRealScout";
 
 export const metadata: Metadata = pageMetadata({
   path: "/google-business",
@@ -158,6 +159,8 @@ export default function GoogleBusinessPage() {
               </div>
             </div>
           </section>
+          <OfficeRealScout />
+
           <OfficeProximity path="/google-business" />
           <UniqueInterior path="/google-business" />
           <ExpertQuote path="/google-business" />

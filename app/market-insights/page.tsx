@@ -1,4 +1,3 @@
-import RealScoutListings from "@/components/realscout/RealScoutListings";
 import { TrendingUp } from "lucide-react";
 import type { Metadata } from "next";
 import CtaActions from "@/components/sections/CtaActions";
@@ -9,6 +8,7 @@ import SupportFaqs from "@/components/sections/SupportFaqs";
 import ExpertQuote from "@/components/sections/ExpertQuote";
 import LeftoverBand from "@/components/sections/LeftoverBand";
 import { pageMetadata } from "@/lib/seo";
+import OfficeRealScout from "@/components/realscout/OfficeRealScout";
 
 export const metadata: Metadata = pageMetadata({
   path: "/market-insights",
@@ -72,6 +72,7 @@ export default function MarketInsightsPage() {
               <UniqueInterior path="/market-insights" />
             </div>
           </div>
+          <OfficeRealScout />
 
           <LeftoverBand path="/market-insights" />
           <LeftoverBand path="/market-insights" slot={1} />
@@ -100,7 +101,6 @@ export default function MarketInsightsPage() {
           Last Updated: January 2026
         </div>
       </main>
-      <RealScoutListings />
     </>
   );
 }

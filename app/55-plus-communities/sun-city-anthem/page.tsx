@@ -1,4 +1,3 @@
-import RealScoutListings from "@/components/realscout/RealScoutListings";
 import Link from "next/link";
 import {
   Phone,
@@ -28,6 +27,7 @@ import {
   generateSeniorCommunitySchema,
   combineSchemas,
 } from "@/lib/schema";
+import OfficeRealScout from "@/components/realscout/OfficeRealScout";
 
 export const metadata: Metadata = pageMetadata({
   path: "/55-plus-communities/sun-city-anthem",
@@ -126,6 +126,8 @@ export default function SunCityAnthemPage() {
               <RealScoutSearch />
             </div>
           </div>
+          <OfficeRealScout />
+
           <OfficeProximity path="/55-plus-communities/sun-city-anthem" />
           <UniqueInterior path="/55-plus-communities/sun-city-anthem" />
 
@@ -184,7 +186,6 @@ export default function SunCityAnthemPage() {
           Last Updated: January 2026
         </div>
       </main>
-      <RealScoutListings />
     </>
   );
 }

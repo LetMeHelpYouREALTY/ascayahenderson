@@ -1,4 +1,3 @@
-import RealScoutListings from "@/components/realscout/RealScoutListings";
 import WhyChooseUs from "@/components/sections/WhyChooseUs";
 import ReviewsSection from "@/components/sections/ReviewsSection";
 import SupportFaqs from "@/components/sections/SupportFaqs";
@@ -18,6 +17,7 @@ import { ctaPhone, nap } from "@/lib/contact";
 import { marketStats as stats } from "@/lib/site-config";
 import { mediaUrl, photos } from "@/lib/media";
 import OpenHousesMap from "@/components/sections/OpenHousesMap";
+import OfficeRealScout from "@/components/realscout/OfficeRealScout";
 
 export async function generateMetadata(): Promise<Metadata> {
   const config = await getPageDomainConfig();
@@ -90,6 +90,7 @@ export default async function Home() {
         </div>
       </section>
       <div className="container mx-auto px-4">
+        <OfficeRealScout />
         <OfficeProximity path="/" />
         <UniqueInterior path="/" />
         <ExpertQuote path="/" />
@@ -284,7 +285,6 @@ export default async function Home() {
         </div>
       </section>
 
-      <RealScoutListings />
       <WhyChooseUs />
       <LeftoverBand path="/" />
       <ReviewsSection showHeading={false} />

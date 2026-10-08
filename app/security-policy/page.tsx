@@ -7,6 +7,7 @@ import ExpertQuote from "@/components/sections/ExpertQuote";
 import HeadingPhoto from "@/components/sections/HeadingPhoto";
 import LeftoverBand from "@/components/sections/LeftoverBand";
 import { nap } from "@/lib/contact";
+import OfficeRealScout from "@/components/realscout/OfficeRealScout";
 
 export const metadata: Metadata = pageMetadata({
   path: "/security-policy",
@@ -27,6 +28,7 @@ export default function SecurityPolicyPage() {
           Security Policy
         </h1>
         <HeadingPhoto path="/security-policy" />
+        <OfficeRealScout />
 
         <div className="prose prose-lg max-w-none">
           <LeftoverBand path="/security-policy" />

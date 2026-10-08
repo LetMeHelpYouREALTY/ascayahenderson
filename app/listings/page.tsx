@@ -17,8 +17,8 @@ import ExpertQuote from "@/components/sections/ExpertQuote";
 import ProcessSteps from "@/components/sections/ProcessSteps";
 import LeftoverBand from "@/components/sections/LeftoverBand";
 import RealScoutSearch from "@/components/realscout/RealScoutSearch";
-import MlsDisclaimer from "@/components/shared/MlsDisclaimer";
 import { pageMetadata } from "@/lib/seo";
+import OfficeRealScout from "@/components/realscout/OfficeRealScout";
 
 export const metadata: Metadata = pageMetadata({
   title:
@@ -150,22 +150,7 @@ export default function ListingsPage() {
             <RealScoutSearch />
           </div>
 
-          {/* RealScout Widget - Live MLS Listings */}
-          <section className="mb-16">
-            <div className="max-w-7xl mx-auto">
-              <div
-                dangerouslySetInnerHTML={{
-                  __html: `<realscout-office-listings 
-                    agent-encoded-id="QWdlbnQtMjI1MDUw" 
-                    sort-order="NEWEST" 
-                    listing-status="For Sale" 
-                    property-types=",SFR,MF,TC"
-                  ></realscout-office-listings>`,
-                }}
-              />
-              <MlsDisclaimer className="mt-4" />
-            </div>
-          </section>
+          <OfficeRealScout />
 
           {/* Popular Searches Section */}
           <section className="mb-16 max-w-6xl mx-auto">

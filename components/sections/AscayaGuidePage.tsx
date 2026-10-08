@@ -144,6 +144,8 @@ export default function AscayaGuidePage({ guide }: AscayaGuidePageProps) {
             </a>
           </div>
 
+          <OfficeRealScout heading="Which Ascaya Henderson homes are for sale?" />
+
           {guide.sections.map((section) => (
             <section key={section.heading} className="mb-12">
               <h2 className="mb-3 text-2xl font-bold text-slate-900 md:text-3xl">
@@ -167,10 +169,6 @@ export default function AscayaGuidePage({ guide }: AscayaGuidePageProps) {
               ) : null}
             </section>
           ))}
-
-          {guide.showListings ? (
-            <OfficeRealScout heading="Which Ascaya Henderson homes are for sale?" />
-          ) : null}
 
           <section className="mb-12" aria-labelledby="ascaya-faq-heading">
             <h2

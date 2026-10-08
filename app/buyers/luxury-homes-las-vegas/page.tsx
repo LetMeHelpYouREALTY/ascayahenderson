@@ -1,4 +1,3 @@
-import RealScoutListings from "@/components/realscout/RealScoutListings";
 import { Shield, Eye, Lock, Star, DollarSign } from "lucide-react";
 import type { Metadata } from "next";
 import { pageMetadata } from "@/lib/seo";
@@ -10,6 +9,7 @@ import HeadingPhoto from "@/components/sections/HeadingPhoto";
 import BuyerFaqs from "@/components/sections/BuyerFaqs";
 import LeftoverBand from "@/components/sections/LeftoverBand";
 import { nap } from "@/lib/contact";
+import OfficeRealScout from "@/components/realscout/OfficeRealScout";
 
 export const metadata: Metadata = pageMetadata({
   path: "/buyers/luxury-homes-las-vegas",
@@ -49,6 +49,7 @@ export default function LuxuryHomesPage() {
             <OfficeProximity path="/buyers/luxury-homes-las-vegas" />
             <UniqueInterior path="/buyers/luxury-homes-las-vegas" />
           </div>
+          <OfficeRealScout />
 
           {/* Market Performance */}
           <LeftoverBand path="/buyers/luxury-homes-las-vegas" slot={1} />
@@ -174,7 +175,6 @@ export default function LuxuryHomesPage() {
           Last Updated: January 2026
         </div>
       </main>
-      <RealScoutListings />
     </>
   );
 }

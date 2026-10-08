@@ -1,4 +1,3 @@
-import RealScoutListings from "@/components/realscout/RealScoutListings";
 import Link from "next/link";
 import type { Metadata } from "next";
 import { pageMetadata } from "@/lib/seo";
@@ -14,6 +13,7 @@ import ExpertQuote from "@/components/sections/ExpertQuote";
 import HeadingPhoto from "@/components/sections/HeadingPhoto";
 import RealScoutSearch from "@/components/realscout/RealScoutSearch";
 import LeftoverBand from "@/components/sections/LeftoverBand";
+import OfficeRealScout from "@/components/realscout/OfficeRealScout";
 
 export const metadata: Metadata = pageMetadata({
   path: "/neighborhoods",
@@ -206,6 +206,7 @@ export default function NeighborhoodsPage() {
               <RealScoutSearch />
             </div>
           </div>
+          <OfficeRealScout />
 
           <LeftoverBand path="/neighborhoods" />
           <section className="mb-10 max-w-6xl mx-auto">
@@ -300,7 +301,6 @@ export default function NeighborhoodsPage() {
           Last Updated: January 2026
         </div>
       </main>
-      <RealScoutListings />
     </>
   );
 }

@@ -1,4 +1,3 @@
-import RealScoutListings from "@/components/realscout/RealScoutListings";
 import Link from "next/link";
 import { CheckCircle, ArrowRight } from "lucide-react";
 import type { Metadata } from "next";
@@ -11,6 +10,7 @@ import LeftoverBand from "@/components/sections/LeftoverBand";
 import HeadingPhoto from "@/components/sections/HeadingPhoto";
 import IntentFaqs from "@/components/sections/IntentFaqs";
 import { pageMetadata } from "@/lib/seo";
+import OfficeRealScout from "@/components/realscout/OfficeRealScout";
 
 export const metadata: Metadata = pageMetadata({
   path: "/luxury-homes",
@@ -173,6 +173,7 @@ export default function LuxuryHomesPage() {
               <UniqueInterior path="/luxury-homes" />
             </div>
           </div>
+          <OfficeRealScout />
 
           {/* Luxury Stats */}
           <LeftoverBand path="/luxury-homes" slot={1} />
@@ -293,7 +294,6 @@ export default function LuxuryHomesPage() {
           Last Updated: January 2026
         </div>
       </main>
-      <RealScoutListings />
     </>
   );
 }

@@ -1,4 +1,3 @@
-import RealScoutListings from "@/components/realscout/RealScoutListings";
 import type { Metadata } from "next";
 import { pageMetadata } from "@/lib/seo";
 import CtaActions from "@/components/sections/CtaActions";
@@ -21,6 +20,7 @@ import {
   generateNeighborhoodSchema,
   combineSchemas,
 } from "@/lib/schema";
+import OfficeRealScout from "@/components/realscout/OfficeRealScout";
 
 export const metadata: Metadata = pageMetadata({
   path: "/neighborhoods/summerlin",
@@ -88,6 +88,7 @@ export default function SummerlinPage() {
               <RealScoutSearch />
             </div>
           </div>
+          <OfficeRealScout />
 
           <OfficeProximity path="/neighborhoods/summerlin" />
           <UniqueInterior path="/neighborhoods/summerlin" />
@@ -213,7 +214,6 @@ export default function SummerlinPage() {
           Last Updated: January 2026
         </div>
       </main>
-      <RealScoutListings />
     </>
   );
 }

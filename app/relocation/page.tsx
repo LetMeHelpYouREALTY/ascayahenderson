@@ -1,4 +1,3 @@
-import RealScoutListings from "@/components/realscout/RealScoutListings";
 import Link from "next/link";
 import {
   Phone,
@@ -25,6 +24,7 @@ import HeadingPhoto from "@/components/sections/HeadingPhoto";
 import IntentFaqs from "@/components/sections/IntentFaqs";
 import LeftoverBand from "@/components/sections/LeftoverBand";
 import { pageMetadata } from "@/lib/seo";
+import OfficeRealScout from "@/components/realscout/OfficeRealScout";
 
 export const metadata: Metadata = pageMetadata({
   path: "/relocation",
@@ -161,6 +161,7 @@ export default function RelocationPage() {
               <UniqueInterior path="/relocation" />
             </div>
           </div>
+          <OfficeRealScout />
 
           <LeftoverBand path="/relocation" />
 
@@ -419,7 +420,6 @@ export default function RelocationPage() {
           Last Updated: January 2026
         </div>
       </main>
-      <RealScoutListings />
     </>
   );
 }

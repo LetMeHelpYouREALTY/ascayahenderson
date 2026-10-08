@@ -1,4 +1,3 @@
-import RealScoutListings from "@/components/realscout/RealScoutListings";
 import Link from "next/link";
 import {
   Sun,
@@ -18,6 +17,7 @@ import ExpertQuote from "@/components/sections/ExpertQuote";
 import HeadingPhoto from "@/components/sections/HeadingPhoto";
 import BuyerFaqs from "@/components/sections/BuyerFaqs";
 import LeftoverBand from "@/components/sections/LeftoverBand";
+import OfficeRealScout from "@/components/realscout/OfficeRealScout";
 
 export const metadata: Metadata = pageMetadata({
   path: "/buyers/california-relocator",
@@ -83,6 +83,7 @@ export default function CaliforniaRelocatorPage() {
             <OfficeProximity path="/buyers/california-relocator" />
             <UniqueInterior path="/buyers/california-relocator" />
           </div>
+          <OfficeRealScout />
 
           <LeftoverBand path="/buyers/california-relocator" />
 
@@ -361,7 +362,6 @@ export default function CaliforniaRelocatorPage() {
           Last Updated: January 2026
         </div>
       </main>
-      <RealScoutListings />
     </>
   );
 }
