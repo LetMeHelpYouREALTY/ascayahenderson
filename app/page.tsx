@@ -96,39 +96,99 @@ export default async function Home() {
 
       <section className="py-16 md:py-20 bg-white" data-home-compare="/">
         <div className="container mx-auto px-4 max-w-4xl">
-          <h2 className="text-3xl md:text-4xl font-bold text-slate-900 mb-4 text-center">
-            What we compare first: Summerlin villages vs Henderson parks
-          </h2>
-          <HeadingPhoto path="/" level="h2" photo={photos.summerlin} priority />
-          <p className="text-lg text-slate-600 mb-8 text-center">
-            Same west-valley start at 9406 W Lake Mead Blvd, Suite 100. We pick
-            two contrasting pins so you are not averaging the whole valley.
-          </p>
-          <div className="grid md:grid-cols-3 gap-6">
-            <div className="rounded-xl border border-slate-200 p-6">
-              <h3 className="font-bold text-lg mb-2">Summerlin (10–15 min)</h3>
-              <p className="text-slate-600 text-sm">
-                Downtown Summerlin retail, The Trails, then Red Rock trailheads
-                on the same clock.
+          {config.domain === "acayahenderson.com" ? (
+            <>
+              <h2 className="text-3xl md:text-4xl font-bold text-slate-900 mb-4 text-center">
+                Ascaya on the McCullough Range in Henderson
+              </h2>
+              <HeadingPhoto
+                path="/"
+                level="h2"
+                photo={{
+                  ...photos.henderson,
+                  alt: "Henderson hillside homes with mountain views near Ascaya",
+                }}
+                priority
+              />
+              <p className="text-lg text-slate-600 mb-8 text-center">
+                Ascaya is a guard-gated community at One Ascaya Blvd, Henderson,
+                NV 89012, about 20 minutes from the Las Vegas Strip. Homes and
+                homesites follow the hillside, with views from the McCullough
+                peaks toward the Strip.
               </p>
-            </div>
-            <div className="rounded-xl border border-slate-200 p-6">
-              <h3 className="font-bold text-lg mb-2">Henderson (25–35 min)</h3>
-              <p className="text-slate-600 text-sm">
-                Green Valley street trees vs Inspirada rec campus. One east
-                afternoon, not both plus Summerlin.
+              <div className="grid md:grid-cols-3 gap-6">
+                <div className="rounded-xl border border-slate-200 p-6">
+                  <h3 className="font-bold text-lg mb-2">
+                    The Canyon Residences
+                  </h3>
+                  <p className="text-slate-600 text-sm">
+                    Lock-and-leave homes inside the gates, built along the
+                    canyon terraces.
+                  </p>
+                </div>
+                <div className="rounded-xl border border-slate-200 p-6">
+                  <h3 className="font-bold text-lg mb-2">Homesites</h3>
+                  <p className="text-slate-600 text-sm">
+                    Desert Design Study homes and Estate and Cloud Rock
+                    Collection homesites for custom hillside builds.
+                  </p>
+                </div>
+                <div className="rounded-xl border border-slate-200 p-6">
+                  <h3 className="font-bold text-lg mb-2">Clubhouse</h3>
+                  <p className="text-slate-600 text-sm">
+                    Dining, fitness studios, a zero-edge pool with
+                    Olympic-length lap lanes, tennis, pickleball, and trails.
+                  </p>
+                </div>
+              </div>
+            </>
+          ) : (
+            <>
+              <h2 className="text-3xl md:text-4xl font-bold text-slate-900 mb-4 text-center">
+                What we compare first: Summerlin villages vs Henderson parks
+              </h2>
+              <HeadingPhoto
+                path="/"
+                level="h2"
+                photo={photos.summerlin}
+                priority
+              />
+              <p className="text-lg text-slate-600 mb-8 text-center">
+                Same west-valley start at 9406 W Lake Mead Blvd, Suite 100. We
+                pick two contrasting pins so you are not averaging the whole
+                valley.
               </p>
-            </div>
-            <div className="rounded-xl border border-slate-200 p-6">
-              <h3 className="font-bold text-lg mb-2">
-                Sun City Summerlin (10–15 min)
-              </h3>
-              <p className="text-slate-600 text-sm">
-                Four rec buildings if the brief is 55+. Anthem is a separate
-                Henderson day.
-              </p>
-            </div>
-          </div>
+              <div className="grid md:grid-cols-3 gap-6">
+                <div className="rounded-xl border border-slate-200 p-6">
+                  <h3 className="font-bold text-lg mb-2">
+                    Summerlin (10–15 min)
+                  </h3>
+                  <p className="text-slate-600 text-sm">
+                    Downtown Summerlin retail, The Trails, then Red Rock
+                    trailheads on the same clock.
+                  </p>
+                </div>
+                <div className="rounded-xl border border-slate-200 p-6">
+                  <h3 className="font-bold text-lg mb-2">
+                    Henderson (25–35 min)
+                  </h3>
+                  <p className="text-slate-600 text-sm">
+                    Green Valley street trees vs Inspirada rec campus. One east
+                    afternoon, not both plus Summerlin.
+                  </p>
+                </div>
+                <div className="rounded-xl border border-slate-200 p-6">
+                  <h3 className="font-bold text-lg mb-2">
+                    Sun City Summerlin (10–15 min)
+                  </h3>
+                  <p className="text-slate-600 text-sm">
+                    Four rec buildings if the brief is 55+. Anthem is a separate
+                    Henderson day.
+                  </p>
+                </div>
+              </div>
+            </>
+          )}
           <p className="text-sm text-slate-600 mt-8 mb-6 text-center">
             {nap.brokerage} · {nap.fullAddress} · Call or text{" "}
             {ctaPhone.display}.

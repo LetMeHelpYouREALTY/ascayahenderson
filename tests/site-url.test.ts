@@ -1,5 +1,6 @@
 import { afterEach, describe, expect, it } from "vitest";
 import {
+  ACAYA_HENDERSON_CANONICAL,
   HEYBERKSHIRE_CANONICAL,
   HOST_CANONICAL_ORIGINS,
   resolveSiteUrl,
@@ -38,6 +39,19 @@ describe("resolveSiteUrl", () => {
   it("uses bare https host for other mapped domains", () => {
     delete process.env.NEXT_PUBLIC_SITE_URL;
     expect(resolveSiteUrl("drjanduffy.com")).toBe("https://drjanduffy.com");
+  });
+
+  it("keeps www.acayahenderson.com as the Ascaya canonical", () => {
+    process.env.NEXT_PUBLIC_SITE_URL = "https://www.heyberkshire.com";
+    expect(resolveSiteUrl("www.acayahenderson.com")).toBe(
+      ACAYA_HENDERSON_CANONICAL,
+    );
+    expect(resolveSiteUrl("acayahenderson.com")).toBe(
+      ACAYA_HENDERSON_CANONICAL,
+    );
+    expect(HOST_CANONICAL_ORIGINS["acayahenderson.com"]).toBe(
+      ACAYA_HENDERSON_CANONICAL,
+    );
   });
 
   it("falls back to www heyberkshire with no env and no host", () => {

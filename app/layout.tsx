@@ -89,7 +89,7 @@ export default async function RootLayout({
         <InnerPageChrome>{children}</InnerPageChrome>
         <Footer />
         <MobileStickyCTA />
-        <AIChatWidget />
+        <AIChatWidget neighborhood={getDomainConfig(domain).neighborhood} />
         <Analytics />
         <Script
           src={realscout.scriptSrc}

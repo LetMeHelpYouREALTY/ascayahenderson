@@ -1,67 +1,66 @@
 import { NextRequest, NextResponse } from "next/server";
-import OpenAI from "openai";
+import { getSharedClaudeClient } from "@/lib/claude/client";
 
-const openrouter = new OpenAI({
-  apiKey: process.env.OPENROUTER_API_KEY,
-  baseURL: "https://openrouter.ai/api/v1",
-});
+const COPY_MODEL = "claude-3-5-haiku-20241022";
+
+const PROPERTY_DESCRIPTION_SYSTEM = `You are an expert real estate copywriter for Dr. Jan Duffy, REALTOR® S.0197614.LLC, Berkshire Hathaway HomeServices Nevada Properties. You write listing descriptions for Las Vegas and Henderson, Nevada, including Ascaya at One Ascaya Blvd, Henderson.
+
+Write 2-3 paragraphs, 150-250 words. Describe square footage, amenities, named places, and commute times. Never use protected-class references or proxies such as safe neighborhood, good schools, family-friendly, or established community. Do not invent prices, HOA dues, or ratings. If a fact was not provided, omit it.`;
+
+function field(value: unknown): string {
+  if (typeof value === "string" && value.trim()) {
+    return value.trim().slice(0, 300);
+  }
+  if (typeof value === "number" && Number.isFinite(value)) {
+    return String(value);
+  }
+  return "Not specified";
+}
 
 export async function POST(request: NextRequest) {
   try {
-    const { propertyDetails } = await request.json();
+    const body = (await request.json()) as { propertyDetails?: unknown };
+    const propertyDetails = body.propertyDetails;
 
-    if (!propertyDetails) {
-      return NextResponse.json({ error: "Property details are required" }, { status: 400 });
+    if (!propertyDetails || typeof propertyDetails !== "object") {
+      return NextResponse.json(
+        { error: "Property details are required" },
+        { status: 400 },
+      );
     }
 
-    if (!process.env.OPENROUTER_API_KEY) {
+    const claude = getSharedClaudeClient();
+    if (!claude) {
       return NextResponse.json(
-        { error: "OpenRouter API key not configured" },
+        { error: "Claude API key not configured" },
         { status: 500 },
       );
     }
 
-    const prompt = `Generate a compelling, SEO-friendly property description for a real estate listing in Las Vegas or Henderson, Nevada. 
+    const details = propertyDetails as Record<string, unknown>;
+    const prompt = `Generate a compelling, SEO-friendly property description for a real estate listing in Las Vegas or Henderson, Nevada.
 
 Property Details:
-- Address/Location: ${propertyDetails.location || "Not specified"}
-- Bedrooms: ${propertyDetails.bedrooms || "Not specified"}
-- Bathrooms: ${propertyDetails.bathrooms || "Not specified"}
-- Square Feet: ${propertyDetails.squareFeet || "Not specified"}
-- Price: ${propertyDetails.price || "Not specified"}
-- Year Built: ${propertyDetails.yearBuilt || "Not specified"}
-- Additional Features: ${propertyDetails.features || "None specified"}
+- Address/Location: ${field(details.location)}
+- Bedrooms: ${field(details.bedrooms)}
+- Bathrooms: ${field(details.bathrooms)}
+- Square Feet: ${field(details.squareFeet)}
+- Price: ${field(details.price)}
+- Year Built: ${field(details.yearBuilt)}
+- Additional Features: ${field(details.features)}`;
 
-Requirements:
-- Write 2-3 engaging paragraphs (150-250 words)
-- Highlight key features and benefits
-- Use natural, appealing language
-- Include location benefits (proximity to amenities, schools, etc.)
-- Make it compelling for potential buyers
-- Keep it professional and accurate`;
-
-    const response = await openrouter.chat.completions.create({
-      model: "anthropic/claude-3.5-haiku",
-      messages: [
-        {
-          role: "system",
-          content:
-            "You are an expert real estate copywriter specializing in Las Vegas and Henderson, Nevada properties. Write compelling, accurate property descriptions that highlight features and benefits.",
-        },
-        {
-          role: "user",
-          content: prompt,
-        },
-      ],
+    const response = await claude.sendMessage({
+      messages: [{ role: "user", content: prompt }],
+      systemPrompt: PROPERTY_DESCRIPTION_SYSTEM,
+      model: COPY_MODEL,
+      maxTokens: 400,
       temperature: 0.8,
-      max_tokens: 400,
+      enableCache: true,
     });
 
-    const description = response.choices[0].message.content;
-
-    return NextResponse.json({ description });
+    return NextResponse.json({ description: response.content });
   } catch (error) {
-    console.error("OpenRouter API error:", error);
+    console.error("Claude API error:", error);
     return NextResponse.json(
       { error: "Failed to generate property description" },
       { status: 500 },

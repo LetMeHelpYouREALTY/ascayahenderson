@@ -10,13 +10,19 @@ interface Message {
   content: string;
 }
 
-export default function AIChatWidget() {
+type AIChatWidgetProps = {
+  neighborhood?: string;
+};
+
+export default function AIChatWidget({ neighborhood }: AIChatWidgetProps) {
   const [isOpen, setIsOpen] = useState(false);
   const [messages, setMessages] = useState<Message[]>([
     {
       role: "assistant",
       content:
-        "Hello! I'm your real estate assistant. How can I help you find your dream home in Las Vegas or Henderson today?",
+        neighborhood === "Ascaya"
+          ? "Hello. I can help with Ascaya homes at One Ascaya Blvd in Henderson. Call or text Dr. Jan Duffy at (702) 222-1964."
+          : "Hello! I'm your real estate assistant. How can I help you find your dream home in Las Vegas or Henderson today?",
     },
   ]);
   const [input, setInput] = useState("");
@@ -118,7 +124,11 @@ export default function AIChatWidget() {
           {/* Header */}
           <div className="bg-blue-600 text-white p-4 rounded-t-lg flex justify-between items-center">
             <div>
-              <h3 className="font-semibold">Real Estate Assistant</h3>
+              <h3 className="font-semibold">
+                {neighborhood === "Ascaya"
+                  ? "Ascaya Henderson"
+                  : "Real Estate Assistant"}
+              </h3>
               <p className="text-xs text-blue-100">Ask me anything!</p>
             </div>
             <button

@@ -7,9 +7,13 @@
 /** Canonical production origin for heyberkshire (www, not apex). */
 export const HEYBERKSHIRE_CANONICAL = "https://www.heyberkshire.com";
 
-/** Normalized hostname → canonical origin (when env is unset). */
+/** Canonical production origin for Ascaya Henderson (www, not apex). */
+export const ACAYA_HENDERSON_CANONICAL = "https://www.acayahenderson.com";
+
+/** Normalized hostname → canonical origin. Mapped hosts keep their own www origin. */
 export const HOST_CANONICAL_ORIGINS: Record<string, string> = {
   "heyberkshire.com": HEYBERKSHIRE_CANONICAL,
+  "acayahenderson.com": ACAYA_HENDERSON_CANONICAL,
 };
 
 export function normalizeHostname(hostname: string): string {
@@ -21,17 +25,20 @@ export function normalizeHostname(hostname: string): string {
 
 /**
  * Site origin for canonical, og:url, and JSON-LD.
- * 1) NEXT_PUBLIC_SITE_URL when set
- * 2) Host map (heyberkshire → www) or https://{host} for other live domains
- * 3) HeyBerkshire www fallback (never bare apex)
+ * 1) Host map (heyberkshire and acayahenderson → www)
+ * 2) NEXT_PUBLIC_SITE_URL when set
+ * 3) https://{host} for other live domains
+ * 4) HeyBerkshire www fallback (never bare apex)
  */
 export function resolveSiteUrl(hostname?: string | null): string {
   const fromEnv = process.env.NEXT_PUBLIC_SITE_URL?.replace(/\/$/, "");
+  const clean = normalizeHostname(hostname ?? "");
+  const mapped = clean ? HOST_CANONICAL_ORIGINS[clean] : undefined;
+  if (mapped) return mapped;
   if (fromEnv) return fromEnv;
 
-  const clean = normalizeHostname(hostname ?? "");
   if (clean && clean !== "localhost" && !clean.endsWith(".vercel.app")) {
-    return HOST_CANONICAL_ORIGINS[clean] ?? `https://${clean}`;
+    return `https://${clean}`;
   }
 
   return HEYBERKSHIRE_CANONICAL;

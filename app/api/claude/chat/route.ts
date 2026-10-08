@@ -11,22 +11,14 @@
  */
 
 import { NextRequest, NextResponse } from "next/server";
-import { ClaudeClient } from "@/lib/claude/client";
+import { getSharedClaudeClient } from "@/lib/claude/client";
 import { defaultCache } from "@/lib/claude/cache";
 import {
   realEstateAgentTemplate,
   propertySearchTemplate,
   homeValuationTemplate,
   customerSupportTemplate,
-  createCachedPrompt,
 } from "@/lib/claude/prompt-templates";
-
-// Initialize Claude client
-const claude = new ClaudeClient({
-  apiKey: process.env.ANTHROPIC_API_KEY || "",
-  enableCaching: true,
-  enableCostTracking: true,
-});
 
 export async function POST(request: NextRequest) {
   try {
@@ -50,7 +42,13 @@ export async function POST(request: NextRequest) {
 
     // Select prompt template
     const template = getTemplate(templateType);
-    const lastMessage = messages[messages.length - 1];
+    const claude = getSharedClaudeClient();
+    if (!claude) {
+      return NextResponse.json(
+        { error: "Claude API key not configured" },
+        { status: 500 },
+      );
+    }
 
     // Check response cache first
     const cachedResponse = await defaultCache.get(messages, template.system);
@@ -154,8 +152,15 @@ export async function POST(request: NextRequest) {
 /**
  * GET endpoint for cost statistics
  */
-export async function GET(request: NextRequest) {
+export async function GET() {
   try {
+    const claude = getSharedClaudeClient();
+    if (!claude) {
+      return NextResponse.json(
+        { error: "Claude API key not configured" },
+        { status: 500 },
+      );
+    }
     const stats = claude.getCostStats();
     const cacheStats = defaultCache.getStats();
 

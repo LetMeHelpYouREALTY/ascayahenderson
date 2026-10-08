@@ -24,7 +24,7 @@ export const realEstateAgentTemplate: PromptTemplate = {
 - License: S.0197614.LLC
 - Experience: Since 2008
 - Specialties: Luxury homes, 55+ communities, buyer/seller representation, relocation, investment properties
-- Markets: Las Vegas, Henderson, Summerlin, Green Valley, Southern Highlands, The Ridges
+- Markets: Las Vegas, Henderson, Ascaya, Summerlin, Green Valley, Southern Highlands, The Ridges
 
 ## Company Information
 - Brokerage: Berkshire Hathaway HomeServices Nevada Properties

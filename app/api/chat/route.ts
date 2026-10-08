@@ -1,14 +1,42 @@
 import { NextRequest, NextResponse } from "next/server";
-import OpenAI from "openai";
+import { getSharedClaudeClient, type ClaudeMessage } from "@/lib/claude/client";
+import { realEstateAgentTemplate } from "@/lib/claude/prompt-templates";
 
-const openrouter = new OpenAI({
-  apiKey: process.env.OPENROUTER_API_KEY,
-  baseURL: "https://openrouter.ai/api/v1",
-});
+const CHAT_MODEL = "claude-3-5-haiku-20241022";
+
+function toClaudeMessages(
+  conversation: unknown,
+  prompt: string,
+): ClaudeMessage[] {
+  const prior: ClaudeMessage[] = [];
+  if (Array.isArray(conversation)) {
+    for (const turn of conversation) {
+      if (!turn || typeof turn !== "object") continue;
+      const role = (turn as { role?: unknown }).role;
+      const content = (turn as { content?: unknown }).content;
+      if (
+        (role === "user" || role === "assistant") &&
+        typeof content === "string" &&
+        content.trim()
+      ) {
+        prior.push({ role, content: content.slice(0, 4000) });
+      }
+    }
+  }
+  while (prior.length > 0 && prior[0]?.role === "assistant") {
+    prior.shift();
+  }
+  prior.push({ role: "user", content: prompt.slice(0, 4000) });
+  return prior;
+}
 
 export async function POST(request: NextRequest) {
   try {
-    const { prompt, conversation = [] } = await request.json();
+    const body = (await request.json()) as {
+      prompt?: unknown;
+      conversation?: unknown;
+    };
+    const prompt = typeof body.prompt === "string" ? body.prompt.trim() : "";
 
     if (!prompt) {
       return NextResponse.json(
@@ -17,39 +45,26 @@ export async function POST(request: NextRequest) {
       );
     }
 
-    if (!process.env.OPENROUTER_API_KEY) {
+    const claude = getSharedClaudeClient();
+    if (!claude) {
       return NextResponse.json(
-        { error: "OpenRouter API key not configured" },
+        { error: "Claude API key not configured" },
         { status: 500 },
       );
     }
 
-    // Build messages array with system prompt and conversation history
-    const messages: OpenAI.Chat.Completions.ChatCompletionMessageParam[] = [
-      {
-        role: "system",
-        content:
-          "You are a professional real estate assistant for Dr. Jan Duffy, a licensed realtor with Berkshire Hathaway HomeServices Nevada Properties. You specialize in Las Vegas and Henderson real estate. Be concise, warm, helpful, and professional. Mention that users can call or text Dr. Jan Duffy at (702) 222-1964. Never use Fair Housing proxies such as safe neighborhood, good schools, or family-friendly; describe square footage, amenities, school names, and commute times instead.",
-      },
-      ...conversation,
-      {
-        role: "user",
-        content: prompt,
-      },
-    ];
-
-    const response = await openrouter.chat.completions.create({
-      model: "anthropic/claude-3.5-haiku",
-      messages,
+    const response = await claude.sendMessage({
+      messages: toClaudeMessages(body.conversation, prompt),
+      systemPrompt: realEstateAgentTemplate.system,
+      model: CHAT_MODEL,
+      maxTokens: 500,
       temperature: 0.7,
-      max_tokens: 500,
+      enableCache: true,
     });
 
-    const reply = response.choices[0].message.content;
-
-    return NextResponse.json({ reply });
+    return NextResponse.json({ reply: response.content });
   } catch (error) {
-    console.error("OpenRouter API error:", error);
+    console.error("Claude API error:", error);
     return NextResponse.json(
       { error: "Failed to generate response" },
       { status: 500 },

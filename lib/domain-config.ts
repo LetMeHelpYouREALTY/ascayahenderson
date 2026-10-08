@@ -29,6 +29,27 @@ export interface DomainConfig {
 const REALSCOUT_AGENT_ID = "QWdlbnQtMjI1MDUw";
 
 export const DOMAIN_CONFIGS: Record<string, DomainConfig> = {
+  "acayahenderson.com": {
+    domain: "acayahenderson.com",
+    neighborhood: "Ascaya",
+    tagline: "Ascaya Henderson Homes for Sale",
+    description:
+      "Ascaya homes for sale in Henderson, Nevada. Guard-gated hillside community at One Ascaya Blvd. Dr. Jan Duffy, REALTOR® S.0197614.LLC.",
+    heroHeadline: "Ascaya Henderson Homes for Sale",
+    heroSubheadline:
+      "Guard-gated hillside homes at One Ascaya Blvd, about 20 minutes from the Las Vegas Strip. Call (702) 222-1964.",
+    keywords: [
+      "Ascaya Henderson homes",
+      "Ascaya homes for sale",
+      "Henderson hillside real estate",
+    ],
+    pageType: "luxury",
+    realscoutAgentId: REALSCOUT_AGENT_ID,
+    ctaBadge: "Ascaya Henderson",
+    ctaHeadline: "Tour Ascaya with Dr. Jan Duffy",
+    ctaSubheadline:
+      "Call or text (702) 222-1964 for current Ascaya listings and a gate appointment.",
+  },
   "consenzaestates.com": {
     domain: "consenzaestates.com",
     neighborhood: "Consenza Estates",

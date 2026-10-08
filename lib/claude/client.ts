@@ -373,3 +373,23 @@ class RateLimiter {
     return new Promise((resolve) => setTimeout(resolve, ms));
   }
 }
+
+let sharedClaudeClient: ClaudeClient | null = null;
+
+/**
+ * Request-time Claude client.
+ * Next.js imports route modules while collecting page data. Constructing the
+ * SDK at module scope fails the production build when ANTHROPIC_API_KEY is unset.
+ */
+export function getSharedClaudeClient(): ClaudeClient | null {
+  const apiKey = process.env.ANTHROPIC_API_KEY;
+  if (!apiKey) return null;
+  if (!sharedClaudeClient) {
+    sharedClaudeClient = new ClaudeClient({
+      apiKey,
+      enableCaching: true,
+      enableCostTracking: true,
+    });
+  }
+  return sharedClaudeClient;
+}
