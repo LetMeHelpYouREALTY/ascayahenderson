@@ -32,11 +32,11 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 lg:gap-12">
           <div>
             <h2 className="font-bold text-xl mb-4">
-              Berkshire Hathaway HomeServices
+              Berkshire Hathaway HomeServices Nevada Properties
             </h2>
             <p className="text-slate-300 mb-4 text-sm">
-              Nevada Properties — Dr. Jan Duffy, REALTOR®. Buying, selling, and
-              relocating in Las Vegas, Henderson, and Summerlin.
+              Dr. Jan Duffy, REALTOR®. Buying, selling, and relocating in
+              Ascaya, Henderson, Las Vegas, and Summerlin.
             </p>
             <address className="not-italic text-slate-300 text-sm mb-4">
               {nap.street}

@@ -82,7 +82,10 @@ export default function SunCityAliantePage() {
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-slate-900 mb-6">
               Sun City Aliante
             </h1>
-            <HeadingPhoto path="/55-plus-communities/sun-city-aliante" />
+            <HeadingPhoto
+              path="/55-plus-communities/sun-city-aliante"
+              heading={"Sun City Aliante"}
+            />
 
             <p className="text-xl text-slate-600">
               Full Sun City amenities at the best value. Golf, pools, fitness,

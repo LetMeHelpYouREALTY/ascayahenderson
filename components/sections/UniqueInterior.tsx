@@ -30,7 +30,7 @@ export default function UniqueInterior({
       <h2 className="text-2xl md:text-3xl font-bold text-slate-900 mb-4">
         {h2}
       </h2>
-      <HeadingPhoto path={path} level="h2" />
+      <HeadingPhoto path={path} level="h2" heading={h2} />
       <p className="text-slate-700 mb-6">{body}</p>
       <ul className="list-disc pl-5 space-y-2 text-slate-700 mb-8">
         {copy.facts.map((fact) => (
@@ -40,10 +40,10 @@ export default function UniqueInterior({
       <h3 className="text-xl md:text-2xl font-bold text-slate-900 mb-4">
         {copy.h3}
       </h3>
-      <HeadingPhoto path={path} level="h3" />
+      <HeadingPhoto path={path} level="h3" heading={copy.h3} />
       <p className="text-slate-700 mb-6">{copy.h3Body}</p>
       <p className="text-sm text-slate-600 mb-6">
-        {nap.brokerage} · {nap.fullAddress} · Call or text {ctaPhone.display}.
+        {nap.fullAddress} · Call or text {ctaPhone.display}.
       </p>
       <CtaActions variant="onLight" />
     </section>

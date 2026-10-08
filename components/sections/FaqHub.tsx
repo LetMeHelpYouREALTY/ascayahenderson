@@ -17,12 +17,13 @@ export default function FaqHub() {
             path="/faq"
             level="h2"
             photo={faqHubPhotoForCategory(category.id)}
+            heading={category.h2}
           />
           <FaqAccordion items={category.items} />
         </section>
       ))}
       <p className="text-sm text-slate-600 mt-8 mb-6 text-center">
-        {nap.brokerage} · {nap.fullAddress} · Call or text {ctaPhone.display}.
+        {nap.fullAddress} · Call or text {ctaPhone.display}.
       </p>
       <CtaActions variant="onLight" />
     </div>

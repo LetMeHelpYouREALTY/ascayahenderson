@@ -41,6 +41,10 @@ export function isCloudflareImagesEnabled(): boolean {
 }
 
 export function mediaUrl(src: string): string {
+  // Generated heading stills live in git until they are uploaded to Cloudflare.
+  if (src.includes("/images/headings/")) {
+    return gitBackupUrl(src);
+  }
   const path = cloudflareImageId(src);
   const mediaCdn = (process.env.NEXT_PUBLIC_MEDIA_CDN ?? "").replace(/\/$/, "");
   if (mediaCdn) {

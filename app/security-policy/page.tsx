@@ -27,7 +27,7 @@ export default function SecurityPolicyPage() {
         <h1 className="text-4xl font-bold text-gray-900 mb-8">
           Security Policy
         </h1>
-        <HeadingPhoto path="/security-policy" />
+        <HeadingPhoto path="/security-policy" heading={"Security Policy"} />
         <OfficeRealScout />
 
         <div className="prose prose-lg max-w-none">

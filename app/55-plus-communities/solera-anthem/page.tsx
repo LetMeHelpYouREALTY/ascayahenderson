@@ -83,7 +83,10 @@ export default function SoleraAnthemPage() {
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-slate-900 mb-6">
               Solera at Anthem
             </h1>
-            <HeadingPhoto path="/55-plus-communities/solera-anthem" />
+            <HeadingPhoto
+              path="/55-plus-communities/solera-anthem"
+              heading={"Solera at Anthem"}
+            />
 
             <p className="text-xl text-slate-600">
               Guard-gated 55+ living in Henderson's Anthem area.

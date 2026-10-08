@@ -110,7 +110,10 @@ export default function SunCityAnthemPage() {
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-slate-900 mb-6">
               Sun City Anthem
             </h1>
-            <HeadingPhoto path="/55-plus-communities/sun-city-anthem" />
+            <HeadingPhoto
+              path="/55-plus-communities/sun-city-anthem"
+              heading={"Sun City Anthem"}
+            />
 
             <p className="text-xl text-slate-600">
               7,100+ homes. Mountain views. Championship golf. Anthem Center

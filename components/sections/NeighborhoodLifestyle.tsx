@@ -20,6 +20,7 @@ export default function NeighborhoodLifestyle({
         level="h2"
         photo={lifestylePhotoForPath(path)}
         priority
+        heading={copy.h2}
       />
     </div>
   );

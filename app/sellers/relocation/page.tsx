@@ -1,6 +1,5 @@
 import Link from "next/link";
 import {
-  Plane,
   Globe,
   Clock,
   CheckCircle,
@@ -41,16 +40,15 @@ export default function RelocationPage() {
         <div className="container mx-auto px-4">
           {/* Hero */}
           <div className="max-w-4xl mx-auto text-center mb-16">
-            <div className="inline-flex items-center bg-blue-100 text-blue-800 px-4 py-2 rounded-full text-sm font-semibold mb-6">
-              <Plane className="h-4 w-4 mr-2" />
-              Nationwide BHHS Network
-            </div>
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-slate-900 mb-6">
               New Opportunity?
               <br />
               We Handle Your Sale.
             </h1>
-            <HeadingPhoto path="/sellers/relocation" />
+            <HeadingPhoto
+              path="/sellers/relocation"
+              heading={"New Opportunity? We Handle Your Sale."}
+            />
 
             <p className="text-xl text-slate-600 mb-8">
               Sell your Las Vegas home while you focus on your new chapter. We

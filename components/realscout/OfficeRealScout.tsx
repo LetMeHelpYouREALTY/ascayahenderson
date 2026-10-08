@@ -21,8 +21,7 @@ export default function OfficeRealScout({
         {heading}
       </h2>
       <p className="mx-auto mb-8 max-w-2xl text-center text-lg text-slate-600">
-        Homes for sale through Berkshire Hathaway HomeServices Nevada
-        Properties. Call or text {ctaPhone.display}.
+        Homes for sale in the Las Vegas Valley. Call or text {ctaPhone.display}.
       </p>
       <div
         dangerouslySetInnerHTML={{

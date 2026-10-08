@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { Phone, Mail, MapPin, Clock, Star, Award } from "lucide-react";
+import { Phone, Mail, MapPin, Clock, Star } from "lucide-react";
 import type { Metadata } from "next";
 import { pageMetadata } from "@/lib/seo";
 import CtaActions from "@/components/sections/CtaActions";
@@ -62,24 +62,17 @@ export default function GoogleBusinessPage() {
             <div className="bg-gradient-to-br from-slate-900 to-blue-900 text-white rounded-2xl p-8 md:p-12">
               <div className="grid md:grid-cols-2 gap-8 items-center">
                 <div>
-                  <div className="flex items-center gap-2 mb-4">
-                    <Award
-                      className="h-6 w-6 text-yellow-400"
-                      aria-hidden="true"
-                    />
-                    <span className="text-yellow-400 font-semibold">
-                      Berkshire Hathaway HomeServices
-                    </span>
-                  </div>
                   <h1 className="text-4xl md:text-5xl font-bold mb-4">
                     Dr. Jan Duffy
                   </h1>
-                  <HeadingPhoto path="/google-business" />
+                  <HeadingPhoto
+                    path="/google-business"
+                    heading={"Dr. Jan Duffy"}
+                  />
 
-                  <p className="text-xl text-blue-200 mb-2">
+                  <p className="text-xl text-blue-200 mb-6">
                     REALTOR® | License {businessInfo.license}
                   </p>
-                  <p className="text-slate-300 mb-6">Nevada Properties</p>
 
                   <div className="space-y-3">
                     <div className="flex items-start gap-3">
@@ -177,6 +170,9 @@ export default function GoogleBusinessPage() {
               level="h2"
               photo={leftoverPhotoForPath("/google-business", 2)}
               priority
+              heading={
+                "Mon\u2013Fri 9am\u20136pm, Sat 10am\u20134pm at Suite 100 \u2014 Sunday by appointment"
+              }
             />
             <p className="text-slate-600 text-center max-w-3xl mx-auto mb-6">
               Hours on this URL must match Google Business. Walk-ins welcome
@@ -213,6 +209,9 @@ export default function GoogleBusinessPage() {
               level="h2"
               photo={leftoverPhotoForPath("/google-business", 3)}
               priority
+              heading={
+                "Maps pin at 9406 W Lake Mead Blvd \u2014 Directions and Google Reviews on this URL"
+              }
             />
             <p className="text-slate-600 text-center max-w-3xl mx-auto mb-6">
               The embed, Get Directions, and View Google Reviews buttons are the

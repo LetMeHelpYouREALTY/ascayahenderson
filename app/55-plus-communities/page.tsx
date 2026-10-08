@@ -255,7 +255,10 @@ export default function FiftyFiveCommunitiesPage() {
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-slate-900 mb-6">
               Find Your Perfect 55+ Community in Las Vegas
             </h1>
-            <HeadingPhoto path="/55-plus-communities" />
+            <HeadingPhoto
+              path="/55-plus-communities"
+              heading={"Find Your Perfect 55+ Community in Las Vegas"}
+            />
 
             <p className="text-xl md:text-2xl text-slate-600 mb-8">
               Sun City, Del Webb, Heritage at Stonebridge & more—

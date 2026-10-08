@@ -60,7 +60,10 @@ export default function MarketInsightsPage() {
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-slate-900 mb-6">
               Las Vegas Market Insights
             </h1>
-            <HeadingPhoto path="/market-insights" />
+            <HeadingPhoto
+              path="/market-insights"
+              heading={"Las Vegas Market Insights"}
+            />
 
             <p className="text-xl text-slate-600">
               Technology trends, economic forces, and market dynamics shaping

@@ -65,13 +65,10 @@ export default function ContactPage() {
         <div className="container mx-auto px-4">
           {/* Hero */}
           <div className="text-center mb-12">
-            <div className="inline-block bg-blue-100 text-blue-800 px-4 py-2 rounded-full text-sm font-semibold mb-6">
-              Berkshire Hathaway HomeServices Nevada Properties
-            </div>
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-slate-900 mb-6">
               Contact Dr. Jan Duffy
             </h1>
-            <HeadingPhoto path="/contact" />
+            <HeadingPhoto path="/contact" heading={"Contact Dr. Jan Duffy"} />
 
             <p className="text-xl text-slate-600 max-w-2xl mx-auto mb-8">
               Questions about Las Vegas real estate? Your{" "}

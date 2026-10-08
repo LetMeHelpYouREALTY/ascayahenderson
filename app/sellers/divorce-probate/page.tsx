@@ -51,7 +51,10 @@ export default function DivorceProbatePage() {
               <br />
               Expert Guidance
             </h1>
-            <HeadingPhoto path="/sellers/divorce-probate" />
+            <HeadingPhoto
+              path="/sellers/divorce-probate"
+              heading={"Difficult Situations, Expert Guidance"}
+            />
 
             <p className="text-xl text-slate-600 mb-8">
               When life gets complicated, you need an agent who handles

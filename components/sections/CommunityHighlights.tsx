@@ -23,6 +23,7 @@ export default function CommunityHighlights({
         level="h3"
         photo={highlightPhotoForPath(path)}
         priority
+        heading={copy.h3}
       />
       <p className="text-slate-700 mb-4">{copy.body}</p>
       <div className="grid md:grid-cols-2 gap-8">
@@ -36,7 +37,7 @@ export default function CommunityHighlights({
         ))}
       </div>
       <p className="text-slate-600 text-sm mt-4">
-        {nap.brokerage} · {nap.fullAddress} · Call or text {ctaPhone.display}.
+        {nap.fullAddress} · Call or text {ctaPhone.display}.
       </p>
     </div>
   );

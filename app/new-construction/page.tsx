@@ -180,7 +180,12 @@ export default function NewConstructionPage() {
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-slate-900 mb-6">
               Berkshire Hathaway HomeServices New Construction Las Vegas
             </h1>
-            <HeadingPhoto path="/new-construction" />
+            <HeadingPhoto
+              path="/new-construction"
+              heading={
+                "Berkshire Hathaway HomeServices New Construction Las Vegas"
+              }
+            />
 
             <p className="text-xl text-slate-600 mb-8">
               Your complete buyer's guide to new homes in Las Vegas. Free

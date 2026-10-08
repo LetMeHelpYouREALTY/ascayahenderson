@@ -53,7 +53,10 @@ export default function FirstTimeBuyersPage() {
               <br />
               <span className="text-blue-600">Starts Here</span>
             </h1>
-            <HeadingPhoto path="/buyers/first-time-buyers" />
+            <HeadingPhoto
+              path="/buyers/first-time-buyers"
+              heading={"Your First Home in Las Vegas Starts Here"}
+            />
 
             <p className="text-xl text-slate-600 mb-8">
               Down payment assistance. Builder incentives. Expert guidance every

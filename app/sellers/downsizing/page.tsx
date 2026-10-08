@@ -48,7 +48,10 @@ export default function DownsizingPage() {
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-slate-900 mb-6">
               Simplify. Downsize. Enjoy.
             </h1>
-            <HeadingPhoto path="/sellers/downsizing" />
+            <HeadingPhoto
+              path="/sellers/downsizing"
+              heading={"Simplify. Downsize. Enjoy."}
+            />
 
             <p className="text-xl text-slate-600 mb-8">
               Extract your equity. Embrace low-maintenance living. Start your

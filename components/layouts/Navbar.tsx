@@ -4,7 +4,7 @@ import { useState, useEffect, useRef } from "react";
 import Link from "next/link";
 import { Menu, X, Phone, ChevronDown } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import { ctaPhone, nap } from "@/lib/contact";
+import { ctaPhone } from "@/lib/contact";
 import LocalTrustBar from "@/components/layouts/LocalTrustBar";
 
 export default function Navbar() {
@@ -82,14 +82,13 @@ export default function Navbar() {
           <Link
             href="/"
             className="flex flex-col min-w-0 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-blue-600 focus-visible:ring-offset-2 rounded-md"
-            aria-label={`${nap.brokerage} home`}
+            aria-label="Dr. Jan Duffy home"
           >
             <span className="text-lg md:text-xl lg:text-2xl font-bold text-slate-900 hover:text-blue-600 transition-colors leading-tight truncate">
-              Berkshire Hathaway
-              <span className="text-blue-600"> HomeServices</span>
+              Dr. Jan Duffy
             </span>
             <span className="text-xs text-slate-500 hidden sm:block">
-              Nevada Properties · Dr. Jan Duffy
+              Ascaya Henderson · REALTOR®
             </span>
           </Link>
 

@@ -83,7 +83,10 @@ export default function TrilogySummerlinPage() {
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-slate-900 mb-6">
               Trilogy at Summerlin
             </h1>
-            <HeadingPhoto path="/55-plus-communities/trilogy-summerlin" />
+            <HeadingPhoto
+              path="/55-plus-communities/trilogy-summerlin"
+              heading={"Trilogy at Summerlin"}
+            />
 
             <p className="text-xl text-slate-600">
               Where five-star resort living meets 55+ community. Farm-to-table

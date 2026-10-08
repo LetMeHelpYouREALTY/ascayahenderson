@@ -2,6 +2,7 @@
 
 import Image from "next/image";
 import { useState } from "react";
+import { photoForHeading } from "@/lib/heading-photos";
 import {
   gitBackupUrl,
   h2PhotoForPath,
@@ -14,6 +15,8 @@ import {
 type HeadingPhotoProps = {
   path: string;
   level?: "h1" | "h2" | "h3";
+  /** Section heading. When set, the still is chosen from this text. */
+  heading?: string;
   photo?: SitePhoto;
   className?: string;
   priority?: boolean;
@@ -22,12 +25,15 @@ type HeadingPhotoProps = {
 export default function HeadingPhoto({
   path,
   level = "h1",
+  heading,
   photo,
   className = "",
   priority,
 }: HeadingPhotoProps) {
   let asset: SitePhoto;
-  if (photo) {
+  if (heading?.trim()) {
+    asset = photoForHeading(heading, path);
+  } else if (photo) {
     asset = photo;
   } else {
     switch (level) {

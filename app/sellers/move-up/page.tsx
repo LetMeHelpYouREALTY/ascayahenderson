@@ -47,7 +47,10 @@ export default function MoveUpSellerPage() {
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-slate-900 mb-6">
               Ready for Your Next Chapter?
             </h1>
-            <HeadingPhoto path="/sellers/move-up" />
+            <HeadingPhoto
+              path="/sellers/move-up"
+              heading={"Ready for Your Next Chapter?"}
+            />
 
             <p className="text-xl text-slate-600 mb-8">
               Your home's equity unlocks your dream home. Let's make the upgrade

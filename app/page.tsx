@@ -15,6 +15,7 @@ import { pageMetadata } from "@/lib/seo";
 import { getPageDomainConfig } from "@/lib/get-domain-config";
 import { ctaPhone, nap } from "@/lib/contact";
 import { marketStats as stats } from "@/lib/site-config";
+import { photoForHeading } from "@/lib/heading-photos";
 import { mediaUrl, photos } from "@/lib/media";
 import OpenHousesMap from "@/components/sections/OpenHousesMap";
 import OfficeRealScout from "@/components/realscout/OfficeRealScout";
@@ -33,13 +34,14 @@ export async function generateMetadata(): Promise<Metadata> {
 
 export default async function Home() {
   const config = await getPageDomainConfig();
+  const heroStill = photoForHeading(config.heroHeadline, "/");
 
   return (
     <main id="main-content">
       <section className="relative bg-slate-900 text-white py-24 md:py-32 overflow-hidden">
         <Image
-          src={mediaUrl(photos.homeHero.src)}
-          alt={photos.homeHero.alt}
+          src={mediaUrl(heroStill.src)}
+          alt={heroStill.alt}
           fill
           priority
           className="object-cover opacity-30"
@@ -111,6 +113,7 @@ export default async function Home() {
                   alt: "Henderson hillside homes with mountain views near Ascaya",
                 }}
                 priority
+                heading={"Where is Ascaya in Henderson?"}
               />
               <p className="text-lg text-slate-600 mb-8 text-center">
                 Ascaya is a guard-gated community at One Ascaya Blvd, Henderson,
@@ -175,6 +178,9 @@ export default async function Home() {
                 level="h2"
                 photo={photos.summerlin}
                 priority
+                heading={
+                  "What we compare first: Summerlin villages vs Henderson parks"
+                }
               />
               <p className="text-lg text-slate-600 mb-8 text-center">
                 Same west-valley start at 9406 W Lake Mead Blvd, Suite 100. We
@@ -213,8 +219,7 @@ export default async function Home() {
             </>
           )}
           <p className="text-sm text-slate-600 mt-8 mb-6 text-center">
-            {nap.brokerage} · {nap.fullAddress} · Call or text{" "}
-            {ctaPhone.display}.
+            {nap.fullAddress} · Call or text {ctaPhone.display}.
           </p>
           <CtaActions variant="onLight" />
         </div>
@@ -233,6 +238,9 @@ export default async function Home() {
               level="h2"
               photo={photos.sellers}
               className="max-w-4xl mx-auto"
+              heading={
+                "January 2026 valley snapshot \u2014 then we apply it to your ZIP"
+              }
             />
             <p className="text-slate-400">
               Current data — updated {stats.lastUpdated}

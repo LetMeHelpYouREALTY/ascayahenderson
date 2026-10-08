@@ -33,10 +33,11 @@ export default function SupportFaqs({ path }: SupportFaqsProps) {
         level="h2"
         photo={supportFaqPhotoForPath(path)}
         priority
+        heading={copy.h2}
       />
       <FaqAccordion items={[...copy.items]} />
       <p className="text-sm text-slate-600 mt-8 mb-6 text-center">
-        {nap.brokerage} · {nap.fullAddress} · Call or text {ctaPhone.display}.
+        {nap.fullAddress} · Call or text {ctaPhone.display}.
       </p>
       <CtaActions variant="onLight" />
     </section>

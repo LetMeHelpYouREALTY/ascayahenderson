@@ -40,7 +40,10 @@ export default function LuxuryHomesPage() {
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-slate-900 mb-6">
               Private Luxury Home Search in Las Vegas
             </h1>
-            <HeadingPhoto path="/buyers/luxury-homes-las-vegas" />
+            <HeadingPhoto
+              path="/buyers/luxury-homes-las-vegas"
+              heading={"Private Luxury Home Search in Las Vegas"}
+            />
 
             <p className="text-xl text-slate-600 mb-8">
               Guard-gated estates. Strip penthouses. Uncompromising privacy.

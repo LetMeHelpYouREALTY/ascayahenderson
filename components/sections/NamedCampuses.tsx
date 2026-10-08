@@ -19,6 +19,7 @@ export default function NamedCampuses({ path }: NamedCampusesProps) {
         level="h3"
         photo={campusPhotoForPath(path)}
         priority
+        heading={copy.h3}
       />
       <div className="bg-white border border-slate-200 rounded-xl p-6">
         <p className="text-slate-700 mb-4">{copy.body}</p>

@@ -49,7 +49,10 @@ export default function DelWebbLakeLasVegasPage() {
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-slate-900 mb-6">
               Del Webb at Lake Las Vegas
             </h1>
-            <HeadingPhoto path="/55-plus-communities/del-webb-lake-las-vegas" />
+            <HeadingPhoto
+              path="/55-plus-communities/del-webb-lake-las-vegas"
+              heading={"Del Webb at Lake Las Vegas"}
+            />
 
             <p className="text-xl text-slate-600">
               Modern homes. Lake views. Resort living. The newest Del Webb in

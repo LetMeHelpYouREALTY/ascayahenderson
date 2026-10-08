@@ -21,6 +21,7 @@ export default function NeighborhoodParks({ path }: NeighborhoodParksProps) {
         level="h3"
         photo={parkPhotoForPath(path)}
         priority
+        heading={copy.h3}
       />
       <p className="text-slate-700 mb-4">{copy.body}</p>
       <div className="bg-green-50 border border-green-200 rounded-xl p-6">
@@ -33,7 +34,7 @@ export default function NeighborhoodParks({ path }: NeighborhoodParksProps) {
           ))}
         </ul>
         <p className="text-slate-600 text-sm mt-4">
-          {nap.brokerage} · {nap.fullAddress} · Call or text {ctaPhone.display}.
+          {nap.fullAddress} · Call or text {ctaPhone.display}.
         </p>
       </div>
     </div>

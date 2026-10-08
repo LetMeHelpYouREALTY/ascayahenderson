@@ -9,7 +9,8 @@ import OfficeProximity from "@/components/sections/OfficeProximity";
 import UniqueInterior from "@/components/sections/UniqueInterior";
 import { ctaPhone, nap } from "@/lib/contact";
 import { pageMetadata } from "@/lib/seo";
-import { mediaUrl, photos } from "@/lib/media";
+import { photoForHeading } from "@/lib/heading-photos";
+import { mediaUrl } from "@/lib/media";
 import OfficeRealScout from "@/components/realscout/OfficeRealScout";
 
 type PropertyPageProps = {
@@ -29,6 +30,11 @@ export function generateMetadata({ params }: PropertyPageProps): Metadata {
 }
 
 export default function PropertyPage({ params }: PropertyPageProps) {
+  const showingStill = photoForHeading(
+    "Schedule a Showing for This Las Vegas Listing",
+    `/listings/${params.id}`,
+  );
+
   return (
     <main id="main-content" className="pb-16">
       <div className="container mx-auto px-4">
@@ -46,8 +52,8 @@ export default function PropertyPage({ params }: PropertyPageProps) {
             </p>
             <div className="relative h-64 md:h-80 rounded-lg overflow-hidden mb-6">
               <Image
-                src={mediaUrl(photos.homeHero.src)}
-                alt={photos.homeHero.alt}
+                src={mediaUrl(showingStill.src)}
+                alt={showingStill.alt}
                 fill
                 className="object-cover"
                 priority
@@ -96,7 +102,9 @@ export default function PropertyPage({ params }: PropertyPageProps) {
               <h2 className="text-xl font-bold text-slate-900 mb-2">
                 Dr. Jan Duffy
               </h2>
-              <p className="text-sm text-slate-600 mb-4">{nap.brokerage}</p>
+              <p className="text-sm text-slate-600 mb-4">
+                REALTOR® · License {nap.license}
+              </p>
               <p className="text-sm text-slate-600 mb-6">{nap.fullAddress}</p>
               <div className="space-y-3">
                 <Button

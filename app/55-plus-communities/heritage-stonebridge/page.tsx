@@ -83,7 +83,10 @@ export default function HeritageAtStonebridgePage() {
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-slate-900 mb-6">
               Heritage at Stonebridge
             </h1>
-            <HeadingPhoto path="/55-plus-communities/heritage-stonebridge" />
+            <HeadingPhoto
+              path="/55-plus-communities/heritage-stonebridge"
+              heading={"Heritage at Stonebridge"}
+            />
 
             <p className="text-xl text-slate-600">
               Boutique 55+ living with guard-gated privacy in the heart of

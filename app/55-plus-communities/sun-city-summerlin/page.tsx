@@ -74,7 +74,10 @@ export default function SunCitySummerlinPage() {
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-slate-900 mb-6">
               Sun City Summerlin
             </h1>
-            <HeadingPhoto path="/55-plus-communities/sun-city-summerlin" />
+            <HeadingPhoto
+              path="/55-plus-communities/sun-city-summerlin"
+              heading={"Sun City Summerlin"}
+            />
 
             <p className="text-xl text-slate-600">
               7,700+ homes. 3 golf courses. 4 recreation centers. The gold

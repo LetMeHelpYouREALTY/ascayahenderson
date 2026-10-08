@@ -59,7 +59,15 @@ export default function WhyChooseUs() {
             Start at 9406 W Lake Mead Blvd — then we drive Summerlin or
             Henderson
           </h2>
-          <HeadingPhoto path="/" level="h2" photo={photos.agent} priority />
+          <HeadingPhoto
+            path="/"
+            level="h2"
+            photo={photos.agent}
+            priority
+            heading={
+              "Start at 9406 W Lake Mead Blvd \u2014 then we drive Summerlin or Henderson"
+            }
+          />
           <p className="text-xl text-slate-600 max-w-3xl mx-auto">
             Appointments start at Berkshire Hathaway HomeServices Nevada
             Properties, Suite 100. We sequence the tour from this desk — not a
@@ -87,7 +95,7 @@ export default function WhyChooseUs() {
           })}
         </div>
         <p className="text-sm text-slate-600 mt-10 mb-6 text-center">
-          {nap.brokerage} · {nap.fullAddress} · Call or text {ctaPhone.display}.
+          {nap.fullAddress} · Call or text {ctaPhone.display}.
         </p>
         <CtaActions variant="onLight" />
         <div className="text-center mt-10">

@@ -108,9 +108,6 @@ export default function AscayaGuidePage({ guide }: AscayaGuidePageProps) {
               Ascaya Henderson
             </Link>
           </p>
-          <p className="mb-6 inline-block rounded-full bg-blue-100 px-4 py-2 text-sm font-semibold text-blue-800">
-            {nap.brokerage}
-          </p>
           <h1 className="mb-6 text-4xl font-bold text-slate-900 md:text-5xl lg:text-6xl">
             {guide.h1}
           </h1>
@@ -120,6 +117,7 @@ export default function AscayaGuidePage({ guide }: AscayaGuidePageProps) {
               ...photos.henderson,
               alt: "Henderson park and mountain views in the Ascaya Henderson service area",
             }}
+            heading={guide.h1}
           />
           <p className="mb-8 text-xl text-slate-700">{guide.lede}</p>
           <CtaActions variant="onLight" bookLabel="Book an Ascaya tour" />
@@ -209,8 +207,8 @@ export default function AscayaGuidePage({ guide }: AscayaGuidePageProps) {
               className="h-72 w-full rounded-xl border-0"
             />
             <p className="mt-4 text-sm text-slate-600">
-              {nap.name}. License {nap.license}. {nap.brokerage}. {nap.street},{" "}
-              {nap.city}, {nap.state} {nap.zip}. {ctaPhone.display}.
+              {nap.name}. License {nap.license}. {nap.street}, {nap.city},{" "}
+              {nap.state} {nap.zip}. {ctaPhone.display}.
             </p>
           </section>
 

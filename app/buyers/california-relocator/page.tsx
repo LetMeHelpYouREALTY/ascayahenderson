@@ -74,7 +74,10 @@ export default function CaliforniaRelocatorPage() {
               <br />
               <span className="text-blue-600">Welcome Home to Las Vegas</span>
             </h1>
-            <HeadingPhoto path="/buyers/california-relocator" />
+            <HeadingPhoto
+              path="/buyers/california-relocator"
+              heading={"Relocating from California? Welcome Home to Las Vegas"}
+            />
 
             <p className="text-xl md:text-2xl text-slate-600 mb-8">
               Zero state income tax. 40-60% lower home prices. Same sunshine.
