@@ -28,6 +28,24 @@ export interface ClaudeMessage {
   content: string;
 }
 
+/**
+ * Claude API id for site chat and listing drafts.
+ * Haiku 5.5, checked 2026-10-08: Claude API `claude-haiku-5-5`,
+ * AI Gateway catalog `anthropic/claude-haiku-5.5`.
+ */
+export const CLAUDE_CHAT_MODEL = "claude-haiku-5-5";
+
+const GATEWAY_MODEL_ALIASES: Record<string, string> = {
+  "claude-haiku-5-5": "anthropic/claude-haiku-5.5",
+};
+
+function messageText(content: Array<{ type: string; text?: string }>): string {
+  return content
+    .filter((block) => block.type === "text" && typeof block.text === "string")
+    .map((block) => block.text ?? "")
+    .join("");
+}
+
 export interface ClaudeRequest {
   messages: ClaudeMessage[];
   model?: string;
@@ -76,6 +94,13 @@ export class ClaudeClient {
       cacheWrite: 1.0,
       cacheRead: 0.08,
     },
+    // USD per million tokens. AI Gateway catalog and Claude API, 2026-10-08.
+    "claude-haiku-5-5": {
+      input: 0.1,
+      output: 0.5,
+      cacheWrite: 0.125,
+      cacheRead: 0.01,
+    },
   };
 
   constructor(config: ClaudeConfig) {
@@ -105,24 +130,25 @@ export class ClaudeClient {
    * Send a message to Claude with automatic optimization
    */
   async sendMessage(request: ClaudeRequest): Promise<ClaudeResponse> {
-    const pricingModel = (
-      request.model || "claude-3-5-sonnet-20241022"
-    ).replace(/^anthropic\//, "");
+    const pricingModel = (request.model || CLAUDE_CHAT_MODEL).replace(
+      /^anthropic\//,
+      "",
+    );
     const model = this.apiModel(pricingModel);
 
     // Check rate limits
     await this.rateLimiter.checkLimit();
 
-    // Build request with prompt caching if enabled
+    // Haiku 5.5 rejects temperature other than 1. Omit it.
     const messageParams: Anthropic.MessageCreateParams = {
       model,
       max_tokens: request.maxTokens || 4096,
-      temperature: request.temperature ?? 1.0,
       messages: request.messages.map((msg) => ({
         role: msg.role,
         content: msg.content,
       })),
     };
+    this.applyChatModelOptions(messageParams, pricingModel);
 
     // Add system prompt with cache control if caching is enabled
     if (
@@ -153,8 +179,7 @@ export class ClaudeClient {
       }
 
       return {
-        content:
-          response.content[0].type === "text" ? response.content[0].text : "",
+        content: messageText(response.content),
         usage: {
           inputTokens: response.usage.input_tokens,
           outputTokens: response.usage.output_tokens,
@@ -186,20 +211,24 @@ export class ClaudeClient {
   async *streamMessage(
     request: ClaudeRequest,
   ): AsyncGenerator<string, void, unknown> {
-    const model = this.apiModel(request.model || "claude-3-5-sonnet-20241022");
+    const pricingModel = (request.model || CLAUDE_CHAT_MODEL).replace(
+      /^anthropic\//,
+      "",
+    );
+    const model = this.apiModel(pricingModel);
 
     await this.rateLimiter.checkLimit();
 
     const messageParams: Anthropic.MessageCreateParams = {
       model,
       max_tokens: request.maxTokens || 4096,
-      temperature: request.temperature ?? 1.0,
       messages: request.messages.map((msg) => ({
         role: msg.role,
         content: msg.content,
       })),
       stream: true,
     };
+    this.applyChatModelOptions(messageParams, pricingModel);
 
     if (
       request.systemPrompt &&
@@ -229,13 +258,27 @@ export class ClaudeClient {
     }
   }
 
-  /** Gateway model ids are `anthropic/<id>`. Direct Anthropic ids stay bare. */
+  /** Gateway ids differ from Claude API ids for some current models. */
   private apiModel(model: string): string {
     const bare = model.replace(/^anthropic\//, "");
     if (this.config.baseURL?.includes("ai-gateway.vercel.sh")) {
-      return `anthropic/${bare}`;
+      return GATEWAY_MODEL_ALIASES[bare] ?? `anthropic/${bare}`;
     }
     return bare;
+  }
+
+  /**
+   * Haiku 5.5 thinks by default. Low effort keeps the public chat short.
+   * Sampling params are omitted because any temperature other than 1 is a 400.
+   */
+  private applyChatModelOptions(
+    messageParams: Anthropic.MessageCreateParams,
+    model: string,
+  ): void {
+    if (model !== CLAUDE_CHAT_MODEL) return;
+    (messageParams as unknown as Record<string, unknown>).output_config = {
+      effort: "low",
+    };
   }
 
   /**

@@ -1,7 +1,8 @@
 import { NextRequest, NextResponse } from "next/server";
-import { getSharedClaudeClient } from "@/lib/claude/client";
-
-const COPY_MODEL = "claude-3-5-haiku-20241022";
+import {
+  CLAUDE_CHAT_MODEL,
+  getSharedClaudeClient,
+} from "@/lib/claude/client";
 
 const PROPERTY_DESCRIPTION_SYSTEM = `You are an expert real estate copywriter for Dr. Jan Duffy, REALTOR® S.0197614.LLC, Berkshire Hathaway HomeServices Nevada Properties. You write listing descriptions for Las Vegas and Henderson, Nevada, including Ascaya at One Ascaya Blvd, Henderson.
 
@@ -52,9 +53,8 @@ Property Details:
     const response = await claude.sendMessage({
       messages: [{ role: "user", content: prompt }],
       systemPrompt: PROPERTY_DESCRIPTION_SYSTEM,
-      model: COPY_MODEL,
-      maxTokens: 400,
-      temperature: 0.8,
+      model: CLAUDE_CHAT_MODEL,
+      maxTokens: 1024,
       enableCache: true,
     });
 

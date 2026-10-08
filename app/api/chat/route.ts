@@ -1,8 +1,10 @@
 import { NextRequest, NextResponse } from "next/server";
-import { getSharedClaudeClient, type ClaudeMessage } from "@/lib/claude/client";
+import {
+  CLAUDE_CHAT_MODEL,
+  getSharedClaudeClient,
+  type ClaudeMessage,
+} from "@/lib/claude/client";
 import { realEstateAgentTemplate } from "@/lib/claude/prompt-templates";
-
-const CHAT_MODEL = "claude-3-5-haiku-20241022";
 
 function toClaudeMessages(
   conversation: unknown,
@@ -56,9 +58,8 @@ export async function POST(request: NextRequest) {
     const response = await claude.sendMessage({
       messages: toClaudeMessages(body.conversation, prompt),
       systemPrompt: realEstateAgentTemplate.system,
-      model: CHAT_MODEL,
-      maxTokens: 500,
-      temperature: 0.7,
+      model: CLAUDE_CHAT_MODEL,
+      maxTokens: 1024,
       enableCache: true,
     });
 

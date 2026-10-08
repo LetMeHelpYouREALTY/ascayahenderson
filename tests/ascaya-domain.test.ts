@@ -20,10 +20,12 @@ describe("Ascaya Henderson domain", () => {
 
 describe("Claude routes do not require OpenAI", () => {
   const prevAnthropic = process.env.ANTHROPIC_API_KEY;
+  const prevGateway = process.env.AI_GATEWAY_API_KEY;
   const prevOpenAi = process.env.OPENAI_API_KEY;
 
   it("chat returns a Claude configuration error without a key", async () => {
     delete process.env.ANTHROPIC_API_KEY;
+    delete process.env.AI_GATEWAY_API_KEY;
     delete process.env.OPENAI_API_KEY;
     const response = await chatPost(
       new Request("http://localhost/api/chat", {
@@ -36,12 +38,15 @@ describe("Claude routes do not require OpenAI", () => {
     expect(json.error).toMatch(/Claude/);
     if (prevAnthropic === undefined) delete process.env.ANTHROPIC_API_KEY;
     else process.env.ANTHROPIC_API_KEY = prevAnthropic;
+    if (prevGateway === undefined) delete process.env.AI_GATEWAY_API_KEY;
+    else process.env.AI_GATEWAY_API_KEY = prevGateway;
     if (prevOpenAi === undefined) delete process.env.OPENAI_API_KEY;
     else process.env.OPENAI_API_KEY = prevOpenAi;
   });
 
   it("property descriptions return a Claude configuration error without a key", async () => {
     delete process.env.ANTHROPIC_API_KEY;
+    delete process.env.AI_GATEWAY_API_KEY;
     const response = await descriptionPost(
       new Request("http://localhost/api/generate-property-description", {
         method: "POST",
@@ -55,5 +60,7 @@ describe("Claude routes do not require OpenAI", () => {
     expect(json.error).toMatch(/Claude/);
     if (prevAnthropic === undefined) delete process.env.ANTHROPIC_API_KEY;
     else process.env.ANTHROPIC_API_KEY = prevAnthropic;
+    if (prevGateway === undefined) delete process.env.AI_GATEWAY_API_KEY;
+    else process.env.AI_GATEWAY_API_KEY = prevGateway;
   });
 });
