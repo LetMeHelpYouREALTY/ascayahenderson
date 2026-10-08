@@ -11,9 +11,12 @@
  */
 
 import Anthropic from "@anthropic-ai/sdk";
+import { resolveClaudeAuth } from "@/lib/runtime-config";
 
 export interface ClaudeConfig {
   apiKey: string;
+  /** Set to the Vercel AI Gateway origin when AI_GATEWAY_API_KEY is used. */
+  baseURL?: string;
   maxRetries?: number;
   timeout?: number;
   enableCaching?: boolean;
@@ -86,6 +89,7 @@ export class ClaudeClient {
 
     this.client = new Anthropic({
       apiKey: config.apiKey,
+      baseURL: config.baseURL,
       maxRetries: this.config.maxRetries,
       timeout: this.config.timeout,
     });
@@ -101,7 +105,10 @@ export class ClaudeClient {
    * Send a message to Claude with automatic optimization
    */
   async sendMessage(request: ClaudeRequest): Promise<ClaudeResponse> {
-    const model = request.model || "claude-3-5-sonnet-20241022";
+    const pricingModel = (
+      request.model || "claude-3-5-sonnet-20241022"
+    ).replace(/^anthropic\//, "");
+    const model = this.apiModel(pricingModel);
 
     // Check rate limits
     await this.rateLimiter.checkLimit();
@@ -138,7 +145,7 @@ export class ClaudeClient {
       const response = await this.client.messages.create(messageParams);
 
       // Calculate costs
-      const cost = this.calculateCost(model, response.usage);
+      const cost = this.calculateCost(pricingModel, response.usage);
 
       // Track costs if enabled
       if (this.config.enableCostTracking) {
@@ -179,7 +186,7 @@ export class ClaudeClient {
   async *streamMessage(
     request: ClaudeRequest,
   ): AsyncGenerator<string, void, unknown> {
-    const model = request.model || "claude-3-5-sonnet-20241022";
+    const model = this.apiModel(request.model || "claude-3-5-sonnet-20241022");
 
     await this.rateLimiter.checkLimit();
 
@@ -220,6 +227,15 @@ export class ClaudeClient {
         yield event.delta.text;
       }
     }
+  }
+
+  /** Gateway model ids are `anthropic/<id>`. Direct Anthropic ids stay bare. */
+  private apiModel(model: string): string {
+    const bare = model.replace(/^anthropic\//, "");
+    if (this.config.baseURL?.includes("ai-gateway.vercel.sh")) {
+      return `anthropic/${bare}`;
+    }
+    return bare;
   }
 
   /**
@@ -375,21 +391,27 @@ class RateLimiter {
 }
 
 let sharedClaudeClient: ClaudeClient | null = null;
+let sharedClaudeAuth = "";
 
 /**
  * Request-time Claude client.
  * Next.js imports route modules while collecting page data. Constructing the
- * SDK at module scope fails the production build when ANTHROPIC_API_KEY is unset.
+ * SDK at module scope fails the production build when no Claude key is set.
+ * AI Gateway wins when AI_GATEWAY_API_KEY is present. Per Vercel AI Gateway
+ * docs (2026), that key is sent to https://ai-gateway.vercel.sh.
  */
 export function getSharedClaudeClient(): ClaudeClient | null {
-  const apiKey = process.env.ANTHROPIC_API_KEY;
-  if (!apiKey) return null;
-  if (!sharedClaudeClient) {
+  const auth = resolveClaudeAuth();
+  if (!auth) return null;
+  const fingerprint = `${auth.baseURL ?? "anthropic"}:${auth.apiKey}`;
+  if (!sharedClaudeClient || sharedClaudeAuth !== fingerprint) {
     sharedClaudeClient = new ClaudeClient({
-      apiKey,
+      apiKey: auth.apiKey,
+      baseURL: auth.baseURL,
       enableCaching: true,
       enableCostTracking: true,
     });
+    sharedClaudeAuth = fingerprint;
   }
   return sharedClaudeClient;
 }

@@ -15,6 +15,7 @@ const nextConfig = {
     remotePatterns: [
       { protocol: "https", hostname: "imagedelivery.net" },
       { protocol: "https", hostname: "images.heyberkshire.com" },
+      { protocol: "https", hostname: "res.cloudinary.com" },
     ],
   },
 
@@ -80,7 +81,7 @@ const nextConfig = {
               "style-src 'self' 'unsafe-inline' https://em.realscout.com https://www.realscout.com https://assets.calendly.com",
               "img-src 'self' data: blob: https: http:",
               "font-src 'self' data: https://assets.calendly.com",
-              "connect-src 'self' https://em.realscout.com https://www.realscout.com https://api.anthropic.com https://calendly.com https://www.google-analytics.com https://analytics.google.com https://*.ingest.sentry.io https://widgetbe.com https://challenges.cloudflare.com",
+              "connect-src 'self' https://em.realscout.com https://www.realscout.com https://api.anthropic.com https://ai-gateway.vercel.sh https://calendly.com https://www.google-analytics.com https://*.google-analytics.com https://analytics.google.com https://*.analytics.google.com https://www.googletagmanager.com https://*.ingest.sentry.io https://widgetbe.com https://challenges.cloudflare.com",
               "frame-src 'self' https://em.realscout.com https://www.realscout.com https://calendly.com https://assets.calendly.com https://www.google.com https://maps.google.com https://*.google.com https://challenges.cloudflare.com",
               "worker-src 'self' blob:",
             ].join("; "),

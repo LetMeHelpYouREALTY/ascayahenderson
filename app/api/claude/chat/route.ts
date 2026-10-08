@@ -12,6 +12,7 @@
 
 import { NextRequest, NextResponse } from "next/server";
 import { getSharedClaudeClient } from "@/lib/claude/client";
+import { resolveClaudeAuth } from "@/lib/runtime-config";
 import { defaultCache } from "@/lib/claude/cache";
 import {
   realEstateAgentTemplate,
@@ -33,7 +34,7 @@ export async function POST(request: NextRequest) {
       );
     }
 
-    if (!process.env.ANTHROPIC_API_KEY) {
+    if (!resolveClaudeAuth()) {
       return NextResponse.json(
         { error: "Claude API key not configured" },
         { status: 500 },

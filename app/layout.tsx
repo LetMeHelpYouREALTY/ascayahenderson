@@ -21,6 +21,7 @@ import {
 } from "@/lib/schema";
 import { generateLocalBusinessSchema } from "@/lib/gbp-schema";
 import { realscout, nap, resolveSiteUrl } from "@/lib/contact";
+import { gaEnabled, gaMeasurementId } from "@/lib/runtime-config";
 
 export async function generateMetadata(): Promise<Metadata> {
   const domain = headers().get("x-domain") || "";
@@ -64,6 +65,7 @@ export default async function RootLayout({
 }) {
   const domain = headers().get("x-domain") || "";
   const siteUrl = resolveSiteUrl(domain);
+  const gaId = gaEnabled() ? gaMeasurementId() : null;
   const siteSchemas = combineSchemas(
     generateLocalBusinessSchema(siteUrl),
     generateOrganizationSchema(siteUrl),
@@ -100,6 +102,20 @@ export default async function RootLayout({
           src="https://assets.calendly.com/assets/external/widget.js"
           strategy="afterInteractive"
         />
+        {gaId ? (
+          <>
+            <Script
+              src={`https://www.googletagmanager.com/gtag/js?id=${gaId}`}
+              strategy="afterInteractive"
+            />
+            <Script id="ga4" strategy="afterInteractive">{`
+              window.dataLayer = window.dataLayer || [];
+              function gtag(){dataLayer.push(arguments);}
+              gtag('js', new Date());
+              gtag('config', '${gaId}', { anonymize_ip: true, send_page_view: true });
+            `}</Script>
+          </>
+        ) : null}
         <Script id="widget-tracker" strategy="afterInteractive">{`
           (function(w,i,d,g,e,t){w["WidgetTrackerObject"]=g;(w[g]=w[g]||function()
           {(w[g].q=w[g].q||[]).push(arguments);}),(w[g].ds=1*new Date());(e="script"),

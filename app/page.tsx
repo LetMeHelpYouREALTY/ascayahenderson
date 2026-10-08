@@ -17,6 +17,7 @@ import { getPageDomainConfig } from "@/lib/get-domain-config";
 import { ctaPhone, nap } from "@/lib/contact";
 import { marketStats as stats } from "@/lib/site-config";
 import { mediaUrl, photos } from "@/lib/media";
+import OpenHousesMap from "@/components/sections/OpenHousesMap";
 
 export async function generateMetadata(): Promise<Metadata> {
   const config = await getPageDomainConfig();
@@ -196,6 +197,8 @@ export default async function Home() {
           <CtaActions variant="onLight" />
         </div>
       </section>
+
+      <OpenHousesMap />
 
       <section className="py-16 bg-slate-900 text-white">
         <div className="container mx-auto px-4">
