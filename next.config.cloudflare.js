@@ -43,10 +43,10 @@ const nextConfig = {
         has: [
           {
             type: "host",
-            value: "acayahenderson.com",
+            value: "ascayahenderson.com",
           },
         ],
-        destination: "https://www.acayahenderson.com/:path*",
+        destination: "https://www.ascayahenderson.com/:path*",
         permanent: true,
       },
     ];

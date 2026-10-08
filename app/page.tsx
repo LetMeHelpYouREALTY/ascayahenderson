@@ -96,7 +96,7 @@ export default async function Home() {
 
       <section className="py-16 md:py-20 bg-white" data-home-compare="/">
         <div className="container mx-auto px-4 max-w-4xl">
-          {config.domain === "acayahenderson.com" ? (
+          {config.domain === "ascayahenderson.com" ? (
             <>
               <h2 className="text-3xl md:text-4xl font-bold text-slate-900 mb-4 text-center">
                 Ascaya on the McCullough Range in Henderson

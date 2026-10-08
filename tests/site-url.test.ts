@@ -1,6 +1,6 @@
 import { afterEach, describe, expect, it } from "vitest";
 import {
-  ACAYA_HENDERSON_CANONICAL,
+  ASCAYA_HENDERSON_CANONICAL,
   HEYBERKSHIRE_CANONICAL,
   HOST_CANONICAL_ORIGINS,
   resolveSiteUrl,
@@ -41,22 +41,22 @@ describe("resolveSiteUrl", () => {
     expect(resolveSiteUrl("drjanduffy.com")).toBe("https://drjanduffy.com");
   });
 
-  it("keeps www.acayahenderson.com as the Ascaya canonical", () => {
+  it("keeps www.ascayahenderson.com as the Ascaya canonical", () => {
     process.env.NEXT_PUBLIC_SITE_URL = "https://www.heyberkshire.com";
-    expect(resolveSiteUrl("www.acayahenderson.com")).toBe(
-      ACAYA_HENDERSON_CANONICAL,
+    expect(resolveSiteUrl("www.ascayahenderson.com")).toBe(
+      ASCAYA_HENDERSON_CANONICAL,
     );
-    expect(resolveSiteUrl("acayahenderson.com")).toBe(
-      ACAYA_HENDERSON_CANONICAL,
+    expect(resolveSiteUrl("ascayahenderson.com")).toBe(
+      ASCAYA_HENDERSON_CANONICAL,
     );
-    expect(HOST_CANONICAL_ORIGINS["acayahenderson.com"]).toBe(
-      ACAYA_HENDERSON_CANONICAL,
+    expect(HOST_CANONICAL_ORIGINS["ascayahenderson.com"]).toBe(
+      ASCAYA_HENDERSON_CANONICAL,
     );
   });
 
-  it("falls back to www heyberkshire with no env and no host", () => {
+  it("falls back to www.ascayahenderson.com with no env and no host", () => {
     delete process.env.NEXT_PUBLIC_SITE_URL;
-    expect(resolveSiteUrl()).toBe(HEYBERKSHIRE_CANONICAL);
-    expect(resolveSiteUrl(null)).toBe(HEYBERKSHIRE_CANONICAL);
+    expect(resolveSiteUrl()).toBe(ASCAYA_HENDERSON_CANONICAL);
+    expect(resolveSiteUrl(null)).toBe(ASCAYA_HENDERSON_CANONICAL);
   });
 });

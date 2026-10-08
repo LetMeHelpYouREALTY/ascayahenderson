@@ -8,12 +8,12 @@
 export const HEYBERKSHIRE_CANONICAL = "https://www.heyberkshire.com";
 
 /** Canonical production origin for Ascaya Henderson (www, not apex). */
-export const ACAYA_HENDERSON_CANONICAL = "https://www.acayahenderson.com";
+export const ASCAYA_HENDERSON_CANONICAL = "https://www.ascayahenderson.com";
 
 /** Normalized hostname → canonical origin. Mapped hosts keep their own www origin. */
 export const HOST_CANONICAL_ORIGINS: Record<string, string> = {
   "heyberkshire.com": HEYBERKSHIRE_CANONICAL,
-  "acayahenderson.com": ACAYA_HENDERSON_CANONICAL,
+  "ascayahenderson.com": ASCAYA_HENDERSON_CANONICAL,
 };
 
 export function normalizeHostname(hostname: string): string {
@@ -25,10 +25,10 @@ export function normalizeHostname(hostname: string): string {
 
 /**
  * Site origin for canonical, og:url, and JSON-LD.
- * 1) Host map (heyberkshire and acayahenderson → www)
+ * 1) Host map (heyberkshire and ascayahenderson → www)
  * 2) NEXT_PUBLIC_SITE_URL when set
  * 3) https://{host} for other live domains
- * 4) HeyBerkshire www fallback (never bare apex)
+ * 4) Ascaya www fallback (never bare apex)
  */
 export function resolveSiteUrl(hostname?: string | null): string {
   const fromEnv = process.env.NEXT_PUBLIC_SITE_URL?.replace(/\/$/, "");
@@ -41,13 +41,13 @@ export function resolveSiteUrl(hostname?: string | null): string {
     return `https://${clean}`;
   }
 
-  return HEYBERKSHIRE_CANONICAL;
+  return ASCAYA_HENDERSON_CANONICAL;
 }
 
-/** Build-time default for sitemap/robots; set NEXT_PUBLIC_SITE_URL on each Vercel project. */
+/** Build-time default for sitemap/robots. This site's primary origin is www. */
 export const SITE_URL =
   process.env.NEXT_PUBLIC_SITE_URL?.replace(/\/$/, "") ??
-  HEYBERKSHIRE_CANONICAL;
+  ASCAYA_HENDERSON_CANONICAL;
 
 export const ctaPhone = {
   display: "(702) 222-1964",

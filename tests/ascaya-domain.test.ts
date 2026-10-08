@@ -5,12 +5,16 @@ import { POST as descriptionPost } from "@/app/api/generate-property-description
 
 describe("Ascaya Henderson domain", () => {
   it("maps www and apex to the Ascaya config", () => {
-    const fromWww = getDomainConfig("www.acayahenderson.com");
-    const fromApex = getDomainConfig("acayahenderson.com");
+    const fromWww = getDomainConfig("www.ascayahenderson.com");
+    const fromApex = getDomainConfig("ascayahenderson.com");
     expect(fromWww.neighborhood).toBe("Ascaya");
-    expect(fromWww.domain).toBe("acayahenderson.com");
+    expect(fromWww.domain).toBe("ascayahenderson.com");
     expect(fromApex.heroHeadline).toBe("Ascaya Henderson Homes for Sale");
     expect(fromWww.heroSubheadline).toContain("(702) 222-1964");
+    expect(getDomainConfig("").domain).toBe("ascayahenderson.com");
+    expect(getDomainConfig("ascayahenderson.vercel.app").neighborhood).toBe(
+      "Ascaya",
+    );
   });
 });
 

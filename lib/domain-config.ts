@@ -29,8 +29,8 @@ export interface DomainConfig {
 const REALSCOUT_AGENT_ID = "QWdlbnQtMjI1MDUw";
 
 export const DOMAIN_CONFIGS: Record<string, DomainConfig> = {
-  "acayahenderson.com": {
-    domain: "acayahenderson.com",
+  "ascayahenderson.com": {
+    domain: "ascayahenderson.com",
     neighborhood: "Ascaya",
     tagline: "Ascaya Henderson Homes for Sale",
     description:
@@ -824,7 +824,7 @@ export function getDomainConfig(hostname: string): DomainConfig {
   const mapped = DOMAIN_CONFIGS[clean];
   if (mapped) return mapped;
   if (!clean || clean === "localhost" || clean.endsWith(".vercel.app")) {
-    return { ...DEFAULT_CONFIG, domain: "heyberkshire.com" };
+    return DOMAIN_CONFIGS["ascayahenderson.com"];
   }
   return {
     ...DEFAULT_CONFIG,
