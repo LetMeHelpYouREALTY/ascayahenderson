@@ -17,7 +17,9 @@ type PropertyPageProps = {
   params: Promise<{ id: string }>;
 };
 
-export async function generateMetadata(props: PropertyPageProps): Promise<Metadata> {
+export async function generateMetadata(
+  props: PropertyPageProps,
+): Promise<Metadata> {
   const params = await props.params;
   return {
     ...pageMetadata({
