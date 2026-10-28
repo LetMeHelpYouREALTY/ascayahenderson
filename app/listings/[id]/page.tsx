@@ -14,10 +14,11 @@ import { mediaUrl } from "@/lib/media";
 import OfficeRealScout from "@/components/realscout/OfficeRealScout";
 
 type PropertyPageProps = {
-  params: { id: string };
+  params: Promise<{ id: string }>;
 };
 
-export function generateMetadata({ params }: PropertyPageProps): Metadata {
+export async function generateMetadata(props: PropertyPageProps): Promise<Metadata> {
+  const params = await props.params;
   return {
     ...pageMetadata({
       title: `MLS Listing ${params.id} | Las Vegas Homes | Dr. Jan Duffy`,
@@ -29,7 +30,8 @@ export function generateMetadata({ params }: PropertyPageProps): Metadata {
   };
 }
 
-export default function PropertyPage({ params }: PropertyPageProps) {
+export default async function PropertyPage(props: PropertyPageProps) {
+  const params = await props.params;
   const showingStill = photoForHeading(
     "Schedule a Showing for This Las Vegas Listing",
     `/listings/${params.id}`,

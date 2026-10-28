@@ -22,7 +22,7 @@ import OfficeRealScout from "@/components/realscout/OfficeRealScout";
 
 export async function generateMetadata(): Promise<Metadata> {
   const config = await getPageDomainConfig();
-  const hostname = headers().get("x-domain");
+  const hostname = (await headers()).get("x-domain");
   return pageMetadata({
     path: "/",
     hostname,
