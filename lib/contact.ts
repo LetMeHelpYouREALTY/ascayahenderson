@@ -1,7 +1,7 @@
 /**
  * Single source of truth for NAP, phones, hours, maps, and social.
  * CTA line: (702) 500-1955 — client-facing call buttons.
- * Office/GBP NAP: (702) 500-1942 — footer schema and Google Business match.
+ * Main line: (702) 500-1955 (non-GBP site). 702-222-1964 is client email/text only.
  */
 
 /** Canonical production origin for heyberkshire (www, not apex). */
@@ -57,10 +57,10 @@ export const ctaPhone = {
 } as const;
 
 export const officePhone = {
-  display: "(702) 500-1942",
-  displayShort: "702-500-1942",
-  tel: "+17025001942",
-  href: "tel:+17025001942",
+  display: "(702) 500-1955",
+  displayShort: "702-500-1955",
+  tel: "+17025001955",
+  href: "tel:+17025001955",
 } as const;
 
 export const nap = {
