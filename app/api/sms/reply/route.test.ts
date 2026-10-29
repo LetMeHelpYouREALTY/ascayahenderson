@@ -31,13 +31,13 @@ describe("POST /api/sms/reply", () => {
 
   it("returns escaped TwiML when auto-reply is enabled", async () => {
     setEnv("SMS_AUTO_REPLY_ENABLED", "true");
-    setEnv("SMS_AUTO_REPLY_MESSAGE", "Call Dr. Jan at (702) 222-1964 & ask.");
-    setEnv("SMS_PHONE_NUMBER", "+17022221964");
+    setEnv("SMS_AUTO_REPLY_MESSAGE", "Call Dr. Jan at (702) 500-1955 & ask.");
+    setEnv("SMS_PHONE_NUMBER", "+17025001955");
     const response = await POST();
     expect(response.status).toBe(200);
     expect(response.headers.get("Content-Type")).toContain("text/xml");
     const body = await response.text();
-    expect(body).toContain("Call Dr. Jan at (702) 222-1964 &amp; ask.");
-    expect(body).not.toContain("+17022221964");
+    expect(body).toContain("Call Dr. Jan at (702) 500-1955 &amp; ask.");
+    expect(body).not.toContain("+17025001955");
   });
 });

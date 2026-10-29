@@ -35,7 +35,7 @@ describe("Ascaya guide pages", () => {
     expect(html).toContain(guide.h1);
     expect(html).toContain("Where is Ascaya in Henderson?");
     expect(html).toContain("FAQPage");
-    expect(html).toContain("(702) 222-1964");
+    expect(html).toContain("(702) 500-1955");
     expect(html).toContain("9406 W Lake Mead Blvd, Suite 100");
     expect(html).toContain("1 Ascaya Blvd");
     expect(html).toContain("realscout-office-listings");

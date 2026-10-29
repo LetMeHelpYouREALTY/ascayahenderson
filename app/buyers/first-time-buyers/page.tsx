@@ -26,7 +26,7 @@ export const metadata: Metadata = pageMetadata({
   path: "/buyers/first-time-buyers",
   title: "First-Time Home Buyers Las Vegas | Berkshire Hathaway HomeServices",
   description:
-    "First-time buyer in Las Vegas? Down payment assistance, builder incentives, and expert guidance from Dr. Jan Duffy at Berkshire Hathaway HomeServices. Call (702) 222-1964.",
+    "First-time buyer in Las Vegas? Down payment assistance, builder incentives, and expert guidance from Dr. Jan Duffy at Berkshire Hathaway HomeServices. Call (702) 500-1955.",
   keywords: [
     "first time home buyer Las Vegas",
     "first time buyer Nevada",
