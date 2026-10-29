@@ -35,7 +35,7 @@ export const uniqueInteriors: Record<string, UniqueInteriorCopy> = {
     ],
     h3: "Pool terraces and valley overlooks on the showing route",
     h3Body:
-      "Most Ridges tours include the club campus, selected ridge streets, and a return to Downtown Summerlin if you also want retail context. Call (702) 222-1964 for a private gate window.",
+      "Most Ridges tours include the club campus, selected ridge streets, and a return to Downtown Summerlin if you also want retail context. Call (702) 500-1955 for a private gate window.",
   },
   "/neighborhoods/southern-highlands": {
     h2: "South-valley golf and ridge streets in one tour block",
@@ -221,7 +221,7 @@ export const uniqueInteriors: Record<string, UniqueInteriorCopy> = {
     h2: "Same-day Summerlin-then-Henderson routing from the Maps pin",
     body: "Buyer and seller appointments start at Berkshire Hathaway HomeServices Nevada Properties, 9406 W Lake Mead Blvd, Suite 100. We loop Summerlin first (10–15 minutes) and Henderson second (25–35 minutes) so you are not crisscrossing I-15.",
     facts: [
-      "GBP name, address, and office line (702) 500-1942 match this pin",
+      "Call or text (702) 500-1955",
       "Call or text (702) 500-1955 for a same-day showing window",
       "Live MLS search sits on RealScout; we sequence the tour from this desk",
     ],
@@ -235,7 +235,7 @@ export const uniqueInteriors: Record<string, UniqueInteriorCopy> = {
     facts: [
       "Brokerage: Berkshire Hathaway HomeServices Nevada Properties",
       "Markets: Las Vegas, Henderson, Summerlin",
-      "Client CTA (702) 500-1955 · office/GBP (702) 500-1942",
+      "Call (702) 500-1955 ·",
     ],
     h3: "Parking, hours, and the consult desk",
     h3Body:
@@ -246,7 +246,7 @@ export const uniqueInteriors: Record<string, UniqueInteriorCopy> = {
     body: "Walk-ins during posted hours are welcome at Suite 100. Calendly showings can start here and continue to the property. Email homes@heyberkshire.com for documents; do not send listing keys by unsecured email.",
     facts: [
       "Address: 9406 W Lake Mead Blvd, Suite 100, Las Vegas, NV 89134",
-      "Call or text (702) 500-1955 · office (702) 500-1942",
+      "Call or text (702) 500-1955",
       "Map embed, Directions, and View Google Reviews are on this page and the footer",
     ],
     h3: "What to bring to the contact desk",
@@ -255,7 +255,7 @@ export const uniqueInteriors: Record<string, UniqueInteriorCopy> = {
   },
   "/google-business": {
     h2: "This page exists so Maps, GBP, and the website say the same thing",
-    body: "Name, address, and office line (702) 500-1942 match the Google listing. Call or text (702) 500-1955 for a same-day reply. Hours, map pin, reviews, and photos on this URL are kept aligned with the Business Profile.",
+    body: "Call or text (702) 500-1955 for a same-day reply. Hours, map pin, reviews, and photos on this URL are kept aligned with the Business Profile.",
     facts: [
       "9406 W Lake Mead Blvd, Suite 100, Las Vegas, NV 89134",
       "Mon–Fri 9am–6pm, Sat 10am–4pm, Sunday by appointment",
@@ -270,7 +270,7 @@ export const uniqueInteriors: Record<string, UniqueInteriorCopy> = {
     body: "Bring loan pre-approval and a target ZIP to Suite 100. We map commute minutes to listings from this desk instead of answering with valley-wide averages only.",
     facts: [
       "FAQs below are Fair Housing-safe: square footage, amenities, named campuses, commute times",
-      "Client CTA (702) 500-1955",
+      "Call (702) 500-1955",
       "Office NAP matches GBP",
     ],
     h3: "Still stuck after the accordion",
@@ -294,7 +294,7 @@ export const uniqueInteriors: Record<string, UniqueInteriorCopy> = {
     body: "Privacy, lockbox, and showing-access questions are handled at the office. We do not collect listing keys by unsecured email.",
     facts: [
       "Email homes@heyberkshire.com for written policy questions",
-      "Office (702) 500-1942 matches GBP · CTA (702) 500-1955",
+      "Call (702) 500-1955",
       "Address: 9406 W Lake Mead Blvd, Suite 100, Las Vegas, NV 89134",
     ],
     h3: "What we will not do",
@@ -319,7 +319,7 @@ export const uniqueInteriors: Record<string, UniqueInteriorCopy> = {
     facts: [
       "CMA review on-site or at your property",
       "BHHS marketing scope is set before the photographer is booked",
-      "Call (702) 500-1955 · office (702) 500-1942",
+      "Call (702) 500-1955",
     ],
     h3: "What a priced-to-comps listing looks like",
     h3Body:
@@ -391,7 +391,7 @@ export const uniqueInteriors: Record<string, UniqueInteriorCopy> = {
     facts: [
       "Photographer and copy are booked after the walkthrough",
       "Call (702) 500-1955 for a listing appointment",
-      "Office/GBP (702) 500-1942",
+      "Call (702) 500-1955.",
     ],
     h3: "Staged living room is a tactic, not a slogan",
     h3Body:
@@ -437,7 +437,7 @@ export const uniqueInteriors: Record<string, UniqueInteriorCopy> = {
     body: "Confidential file review is by appointment at 9406 W Lake Mead Blvd, Suite 100. Court dates, attorney contacts, and lockbox rules are handled here—not in a public lobby conversation.",
     facts: [
       "Neutral process, documented access, written offers",
-      "Call (702) 222-1964 to schedule a private slot",
+      "Call (702) 500-1955 to schedule a private slot",
       "Do not email sensitive orders to a shared inbox without a heads-up call",
     ],
     h3: "What to bring",
