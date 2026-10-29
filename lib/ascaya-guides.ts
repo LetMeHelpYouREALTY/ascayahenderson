@@ -56,7 +56,7 @@ export const ASCAYA_GUIDES: readonly AscayaGuide[] = [
     path: "/neighborhoods/ascaya",
     title: "Ascaya Henderson Real Estate | Dr. Jan Duffy, REALTOR®",
     description:
-      "Ascaya is a guard-gated community at One Ascaya Blvd, Henderson, NV 89012, on the McCullough Mountain Range. Dr. Jan Duffy helps buyers and sellers. Call (702) 222-1964.",
+      "Ascaya is a guard-gated community at One Ascaya Blvd, Henderson, NV 89012, on the McCullough Mountain Range. Dr. Jan Duffy helps buyers and sellers. Call (702) 500-1942.",
     keywords: [
       "Ascaya Henderson",
       "Ascaya homes for sale",
@@ -95,7 +95,7 @@ export const ASCAYA_GUIDES: readonly AscayaGuide[] = [
       {
         heading: "Who represents you at Ascaya?",
         answer:
-          "Dr. Jan Duffy, REALTOR®, license S.0197614.LLC, with Berkshire Hathaway HomeServices Nevada Properties. Tours start with a call or text to (702) 222-1964. The office is 9406 W Lake Mead Blvd, Suite 100, Las Vegas, NV 89134.",
+          "Dr. Jan Duffy, REALTOR®, license S.0197614.LLC, with Berkshire Hathaway HomeServices Nevada Properties. Tours start with a call or text to (702) 500-1942. The office is 9406 W Lake Mead Blvd, Suite 100, Las Vegas, NV 89134.",
       },
     ],
     faqs: [
@@ -107,12 +107,12 @@ export const ASCAYA_GUIDES: readonly AscayaGuide[] = [
       {
         question: "Is Ascaya guard-gated?",
         answer:
-          "Yes. Ascaya describes itself as a guard-gated residential community. Schedule the gate appointment with Dr. Jan Duffy at (702) 222-1964.",
+          "Yes. Ascaya describes itself as a guard-gated residential community. Schedule the gate appointment with Dr. Jan Duffy at (702) 500-1942.",
       },
       {
         question: "What phone number should I call for an Ascaya showing?",
         answer:
-          "Call or text Dr. Jan Duffy at (702) 222-1964. That is the client line for showings, offers, and valuations.",
+          "Call or text Dr. Jan Duffy at (702) 500-1942. That is the client line for showings, offers, and valuations.",
       },
     ],
   },
@@ -121,14 +121,14 @@ export const ASCAYA_GUIDES: readonly AscayaGuide[] = [
     path: "/ascaya/canyon-residences",
     title: "Canyon Residences at Ascaya | Dr. Jan Duffy",
     description:
-      "The Canyon Residences are 51 lock-and-leave condominiums at Ascaya in Henderson, built by Blue Heron. Garden, Villa, and Penthouse types. Call Dr. Jan Duffy at (702) 222-1964.",
+      "The Canyon Residences are 51 lock-and-leave condominiums at Ascaya in Henderson, built by Blue Heron. Garden, Villa, and Penthouse types. Call Dr. Jan Duffy at (702) 500-1942.",
     keywords: [
       "Canyon Residences Ascaya",
       "Ascaya condominiums Henderson",
       "lock and leave Ascaya",
     ],
     h1: "Canyon Residences at Ascaya in Henderson",
-    lede: "The Canyon Residences are 51 lock-and-leave condominiums at Ascaya, designed and built by Blue Heron across seven terraces. The types are Garden, Villa, and Penthouse. Dr. Jan Duffy sets the showing. Call (702) 222-1964.",
+    lede: "The Canyon Residences are 51 lock-and-leave condominiums at Ascaya, designed and built by Blue Heron across seven terraces. The types are Garden, Villa, and Penthouse. Dr. Jan Duffy sets the showing. Call (702) 500-1942.",
     includePlace: false,
     showListings: true,
     sections: [
@@ -164,7 +164,7 @@ export const ASCAYA_GUIDES: readonly AscayaGuide[] = [
       {
         heading: "How do you buy a Canyon residence?",
         answer:
-          "Call Dr. Jan Duffy at (702) 222-1964. She confirms which residences are for sale, books the gate, and writes the offer through Berkshire Hathaway HomeServices Nevada Properties. Current developer prices change, so this page does not print them.",
+          "Call Dr. Jan Duffy at (702) 500-1942. She confirms which residences are for sale, books the gate, and writes the offer through Berkshire Hathaway HomeServices Nevada Properties. Current developer prices change, so this page does not print them.",
       },
     ],
     faqs: [
@@ -190,7 +190,7 @@ export const ASCAYA_GUIDES: readonly AscayaGuide[] = [
     path: "/ascaya/homesites",
     title: "Ascaya Homesites for Sale | Dr. Jan Duffy",
     description:
-      "Ascaya homesites in Henderson include the Estate Collection and 58 Cloud Rock lots. No build-timeline requirement, per Ascaya. Call Dr. Jan Duffy at (702) 222-1964.",
+      "Ascaya homesites in Henderson include the Estate Collection and 58 Cloud Rock lots. No build-timeline requirement, per Ascaya. Call Dr. Jan Duffy at (702) 500-1942.",
     keywords: [
       "Ascaya homesites",
       "Cloud Rock Collection Ascaya",
@@ -198,7 +198,7 @@ export const ASCAYA_GUIDES: readonly AscayaGuide[] = [
       "custom lots Ascaya",
     ],
     h1: "Ascaya homesites in Henderson",
-    lede: "Ascaya homesites are custom-build lots on the McCullough Mountain Range in Henderson. The Estate Collection runs from about half an acre to more than two acres. Cloud Rock is 58 homesites from 1.6 to 3.34 acres. Call Dr. Jan Duffy at (702) 222-1964 before you rely on a published price.",
+    lede: "Ascaya homesites are custom-build lots on the McCullough Mountain Range in Henderson. The Estate Collection runs from about half an acre to more than two acres. Cloud Rock is 58 homesites from 1.6 to 3.34 acres. Call Dr. Jan Duffy at (702) 500-1942 before you rely on a published price.",
     includePlace: false,
     showListings: true,
     sections: [
@@ -220,7 +220,7 @@ export const ASCAYA_GUIDES: readonly AscayaGuide[] = [
       {
         heading: "What do Ascaya homesites cost?",
         answer:
-          "Ascaya's homesite page lists Estate homesites priced from $1 million and Cloud Rock homesites from $2 million to $8 million. Those are developer figures and they change. Dr. Jan Duffy will confirm the live price before you write an offer. Call (702) 222-1964.",
+          "Ascaya's homesite page lists Estate homesites priced from $1 million and Cloud Rock homesites from $2 million to $8 million. Those are developer figures and they change. Dr. Jan Duffy will confirm the live price before you write an offer. Call (702) 500-1942.",
       },
     ],
     faqs: [
@@ -237,7 +237,7 @@ export const ASCAYA_GUIDES: readonly AscayaGuide[] = [
       {
         question: "Where do I confirm a homesite price?",
         answer:
-          "Call Dr. Jan Duffy at (702) 222-1964. Developer starting prices on ascaya.com are not a live offer price.",
+          "Call Dr. Jan Duffy at (702) 500-1942. Developer starting prices on ascaya.com are not a live offer price.",
       },
     ],
   },
@@ -246,14 +246,14 @@ export const ASCAYA_GUIDES: readonly AscayaGuide[] = [
     path: "/ascaya/desert-design-study",
     title: "Desert Design Study Homes at Ascaya | Dr. Jan Duffy",
     description:
-      "Desert Design Study homes are built desert-modern houses at Ascaya in Henderson. Dr. Jan Duffy tours resale and developer inventory. Call (702) 222-1964.",
+      "Desert Design Study homes are built desert-modern houses at Ascaya in Henderson. Dr. Jan Duffy tours resale and developer inventory. Call (702) 500-1942.",
     keywords: [
       "Desert Design Study Ascaya",
       "Ascaya custom homes Henderson",
       "Ascaya houses for sale",
     ],
     h1: "Desert Design Study homes at Ascaya",
-    lede: "Desert Design Study homes are built houses at Ascaya in Henderson, each designed as a desert-modern residence. Owners use the clubhouse, the 50-meter pool, tennis and pickleball, Family Park, and the trails. Dr. Jan Duffy walks the current inventory with you. Call (702) 222-1964.",
+    lede: "Desert Design Study homes are built houses at Ascaya in Henderson, each designed as a desert-modern residence. Owners use the clubhouse, the 50-meter pool, tennis and pickleball, Family Park, and the trails. Dr. Jan Duffy walks the current inventory with you. Call (702) 500-1942.",
     includePlace: false,
     showListings: true,
     sections: [
@@ -270,7 +270,7 @@ export const ASCAYA_GUIDES: readonly AscayaGuide[] = [
       {
         heading: "How do you tour a Desert Design Study home?",
         answer:
-          "Call or text Dr. Jan Duffy at (702) 222-1964. She books the guard gate and confirms whether the house is a resale or still with the developer. The community address is One Ascaya Blvd, Henderson, NV 89012.",
+          "Call or text Dr. Jan Duffy at (702) 500-1942. She books the guard gate and confirms whether the house is a resale or still with the developer. The community address is One Ascaya Blvd, Henderson, NV 89012.",
       },
     ],
     faqs: [
@@ -281,7 +281,7 @@ export const ASCAYA_GUIDES: readonly AscayaGuide[] = [
       },
       {
         question: "Who shows Desert Design Study homes?",
-        answer: "Dr. Jan Duffy shows them by appointment. Call (702) 222-1964.",
+        answer: "Dr. Jan Duffy shows them by appointment. Call (702) 500-1942.",
       },
       {
         question: "Where is the Desert Design Study collection?",
@@ -294,7 +294,7 @@ export const ASCAYA_GUIDES: readonly AscayaGuide[] = [
     path: "/ascaya/amenities",
     title: "Ascaya Clubhouse and Amenities | Dr. Jan Duffy",
     description:
-      "Ascaya's clubhouse is 23,000 square feet, with dining, fitness, a 50-meter pool, tennis, pickleball, Family Park, and trails. Tours with Dr. Jan Duffy: (702) 222-1964.",
+      "Ascaya's clubhouse is 23,000 square feet, with dining, fitness, a 50-meter pool, tennis, pickleball, Family Park, and trails. Tours with Dr. Jan Duffy: (702) 500-1942.",
     keywords: [
       "Ascaya clubhouse",
       "Ascaya amenities Henderson",
@@ -332,7 +332,7 @@ export const ASCAYA_GUIDES: readonly AscayaGuide[] = [
       {
         heading: "Who can use the amenities while building?",
         answer:
-          "Ascaya says homesite owners have amenity access from day one, including during design and construction. Canyon residents and Desert Design Study owners are also listed for clubhouse access. Call (702) 222-1964 to see the rooms on a tour.",
+          "Ascaya says homesite owners have amenity access from day one, including during design and construction. Canyon residents and Desert Design Study owners are also listed for clubhouse access. Call (702) 500-1942 to see the rooms on a tour.",
       },
     ],
     faqs: [
@@ -348,7 +348,7 @@ export const ASCAYA_GUIDES: readonly AscayaGuide[] = [
       {
         question: "How do I see the clubhouse?",
         answer:
-          "Book a tour with Dr. Jan Duffy at (702) 222-1964. The gate appointment has to be in place before you arrive at One Ascaya Blvd.",
+          "Book a tour with Dr. Jan Duffy at (702) 500-1942. The gate appointment has to be in place before you arrive at One Ascaya Blvd.",
       },
     ],
   },
@@ -357,14 +357,14 @@ export const ASCAYA_GUIDES: readonly AscayaGuide[] = [
     path: "/buyers/ascaya",
     title: "Buy an Ascaya Henderson Home | Dr. Jan Duffy",
     description:
-      "Buy at Ascaya in Henderson with Dr. Jan Duffy. Canyon residences, Desert Design Study homes, and homesites. Gate appointments. Call (702) 222-1964.",
+      "Buy at Ascaya in Henderson with Dr. Jan Duffy. Canyon residences, Desert Design Study homes, and homesites. Gate appointments. Call (702) 500-1942.",
     keywords: [
       "buy home Ascaya Henderson",
       "Ascaya buyer's agent",
       "Dr. Jan Duffy buyer",
     ],
     h1: "Buy an Ascaya Henderson home with Dr. Jan Duffy",
-    lede: "Dr. Jan Duffy represents buyers at Ascaya in Henderson. She sets the gate appointment, compares Canyon residences, Desert Design Study homes, and homesites, and writes the offer. Call or text (702) 222-1964.",
+    lede: "Dr. Jan Duffy represents buyers at Ascaya in Henderson. She sets the gate appointment, compares Canyon residences, Desert Design Study homes, and homesites, and writes the offer. Call or text (702) 500-1942.",
     includePlace: false,
     showListings: true,
     sections: [
@@ -375,7 +375,7 @@ export const ASCAYA_GUIDES: readonly AscayaGuide[] = [
         points: [
           {
             heading: "Book the gate",
-            body: "Call (702) 222-1964. Showings at One Ascaya Blvd need an appointment.",
+            body: "Call (702) 500-1942. Showings at One Ascaya Blvd need an appointment.",
           },
           {
             heading: "Compare the three offerings",
@@ -402,7 +402,7 @@ export const ASCAYA_GUIDES: readonly AscayaGuide[] = [
       {
         question: "Do I need my own agent at Ascaya?",
         answer:
-          "Yes, if you want representation. Dr. Jan Duffy represents buyers separately from the on-site sales gallery. Call (702) 222-1964.",
+          "Yes, if you want representation. Dr. Jan Duffy represents buyers separately from the on-site sales gallery. Call (702) 500-1942.",
       },
       {
         question:
@@ -422,14 +422,14 @@ export const ASCAYA_GUIDES: readonly AscayaGuide[] = [
     path: "/sellers/ascaya",
     title: "Sell an Ascaya Henderson Home | Dr. Jan Duffy",
     description:
-      "Sell your Ascaya home in Henderson with Dr. Jan Duffy at Berkshire Hathaway HomeServices Nevada Properties. Pricing from in-gate comps. Call (702) 222-1964.",
+      "Sell your Ascaya home in Henderson with Dr. Jan Duffy at Berkshire Hathaway HomeServices Nevada Properties. Pricing from in-gate comps. Call (702) 500-1942.",
     keywords: [
       "sell home Ascaya Henderson",
       "Ascaya listing agent",
       "Dr. Jan Duffy seller",
     ],
     h1: "Sell an Ascaya Henderson home with Dr. Jan Duffy",
-    lede: "Dr. Jan Duffy lists Ascaya homes for sellers through Berkshire Hathaway HomeServices Nevada Properties. The price starts from comps inside the gates, not a valley average. Call (702) 222-1964.",
+    lede: "Dr. Jan Duffy lists Ascaya homes for sellers through Berkshire Hathaway HomeServices Nevada Properties. The price starts from comps inside the gates, not a valley average. Call (702) 500-1942.",
     includePlace: false,
     showListings: false,
     sections: [
@@ -453,7 +453,7 @@ export const ASCAYA_GUIDES: readonly AscayaGuide[] = [
           },
           {
             heading: "Offer review",
-            body: "You see the terms before anything is accepted. Call (702) 222-1964 to start.",
+            body: "You see the terms before anything is accepted. Call (702) 500-1942 to start.",
           },
         ],
       },
@@ -467,7 +467,7 @@ export const ASCAYA_GUIDES: readonly AscayaGuide[] = [
       {
         question: "Who is the listing agent for Ascaya sellers?",
         answer:
-          "Dr. Jan Duffy, REALTOR®, S.0197614.LLC, Berkshire Hathaway HomeServices Nevada Properties. Call (702) 222-1964.",
+          "Dr. Jan Duffy, REALTOR®, S.0197614.LLC, Berkshire Hathaway HomeServices Nevada Properties. Call (702) 500-1942.",
       },
       {
         question: "Do you list Canyon condominiums and houses?",
@@ -486,7 +486,7 @@ export const ASCAYA_GUIDES: readonly AscayaGuide[] = [
     path: "/home-valuation/ascaya",
     title: "Ascaya Henderson Home Value | Dr. Jan Duffy",
     description:
-      "What is an Ascaya Henderson home worth? Dr. Jan Duffy prices it from MLS comps inside the community. No published guess on this page. Call (702) 222-1964.",
+      "What is an Ascaya Henderson home worth? Dr. Jan Duffy prices it from MLS comps inside the community. No published guess on this page. Call (702) 500-1942.",
     keywords: [
       "Ascaya home value",
       "what is my Ascaya home worth",
@@ -500,7 +500,7 @@ export const ASCAYA_GUIDES: readonly AscayaGuide[] = [
       {
         heading: "What does an Ascaya valuation include?",
         answer:
-          "The address, the product type, recent Ascaya sales, and homes for sale now. A Henderson city median is not an Ascaya value. Dr. Jan Duffy sends the number after she has the property facts. Call (702) 222-1964.",
+          "The address, the product type, recent Ascaya sales, and homes for sale now. A Henderson city median is not an Ascaya value. Dr. Jan Duffy sends the number after she has the property facts. Call (702) 500-1942.",
       },
       {
         heading: "Why is there no price on this page?",
@@ -510,7 +510,7 @@ export const ASCAYA_GUIDES: readonly AscayaGuide[] = [
       {
         heading: "How do you request the valuation?",
         answer:
-          "Call or text (702) 222-1964, or send the address through the contact form. Office hours are Monday through Friday 9:00 AM to 6:00 PM and Saturday 10:00 AM to 4:00 PM. Sunday is by appointment. The office is 9406 W Lake Mead Blvd, Suite 100, Las Vegas, NV 89134.",
+          "Call or text (702) 500-1942, or send the address through the contact form. Office hours are Monday through Friday 9:00 AM to 6:00 PM and Saturday 10:00 AM to 4:00 PM. Sunday is by appointment. The office is 9406 W Lake Mead Blvd, Suite 100, Las Vegas, NV 89134.",
       },
     ],
     faqs: [
@@ -526,7 +526,7 @@ export const ASCAYA_GUIDES: readonly AscayaGuide[] = [
       },
       {
         question: "Who prepares the valuation?",
-        answer: "Dr. Jan Duffy, REALTOR®, S.0197614.LLC. Call (702) 222-1964.",
+        answer: "Dr. Jan Duffy, REALTOR®, S.0197614.LLC. Call (702) 500-1942.",
       },
     ],
   },
