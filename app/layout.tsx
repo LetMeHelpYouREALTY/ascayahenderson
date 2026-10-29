@@ -24,8 +24,8 @@ import { realscout, nap, resolveSiteUrl } from "@/lib/contact";
 import { gaEnabled, gaMeasurementId } from "@/lib/runtime-config";
 
 export async function generateMetadata(): Promise<Metadata> {
-  const domain = headers().get("x-domain") || "";
-  const pathname = headers().get("x-pathname") || "/";
+  const domain = (await headers()).get("x-domain") || "";
+  const pathname = (await headers()).get("x-pathname") || "/";
   const config = getDomainConfig(domain);
   const title = `${config.neighborhood} Real Estate | Dr. Jan Duffy, REALTOR®`;
   const siteUrl = resolveSiteUrl(domain);
@@ -63,7 +63,7 @@ export default async function RootLayout({
 }: {
   children: React.ReactNode;
 }) {
-  const domain = headers().get("x-domain") || "";
+  const domain = (await headers()).get("x-domain") || "";
   const siteUrl = resolveSiteUrl(domain);
   const gaId = gaEnabled() ? gaMeasurementId() : null;
   const siteSchemas = combineSchemas(
