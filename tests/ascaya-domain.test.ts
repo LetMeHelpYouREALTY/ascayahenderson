@@ -10,7 +10,7 @@ describe("Ascaya Henderson domain", () => {
     expect(fromWww.neighborhood).toBe("Ascaya");
     expect(fromWww.domain).toBe("ascayahenderson.com");
     expect(fromApex.heroHeadline).toBe("Ascaya Henderson Homes for Sale");
-    expect(fromWww.heroSubheadline).toContain("(702) 222-1964");
+    expect(fromWww.heroSubheadline).toContain("(702) 500-1942");
     expect(getDomainConfig("").domain).toBe("ascayahenderson.com");
     expect(getDomainConfig("ascayahenderson.vercel.app").neighborhood).toBe(
       "Ascaya",
