@@ -20,7 +20,7 @@ export const metadata: Metadata = pageMetadata({
   path: "/neighborhoods/north-las-vegas",
   title: "Berkshire Hathaway HomeServices North Las Vegas | Affordable Homes",
   description:
-    "Find North Las Vegas homes with Berkshire Hathaway HomeServices Nevada Properties. January 2026 median $385K. Named campuses and commute minutes from Suite 100. Call (702) 222-1964.",
+    "Find North Las Vegas homes with Berkshire Hathaway HomeServices Nevada Properties. January 2026 median $385K. Named campuses and commute minutes from Suite 100. Call (702) 500-1955.",
   keywords: [
     "Berkshire Hathaway HomeServices North Las Vegas",
     "North Las Vegas homes for sale",

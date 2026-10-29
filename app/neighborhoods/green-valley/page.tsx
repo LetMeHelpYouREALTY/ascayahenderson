@@ -19,7 +19,7 @@ export const metadata: Metadata = pageMetadata({
   path: "/neighborhoods/green-valley",
   title: "Berkshire Hathaway HomeServices Green Valley | Henderson Real Estate",
   description:
-    "Find Green Valley homes with Berkshire Hathaway HomeServices Nevada Properties. Dr. Jan Duffy specializes in this Henderson community with parks, shopping, and Green Valley High School nearby. Median price $520K. Call (702) 222-1964.",
+    "Find Green Valley homes with Berkshire Hathaway HomeServices Nevada Properties. Dr. Jan Duffy specializes in this Henderson community with parks, shopping, and Green Valley High School nearby. Median price $520K. Call (702) 500-1955.",
   keywords: [
     "Berkshire Hathaway HomeServices Green Valley",
     "Green Valley homes for sale",
@@ -159,7 +159,7 @@ export default function GreenValleyPage() {
                 between Green Valley proper, Green Valley Ranch, and Green
                 Valley South. Each area is compared by tree canopy age,
                 golf-course adjacency, The District retail, and commute minutes
-                from Suite 100. Call (702) 222-1964.
+                from Suite 100. Call (702) 500-1955.
               </p>
             </div>
           </section>
