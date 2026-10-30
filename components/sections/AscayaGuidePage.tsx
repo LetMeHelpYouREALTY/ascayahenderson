@@ -207,7 +207,7 @@ export default function AscayaGuidePage({ guide }: AscayaGuidePageProps) {
               className="h-72 w-full rounded-xl border-0"
             />
             <p className="mt-4 text-sm text-slate-600">
-              {nap.name}. License {nap.license}. {nap.street}, {nap.city},{" "}
+              {nap.name}. {nap.street}, {nap.city},{" "}
               {nap.state} {nap.zip}. {ctaPhone.display}.
             </p>
           </section>

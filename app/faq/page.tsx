@@ -19,15 +19,15 @@ import OfficeRealScout from "@/components/realscout/OfficeRealScout";
 
 export const metadata: Metadata = pageMetadata({
   path: "/faq",
-  title: "FAQ | Berkshire Hathaway HomeServices Las Vegas Real Estate",
+  title: "FAQ | Dr. Jan Duffy Real Estate",
   description:
-    "Frequently asked questions about Las Vegas real estate, Berkshire Hathaway HomeServices, buying, selling, and working with Dr. Jan Duffy at BHHS Nevada Properties.",
+    "Frequently asked questions about Las Vegas real estate, Dr. Jan Duffy, buying, selling, and working.",
   keywords: [
-    "Berkshire Hathaway HomeServices FAQ",
+    "Dr. Jan Duffy FAQ",
     "Las Vegas real estate questions",
     "buying a home Las Vegas",
     "selling a home Henderson",
-    "BHHS agent questions",
+    "Dr. Duffy agent questions",
   ],
 });
 
@@ -40,9 +40,9 @@ const breadcrumbs = [
 const pageSchemas = combineSchemas(
   generateBreadcrumbSchema(breadcrumbs),
   generateWebPageSchema({
-    name: "Frequently Asked Questions | Berkshire Hathaway HomeServices Las Vegas",
+    name: "Frequently Asked Questions | Dr. Jan Duffy",
     description:
-      "Comprehensive FAQ about Las Vegas real estate, buying, selling, investing, and working with Dr. Jan Duffy at Berkshire Hathaway HomeServices Nevada Properties.",
+      "Comprehensive FAQ about Las Vegas real estate, buying, selling, investing, and working with Dr. Jan Duffy.",
     url: "/faq",
     dateModified: "2026-09-15",
   }),
@@ -65,7 +65,7 @@ export default function FAQPage() {
 
             <p className="text-xl text-slate-600">
               Everything you need to know about working with{" "}
-              <strong>Berkshire Hathaway HomeServices</strong> in Las Vegas
+              <strong>Dr. Jan Duffy</strong> in Las Vegas
             </p>
             <div className="mt-8">
               <CtaActions variant="onLight" />

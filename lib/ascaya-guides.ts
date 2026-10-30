@@ -95,7 +95,7 @@ export const ASCAYA_GUIDES: readonly AscayaGuide[] = [
       {
         heading: "Who represents you at Ascaya?",
         answer:
-          "Dr. Jan Duffy, REALTOR®, license S.0197614.LLC, with Berkshire Hathaway HomeServices Nevada Properties. Tours start with a call or text to (702) 500-1955. The office is 9406 W Lake Mead Blvd, Suite 100, Las Vegas, NV 89134.",
+          "Dr. Jan Duffy, REALTOR®. Tours start with a call or text to (702) 500-1955. The office is 9406 W Lake Mead Blvd, Suite 100, Las Vegas, NV 89134.",
       },
     ],
     faqs: [
@@ -164,7 +164,7 @@ export const ASCAYA_GUIDES: readonly AscayaGuide[] = [
       {
         heading: "How do you buy a Canyon residence?",
         answer:
-          "Call Dr. Jan Duffy at (702) 500-1955. She confirms which residences are for sale, books the gate, and writes the offer through Berkshire Hathaway HomeServices Nevada Properties. Current developer prices change, so this page does not print them.",
+          "Call Dr. Jan Duffy at (702) 500-1955. She confirms which residences are for sale, books the gate, and writes the offer. Current developer prices change, so this page does not print them.",
       },
     ],
     faqs: [
@@ -383,7 +383,7 @@ export const ASCAYA_GUIDES: readonly AscayaGuide[] = [
           },
           {
             heading: "Write the offer",
-            body: "Dr. Jan Duffy prepares it through Berkshire Hathaway HomeServices Nevada Properties, license S.0197614.LLC.",
+            body: "Dr. Jan Duffy prepares it.",
           },
         ],
       },
@@ -422,14 +422,14 @@ export const ASCAYA_GUIDES: readonly AscayaGuide[] = [
     path: "/sellers/ascaya",
     title: "Sell an Ascaya Henderson Home | Dr. Jan Duffy",
     description:
-      "Sell your Ascaya home in Henderson with Dr. Jan Duffy at Berkshire Hathaway HomeServices Nevada Properties. Pricing from in-gate comps. Call (702) 500-1955.",
+      "Sell your Ascaya home in Henderson with Dr. Jan Duffy. Pricing from in-gate comps. Call (702) 500-1955.",
     keywords: [
       "sell home Ascaya Henderson",
       "Ascaya listing agent",
       "Dr. Jan Duffy seller",
     ],
     h1: "Sell an Ascaya Henderson home with Dr. Jan Duffy",
-    lede: "Dr. Jan Duffy lists Ascaya homes for sellers through Berkshire Hathaway HomeServices Nevada Properties. The price starts from comps inside the gates, not a valley average. Call (702) 500-1955.",
+    lede: "Dr. Jan Duffy lists Ascaya homes for sellers. The price starts from comps inside the gates, not a valley average. Call (702) 500-1955.",
     includePlace: false,
     showListings: false,
     sections: [
@@ -467,7 +467,7 @@ export const ASCAYA_GUIDES: readonly AscayaGuide[] = [
       {
         question: "Who is the listing agent for Ascaya sellers?",
         answer:
-          "Dr. Jan Duffy, REALTOR®, S.0197614.LLC, Berkshire Hathaway HomeServices Nevada Properties. Call (702) 500-1955.",
+          "Dr. Jan Duffy, REALTOR®. Call (702) 500-1955.",
       },
       {
         question: "Do you list Canyon condominiums and houses?",
@@ -526,7 +526,7 @@ export const ASCAYA_GUIDES: readonly AscayaGuide[] = [
       },
       {
         question: "Who prepares the valuation?",
-        answer: "Dr. Jan Duffy, REALTOR®, S.0197614.LLC. Call (702) 500-1955.",
+        answer: "Dr. Jan Duffy, REALTOR®. Call (702) 500-1955.",
       },
     ],
   },

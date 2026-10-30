@@ -12,15 +12,15 @@ import OfficeRealScout from "@/components/realscout/OfficeRealScout";
 
 export const metadata: Metadata = pageMetadata({
   path: "/why-berkshire-hathaway",
-  title: "Why Choose Berkshire Hathaway HomeServices | Las Vegas Real Estate",
+  title: "Why Choose Dr. Jan Duffy | Las Vegas Real Estate",
   description:
-    "See what Berkshire Hathaway HomeServices Nevada Properties puts on a listing file. Marketing samples at Suite 100. Call (702) 500-1955.",
+    "See what Dr. Jan Duffy puts on a listing file. Marketing samples at Suite 100. Call (702) 500-1955.",
   keywords: [
-    "Berkshire Hathaway HomeServices",
-    "why choose BHHS",
+    "Dr. Jan Duffy",
+    "why choose Dr. Duffy",
     "Warren Buffett real estate",
     "trusted real estate brand",
-    "BHHS Nevada Properties",
+    "Dr. Jan Duffy",
   ],
 });
 
@@ -51,20 +51,16 @@ export default function WhyBerkshireHathawayPage() {
         <div className="container mx-auto px-4">
           {/* Hero Section */}
           <div className="max-w-4xl mx-auto text-center mb-16">
-            <div className="inline-block bg-blue-100 text-blue-800 px-4 py-2 rounded-full text-sm font-semibold mb-6">
-              License S.0197614.LLC
-            </div>
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-slate-900 mb-6">
-              Why Choose Berkshire Hathaway HomeServices?
+              Why Choose Dr. Jan Duffy?
             </h1>
             <HeadingPhoto
               path="/why-berkshire-hathaway"
-              heading={"Why Choose Berkshire Hathaway HomeServices?"}
+              heading={"Why Choose Dr. Jan Duffy?"}
             />
 
             <p className="text-xl text-slate-600 leading-relaxed">
-              When you work with a{" "}
-              <strong>Berkshire Hathaway HomeServices</strong> agent, you're
+              When you work with <strong>Dr. Jan Duffy</strong>, you're
               backed by a name synonymous with trust, ethical standards, and
               financial strength—the same principles that built Warren Buffett's
               empire.
@@ -82,37 +78,6 @@ export default function WhyBerkshireHathawayPage() {
 
           <ProcessSteps path="/why-berkshire-hathaway" />
 
-          {/* Stats Section */}
-          <section className="mb-16 bg-blue-600 text-white rounded-2xl p-8 md:p-12 max-w-5xl mx-auto">
-            <h2 className="text-3xl font-bold mb-8 text-center">
-              50,000 agents, $138B 2024 volume — then ask what Suite 100 puts on
-              YOUR file
-            </h2>
-            <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
-              <div className="text-center">
-                <div className="text-4xl md:text-5xl font-bold mb-2">50K+</div>
-                <div className="text-blue-200">Agents Worldwide</div>
-              </div>
-              <div className="text-center">
-                <div className="text-4xl md:text-5xl font-bold mb-2">
-                  1,500+
-                </div>
-                <div className="text-blue-200">Offices Globally</div>
-              </div>
-              <div className="text-center">
-                <div className="text-4xl md:text-5xl font-bold mb-2">
-                  $138B+
-                </div>
-                <div className="text-blue-200">Sales Volume (2024)</div>
-              </div>
-              <div className="text-center">
-                <div className="text-4xl md:text-5xl font-bold mb-2">#1</div>
-                <div className="text-blue-200">
-                  Parent: Berkshire Hathaway Inc.
-                </div>
-              </div>
-            </div>
-          </section>
 
           <LeftoverBand path="/why-berkshire-hathaway" />
 
@@ -125,7 +90,7 @@ export default function WhyBerkshireHathawayPage() {
               sign
             </h2>
             <p className="text-xl text-slate-300 mb-8">
-              Call (702) 500-1955. License S.0197614.LLC. Suite 100 on W Lake
+              Call (702) 500-1955. Suite 100 on W Lake
               Mead Blvd.
             </p>
             <CtaActions variant="onDark" />

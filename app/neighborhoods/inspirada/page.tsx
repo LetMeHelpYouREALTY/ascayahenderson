@@ -18,11 +18,11 @@ import OfficeRealScout from "@/components/realscout/OfficeRealScout";
 
 export const metadata: Metadata = pageMetadata({
   path: "/neighborhoods/inspirada",
-  title: "Berkshire Hathaway HomeServices Inspirada | Henderson Resort Living",
+  title: "Dr. Jan Duffy Inspirada | Henderson Resort Living",
   description:
-    "Find Inspirada homes with Berkshire Hathaway HomeServices Nevada Properties. Dr. Jan Duffy specializes in Henderson's resort-style community. Median price $525K. Call (702) 500-1955.",
+    "Find Inspirada homes with Dr. Jan Duffy. Dr. Jan Duffy specializes in Henderson's resort-style community. Median price $525K. Call (702) 500-1955.",
   keywords: [
-    "Berkshire Hathaway HomeServices Inspirada",
+    "Dr. Jan Duffy Inspirada",
     "Inspirada homes for sale",
     "Inspirada Henderson",
     "Henderson master planned",
@@ -38,17 +38,17 @@ export default function InspiradaPage() {
           {/* Hero */}
           <div className="max-w-4xl mx-auto text-center mb-16">
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-slate-900 mb-6">
-              Berkshire Hathaway HomeServices Inspirada
+              Dr. Jan Duffy Inspirada
             </h1>
             <HeadingPhoto
               path="/neighborhoods/inspirada"
-              heading={"Berkshire Hathaway HomeServices Inspirada"}
+              heading={"Dr. Jan Duffy Inspirada"}
             />
 
             <p className="text-xl text-slate-600">
               2,000-acre Henderson campus, 30–40 minutes from Suite 100. $525K
               median, 23 DOM, 98 listings (January 2026) with{" "}
-              <strong>Berkshire Hathaway HomeServices</strong> and Dr. Jan
+              <strong>Dr. Jan Duffy</strong> and Dr. Jan
               Duffy.
             </p>
             <div className="mt-8">
@@ -121,13 +121,13 @@ export default function InspiradaPage() {
               </p>
               <p>
                 <strong>
-                  Berkshire Hathaway HomeServices Nevada Properties
+                  Dr. Jan Duffy
                 </strong>{" "}
                 provides free buyer representation on Inspirada new construction
                 purchases. With multiple builders offering homes in the
                 community, navigating options can be overwhelming. Dr. Jan Duffy
                 helps buyers compare builders, negotiate upgrades, and avoid
-                common new construction pitfalls. For resales, BHHS agents
+                common new construction pitfalls. For resales, Dr. Jan Duffy
                 identify properties where previous owners made smart upgrade
                 decisions, delivering better value than comparable new
                 construction.
@@ -155,7 +155,7 @@ export default function InspiradaPage() {
                 features offer compelling alternatives.
               </p>
               <p>
-                Choosing <strong>Berkshire Hathaway HomeServices</strong> for
+                Choosing <strong>Dr. Jan Duffy</strong> for
                 your Inspirada purchase means working with agents who understand
                 the community's various neighborhoods, which builders offer the
                 best quality, and which lots provide the best value. Dr. Jan

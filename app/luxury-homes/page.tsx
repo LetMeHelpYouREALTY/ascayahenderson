@@ -14,15 +14,15 @@ import OfficeRealScout from "@/components/realscout/OfficeRealScout";
 
 export const metadata: Metadata = pageMetadata({
   path: "/luxury-homes",
-  title: "Las Vegas Luxury Homes for Sale | Berkshire Hathaway HomeServices",
+  title: "Las Vegas Luxury Homes for Sale | Dr. Jan Duffy",
   description:
-    "Discover Las Vegas luxury real estate with Dr. Jan Duffy at Berkshire Hathaway HomeServices Nevada Properties. The Ridges, MacDonald Highlands, Summerlin, Southern Highlands. $1M+ homes. Call (702) 500-1955.",
+    "Discover Las Vegas luxury real estate with Dr. Jan Duffy. The Ridges, MacDonald Highlands, Summerlin, Southern Highlands. $1M+ homes. Call (702) 500-1955.",
   keywords: [
     "Las Vegas luxury homes",
     "The Ridges Las Vegas",
     "Summerlin luxury real estate",
     "Southern Highlands homes",
-    "Berkshire Hathaway luxury",
+    "Dr. Jan Duffy luxury",
     "million dollar homes Las Vegas",
     "MacDonald Highlands Henderson",
     "luxury real estate agent Las Vegas",
@@ -35,7 +35,7 @@ const luxurySchema = {
   name: "Las Vegas Luxury Home Services",
   provider: {
     "@type": "RealEstateAgent",
-    name: "Dr. Jan Duffy - Berkshire Hathaway HomeServices Nevada Properties",
+    name: "Dr. Jan Duffy",
     telephone: "+17025001955",
   },
   areaServed: "Las Vegas, Henderson, Summerlin luxury communities",
@@ -136,15 +136,15 @@ export default function LuxuryHomesPage() {
           {/* Hero */}
           <div className="max-w-4xl mx-auto text-center mb-16">
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-slate-900 mb-6">
-              List or Buy Las Vegas Luxury Homes With BHHS
+              List or Buy Las Vegas Luxury Homes With Dr. Duffy
             </h1>
             <HeadingPhoto
               path="/luxury-homes"
-              heading={"List or Buy Las Vegas Luxury Homes With BHHS"}
+              heading={"List or Buy Las Vegas Luxury Homes With Dr. Duffy"}
             />
 
             <p className="text-xl text-slate-600 mb-8">
-              <strong>Berkshire Hathaway HomeServices</strong> represents the
+              <strong>Dr. Jan Duffy</strong> represents the
               gold standard in luxury real estate. When you're buying or selling
               a $1M+ home, trust matters more than ever. Our global network,
               discretion, and expertise ensure your luxury transaction receives
@@ -281,7 +281,7 @@ export default function LuxuryHomesPage() {
             </h2>
             <p className="text-xl text-slate-300 mb-8">
               Whether buying or selling a luxury property, Dr. Jan Duffy
-              provides the expertise and Berkshire Hathaway prestige your
+              provides the expertise and Dr. Jan Duffy's prestige your
               transaction deserves. Confidential consultations available for
               discerning clients.
             </p>

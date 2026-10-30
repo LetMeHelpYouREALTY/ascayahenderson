@@ -21,9 +21,9 @@ import OfficeRealScout from "@/components/realscout/OfficeRealScout";
 
 export const metadata: Metadata = pageMetadata({
   path: "/investment-properties",
-  title: "Las Vegas Investment Properties | Berkshire Hathaway HomeServices",
+  title: "Las Vegas Investment Properties | Dr. Jan Duffy",
   description:
-    "Invest in Las Vegas real estate with Dr. Jan Duffy at Berkshire Hathaway HomeServices Nevada Properties. Rental properties, ROI analysis, 1031 exchanges. No state income tax. Call (702) 500-1955.",
+    "Invest in Las Vegas real estate with Dr. Jan Duffy. Rental properties, ROI analysis, 1031 exchanges. No state income tax. Call (702) 500-1955.",
   keywords: [
     "Las Vegas investment property",
     "Las Vegas rental property",
@@ -97,7 +97,7 @@ export default function InvestmentPropertiesPage() {
             <p className="text-xl text-slate-600">
               No state income tax, strong appreciation, and excellent rental
               yields. Discover why investors choose Las Vegas—with guidance from{" "}
-              <strong>Berkshire Hathaway HomeServices</strong>.
+              <strong>Dr. Jan Duffy</strong>.
             </p>
             <div className="mt-8">
               <CtaActions variant="onLight" />
@@ -438,7 +438,7 @@ export default function InvestmentPropertiesPage() {
               <p className="text-slate-600 text-sm">
                 Dr. Jan works with qualified intermediaries and can help
                 identify replacement properties within the 45-day window.
-                Berkshire Hathaway's nationwide network is invaluable for
+                Dr. Jan Duffy's nationwide network is invaluable for
                 clients exchanging into or out of Las Vegas.
               </p>
             </div>
@@ -451,8 +451,7 @@ export default function InvestmentPropertiesPage() {
               Bring the APN and rent roll to Suite 100 — (702) 500-1955
             </h2>
             <p className="text-xl text-slate-300 mb-8">
-              Get expert guidance on Las Vegas investment properties from Dr.
-              Jan Duffy and Berkshire Hathaway HomeServices.
+              Get expert guidance on Las Vegas investment properties from Dr. Jan Duffy.
             </p>
             <CtaActions variant="onDark" />
           </section>

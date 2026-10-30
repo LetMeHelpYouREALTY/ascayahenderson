@@ -29,19 +29,19 @@ export const metadata: Metadata = pageMetadata({
   title:
     "Solera at Anthem Homes for Sale | Intimate Guard-Gated 55+ Henderson | Dr. Jan Duffy",
   description:
-    "Solera at Anthem - guard-gated 55+ community in Henderson with about 1,200 homes. Homes from $380K-$650K. Lower HOA fees, staffed gate. Dr. Jan Duffy, BHHS. Call (702) 500-1955.",
+    "Solera at Anthem - guard-gated 55+ community in Henderson with about 1,200 homes. Homes from $380K-$650K. Lower HOA fees, staffed gate. Dr. Jan Duffy. Call (702) 500-1955.",
   keywords: [
     "Solera at Anthem homes for sale",
     "Solera Anthem Henderson",
     "guard-gated 55+ community Henderson",
     "Henderson 55+ communities",
     "Henderson 55+ communities",
-    "Berkshire Hathaway Solera Anthem",
+    "Dr. Jan Duffy Solera Anthem",
   ],
   openGraph: {
     title: "Solera at Anthem - Intimate Guard-Gated 55+ in Henderson",
     description:
-      "Close-knit community with a staffed gate. Lower HOA fees. From $380K. Dr. Jan Duffy, BHHS.",
+      "Close-knit community with a staffed gate. Lower HOA fees. From $380K. Dr. Jan Duffy.",
     type: "website",
   },
 });

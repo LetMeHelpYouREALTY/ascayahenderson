@@ -34,7 +34,7 @@ export const DOMAIN_CONFIGS: Record<string, DomainConfig> = {
     neighborhood: "Ascaya",
     tagline: "Ascaya Henderson Homes for Sale",
     description:
-      "Ascaya homes for sale in Henderson, Nevada. Guard-gated hillside community at One Ascaya Blvd. Dr. Jan Duffy, REALTOR® S.0197614.LLC.",
+      "Ascaya homes for sale in Henderson, Nevada. Guard-gated hillside community at One Ascaya Blvd. Dr. Jan Duffy, REALTOR®.",
     heroHeadline: "Ascaya Henderson Homes for Sale",
     heroSubheadline:
       "Guard-gated hillside homes at One Ascaya Blvd, about 20 minutes from the Las Vegas Strip. Call (702) 500-1955.",
@@ -138,13 +138,13 @@ export const DOMAIN_CONFIGS: Record<string, DomainConfig> = {
     neighborhood: "Las Vegas",
     tagline: "Dr. Jan Duffy — Client Reviews",
     description:
-      "Read what clients say about Dr. Jan Duffy, Las Vegas real estate agent at BHHS Nevada Properties.",
+      "Read what clients say about Dr. Jan Duffy, Las Vegas real estate agent.",
     heroHeadline: "What Clients Say About Dr. Jan",
     heroSubheadline:
-      "500+ clients helped. 30+ years of experience. Real results, real reviews.",
+      "500+ clients helped. Licensed since 2008 · 35 years in Las Vegas. Real results, real reviews.",
     keywords: [
       "Dr Jan Duffy reviews",
-      "BHHS Nevada Properties reviews",
+      "Dr. Jan Duffy reviews",
       "Las Vegas realtor reviews",
     ],
     pageType: "search",
@@ -159,11 +159,11 @@ export const DOMAIN_CONFIGS: Record<string, DomainConfig> = {
     neighborhood: "Las Vegas",
     tagline: "Dr. Jan Duffy — Las Vegas REALTOR®",
     description:
-      "Dr. Jan Duffy, Las Vegas REALTOR® at Berkshire Hathaway HomeServices Nevada Properties.",
+      "Dr. Jan Duffy, Las Vegas REALTOR®.",
     heroHeadline: "Dr. Jan Duffy | Las Vegas Real Estate Expert",
     heroSubheadline:
-      "30+ years, 500+ transactions, $127M+ in career sales. Your trusted Las Vegas REALTOR®.",
-    keywords: ["Dr Jan Duffy", "Las Vegas realtor", "BHHS Nevada Properties"],
+      "Licensed since 2008 · 35 years in Las Vegas. 500+ transactions, $127M+ in career sales. Your trusted Las Vegas REALTOR®.",
+    keywords: ["Dr Jan Duffy", "Las Vegas realtor", "Dr. Jan Duffy"],
     pageType: "search",
     realscoutAgentId: REALSCOUT_AGENT_ID,
     ctaBadge: "Las Vegas Expert",
@@ -199,7 +199,7 @@ export const DOMAIN_CONFIGS: Record<string, DomainConfig> = {
       "Las Vegas real estate tips, market data, and insider knowledge from Dr. Jan Duffy.",
     heroHeadline: "Good to Know — Las Vegas Real Estate",
     heroSubheadline:
-      "Market data, neighborhood guides, and insider tips from 30+ years in Las Vegas real estate.",
+      "Market data, neighborhood guides, and insider tips from 35 years in Las Vegas.",
     keywords: [
       "Las Vegas real estate tips",
       "Las Vegas market data",
@@ -210,7 +210,7 @@ export const DOMAIN_CONFIGS: Record<string, DomainConfig> = {
     ctaBadge: "Market Expert",
     ctaHeadline: "Get the Insider Knowledge",
     ctaSubheadline:
-      "30 years of Las Vegas real estate data at your fingertips.",
+      "Las Vegas real estate data at your fingertips.",
   },
   "heritageatstonebridgehomes.com": {
     domain: "heritageatstonebridgehomes.com",
@@ -262,8 +262,8 @@ export const DOMAIN_CONFIGS: Record<string, DomainConfig> = {
       "Ready to buy or sell in Las Vegas? Just call Dr. Jan Duffy at 702-500-1955.",
     heroHeadline: "Just Call Dr. Jan",
     heroSubheadline:
-      "30+ years. 500+ clients. No runaround — just expert Las Vegas real estate guidance.",
-    keywords: ["call Dr Jan Duffy", "Las Vegas realtor phone", "BHHS Nevada"],
+      "35 years in Las Vegas. 500+ clients. No runaround — just expert Las Vegas real estate guidance.",
+    keywords: ["call Dr Jan Duffy", "Las Vegas realtor phone", "Dr. Duffy Nevada"],
     pageType: "search",
     realscoutAgentId: REALSCOUT_AGENT_ID,
     ctaBadge: "Direct Access",
@@ -276,7 +276,7 @@ export const DOMAIN_CONFIGS: Record<string, DomainConfig> = {
     neighborhood: "Las Vegas",
     tagline: "Las Vegas Home Expert — Dr. Jan Duffy",
     description:
-      "Las Vegas home buying and selling expert. Dr. Jan Duffy, BHHS Nevada Properties.",
+      "Las Vegas home buying and selling expert. Dr. Jan Duffy.",
     heroHeadline: "Las Vegas Home Expert",
     heroSubheadline:
       "The most knowledgeable real estate professional in the Las Vegas Valley.",
@@ -289,7 +289,7 @@ export const DOMAIN_CONFIGS: Record<string, DomainConfig> = {
     realscoutAgentId: REALSCOUT_AGENT_ID,
     ctaBadge: "Las Vegas Expert",
     ctaHeadline: "Work With the Expert",
-    ctaSubheadline: "30+ years of Las Vegas market knowledge working for you.",
+    ctaSubheadline: "35 years in Las Vegas working for you.",
   },
   "lonemountainheights.com": {
     domain: "lonemountainheights.com",
@@ -443,7 +443,7 @@ export const DOMAIN_CONFIGS: Record<string, DomainConfig> = {
     neighborhood: "Las Vegas",
     tagline: "Las Vegas Real Estate",
     description:
-      "Las Vegas real estate services from Dr. Jan Duffy, BHHS Nevada Properties.",
+      "Las Vegas real estate services from Dr. Jan Duffy.",
     heroHeadline: "Las Vegas Homes for Sale",
     heroSubheadline:
       "Expert Las Vegas real estate guidance from Dr. Jan Duffy.",
@@ -456,7 +456,7 @@ export const DOMAIN_CONFIGS: Record<string, DomainConfig> = {
     realscoutAgentId: REALSCOUT_AGENT_ID,
     ctaBadge: "Las Vegas Expert",
     ctaHeadline: "Find Your Las Vegas Home",
-    ctaSubheadline: "30+ years of experience working for you.",
+    ctaSubheadline: "Licensed since 2008 · 35 years in Las Vegas.",
   },
   "searchforhomesinhenderson.com": {
     domain: "searchforhomesinhenderson.com",
@@ -484,7 +484,7 @@ export const DOMAIN_CONFIGS: Record<string, DomainConfig> = {
     neighborhood: "Las Vegas",
     tagline: "Search Las Vegas Homes for Sale",
     description:
-      "Search all Las Vegas homes for sale. MLS listings updated daily. Dr. Jan Duffy, BHHS.",
+      "Search all Las Vegas homes for sale. MLS listings updated daily. Dr. Jan Duffy.",
     heroHeadline: "Search Las Vegas Homes for Sale",
     heroSubheadline:
       "Every MLS listing in the Las Vegas Valley — updated daily.",
@@ -693,7 +693,7 @@ export const DOMAIN_CONFIGS: Record<string, DomainConfig> = {
     neighborhood: "Las Vegas",
     tagline: "Las Vegas Real Estate — Dr. Jan Duffy",
     description:
-      "Search Las Vegas homes for sale. Expert real estate guidance from Dr. Jan Duffy, Nevada REALTOR® S.0197614.LLC.",
+      "Search Las Vegas homes for sale. Expert real estate guidance from Dr. Jan Duffy, Nevada REALTOR®.",
     heroHeadline: "Buy or sell from 9406 W Lake Mead Blvd, Suite 100",
     heroSubheadline:
       "Dr. Jan Duffy sequences Summerlin 10–15 minutes, then Henderson 25–35. Call (702) 500-1955.",
@@ -704,7 +704,7 @@ export const DOMAIN_CONFIGS: Record<string, DomainConfig> = {
     ],
     pageType: "search",
     realscoutAgentId: REALSCOUT_AGENT_ID,
-    ctaBadge: "License S.0197614.LLC",
+    ctaBadge: "Licensed since 2008",
     ctaHeadline: "Book Suite 100, then the first two ZIP loops",
     ctaSubheadline: "Call or text (702) 500-1955. The Maps pin is this desk.",
   },
@@ -758,7 +758,7 @@ export const DOMAIN_CONFIGS: Record<string, DomainConfig> = {
       "Dr. Jan Duffy, Las Vegas REALTOR® — buy, sell, and invest across the Las Vegas Valley.",
     heroHeadline: "Dr. Jan Duffy | Las Vegas Real Estate",
     heroSubheadline:
-      "30+ years serving Las Vegas buyers and sellers from Suite 100 on Lake Mead Blvd.",
+      "35 years in Las Vegas, serving buyers and sellers from Suite 100 on Lake Mead Blvd.",
     keywords: ["Dr Jan Duffy", "Las Vegas realtor", "Dr Jan Duffy real estate"],
     pageType: "search",
     realscoutAgentId: REALSCOUT_AGENT_ID,
@@ -795,7 +795,7 @@ export const DEFAULT_CONFIG: DomainConfig = {
   neighborhood: "Las Vegas",
   tagline: "Las Vegas Homes for Sale",
   description:
-    "Search Las Vegas homes for sale. Expert real estate guidance from Dr. Jan Duffy, BHHS Nevada Properties.",
+    "Search Las Vegas homes for sale. Expert real estate guidance from Dr. Jan Duffy.",
   heroHeadline: "Buy or sell from 9406 W Lake Mead Blvd, Suite 100",
   heroSubheadline:
     "Dr. Jan Duffy sequences Summerlin 10–15 minutes, then Henderson 25–35. Call (702) 500-1955.",
@@ -806,7 +806,7 @@ export const DEFAULT_CONFIG: DomainConfig = {
   ],
   pageType: "search",
   realscoutAgentId: REALSCOUT_AGENT_ID,
-  ctaBadge: "License S.0197614.LLC",
+  ctaBadge: "Licensed since 2008",
   ctaHeadline: "Book Suite 100, then the first two ZIP loops",
   ctaSubheadline: "Call or text (702) 500-1955. The Maps pin is this desk.",
 };
@@ -830,6 +830,6 @@ export function getDomainConfig(hostname: string): DomainConfig {
     ...DEFAULT_CONFIG,
     domain: clean,
     tagline: `${clean} — Las Vegas Real Estate`,
-    description: `Las Vegas real estate guidance on ${clean} from Dr. Jan Duffy, REALTOR® S.0197614.LLC.`,
+    description: `Las Vegas real estate guidance on ${clean} from Dr. Jan Duffy, REALTOR®.`,
   };
 }

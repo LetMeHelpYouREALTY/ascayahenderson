@@ -25,22 +25,22 @@ import OfficeRealScout from "@/components/realscout/OfficeRealScout";
 
 export const metadata: Metadata = pageMetadata({
   path: "/google-business",
-  title: "Dr. Jan Duffy, REALTOR® Las Vegas | Berkshire Hathaway HomeServices",
+  title: "Dr. Jan Duffy, REALTOR® Las Vegas",
   description:
-    "Dr. Jan Duffy is a trusted Las Vegas REALTOR® with Berkshire Hathaway HomeServices Nevada Properties. Specializing in Summerlin, Henderson, 55+ communities, California relocation, and luxury homes. Call (702) 500-1955.",
+    "Dr. Jan Duffy is a trusted Las Vegas REALTOR®. Specializing in Summerlin, Henderson, 55+ communities, California relocation, and luxury homes. Call (702) 500-1955.",
   keywords: [
     "Dr. Jan Duffy realtor",
     "Las Vegas real estate agent",
-    "Berkshire Hathaway HomeServices Las Vegas",
+    "Dr. Jan Duffy",
     "Summerlin realtor",
     "Henderson real estate agent",
     "55+ communities Las Vegas",
     "California relocation Las Vegas",
   ],
   openGraph: {
-    title: "Dr. Jan Duffy - Berkshire Hathaway HomeServices Nevada Properties",
+    title: "Dr. Jan Duffy",
     description:
-      "Trusted Las Vegas REALTOR® serving since 2008. Summerlin, Henderson, luxury homes, 55+ communities.",
+      "Trusted Las Vegas REALTOR® licensed since 2008 · 35 years in Las Vegas. Summerlin, Henderson, luxury homes, 55+ communities.",
     type: "profile",
   },
 });
@@ -71,7 +71,7 @@ export default function GoogleBusinessPage() {
                   />
 
                   <p className="text-xl text-blue-200 mb-6">
-                    REALTOR® | License {businessInfo.license}
+                    REALTOR® | Licensed since 2008 · 35 years in Las Vegas
                   </p>
 
                   <div className="space-y-3">
@@ -145,8 +145,8 @@ export default function GoogleBusinessPage() {
                       />
                     ))}
                   </div>
-                  <p className="text-3xl font-bold mb-2">4.9 / 5.0</p>
-                  <p className="text-blue-200 mb-6">200+ Client Reviews</p>
+                  <p className="text-3xl font-bold mb-2">5.0★</p>
+                  <p className="text-blue-200 mb-6">Realtor.com (50 reviews)</p>
                   <CtaActions variant="onDark" />
                 </div>
               </div>
@@ -215,12 +215,12 @@ export default function GoogleBusinessPage() {
             />
             <p className="text-slate-600 text-center max-w-3xl mx-auto mb-6">
               The embed, Get Directions, and View Google Reviews buttons are the
-              GBP actions. Call or text (702) 500-1955. License S.0197614.LLC.
-              Berkshire Hathaway HomeServices Nevada Properties.
+              GBP actions. Call or text (702) 500-1955.
+              Dr. Jan Duffy.
             </p>
             <div className="rounded-xl overflow-hidden border border-slate-200 mb-6">
               <iframe
-                title="Map to Berkshire Hathaway HomeServices Nevada Properties, 9406 W Lake Mead Blvd"
+                title="Map to Dr. Jan Duffy, 9406 W Lake Mead Blvd"
                 src={maps.embedSrc}
                 className="w-full h-72"
                 loading="lazy"

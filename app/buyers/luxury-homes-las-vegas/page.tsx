@@ -13,7 +13,7 @@ import OfficeRealScout from "@/components/realscout/OfficeRealScout";
 
 export const metadata: Metadata = pageMetadata({
   path: "/buyers/luxury-homes-las-vegas",
-  title: "Luxury Homes Las Vegas | Berkshire Hathaway HomeServices",
+  title: "Luxury Homes Las Vegas | Dr. Jan Duffy",
   description:
     "Las Vegas luxury real estate from $1.2M to $10M+. Guard-gated estates, Strip penthouses, and custom homes. Dr. Jan Duffy provides discrete, expert representation. Call (702) 500-1955.",
   keywords: [
@@ -22,7 +22,7 @@ export const metadata: Metadata = pageMetadata({
     "MacDonald Highlands",
     "luxury real estate Henderson",
     "guard gated communities Las Vegas",
-    "Berkshire Hathaway luxury homes",
+    "Dr. Jan Duffy luxury homes",
   ],
 });
 
@@ -109,7 +109,7 @@ export default function LuxuryHomesPage() {
                 <p className="text-slate-700 mb-4">
                   Luxury transactions require a level of discretion that most
                   agents can't provide. Dr. Jan Duffy and{" "}
-                  <strong>Berkshire Hathaway HomeServices</strong> understand
+                  <strong>Dr. Jan Duffy</strong> understand
                   that privacy isn't a luxury—it's a requirement.
                 </p>
                 <ul className="space-y-3">

@@ -25,11 +25,11 @@ import OfficeRealScout from "@/components/realscout/OfficeRealScout";
 export const metadata: Metadata = pageMetadata({
   path: "/neighborhoods/summerlin",
   title:
-    "Berkshire Hathaway HomeServices Summerlin | Las Vegas Luxury Real Estate",
+    "Dr. Jan Duffy Summerlin | Las Vegas Luxury Real Estate",
   description:
-    "Find Summerlin homes with Berkshire Hathaway HomeServices Nevada Properties. Downtown Summerlin and Red Rock trailheads are 10–15 minutes from Suite 100. January 2026 median $625K. Call (702) 500-1955.",
+    "Find Summerlin homes with Dr. Jan Duffy. Downtown Summerlin and Red Rock trailheads are 10–15 minutes from Suite 100. January 2026 median $625K. Call (702) 500-1955.",
   keywords: [
-    "Berkshire Hathaway HomeServices Summerlin",
+    "Dr. Jan Duffy Summerlin",
     "Summerlin homes for sale",
     "Summerlin real estate agent",
     "Summerlin Las Vegas",
@@ -68,17 +68,17 @@ export default function SummerlinPage() {
           {/* Hero */}
           <div className="max-w-4xl mx-auto text-center mb-16">
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-slate-900 mb-6">
-              Berkshire Hathaway HomeServices Summerlin
+              Dr. Jan Duffy Summerlin
             </h1>
             <HeadingPhoto
               path="/neighborhoods/summerlin"
-              heading={"Berkshire Hathaway HomeServices Summerlin"}
+              heading={"Dr. Jan Duffy Summerlin"}
             />
 
             <p className="text-xl text-slate-600">
               Downtown Summerlin and Red Rock trailheads share a 10–15 minute
               clock from Suite 100 with Dr. Jan Duffy at{" "}
-              <strong>Berkshire Hathaway HomeServices</strong> Nevada
+              <strong>Dr. Jan Duffy</strong> Nevada
               Properties.
             </p>
             <div className="mt-8">
@@ -139,7 +139,7 @@ export default function SummerlinPage() {
                 When homebuyers compare Las Vegas master-planned communities,{" "}
                 <strong>Summerlin</strong> is the Howard Hughes 22,500-acre
                 west-valley plat. As a{" "}
-                <strong>Berkshire Hathaway HomeServices</strong>
+                <strong>Dr. Jan Duffy</strong>
                 agent specializing in Summerlin real estate, Dr. Jan Duffy times
                 village tours from Suite 100 so you compare The Trails, Downtown
                 Summerlin, and Red Rock trailheads on the same clock.
@@ -155,13 +155,13 @@ export default function SummerlinPage() {
               </p>
               <p>
                 <strong>
-                  Berkshire Hathaway HomeServices Nevada Properties
+                  Dr. Jan Duffy
                 </strong>{" "}
                 has deep roots in Summerlin, and our agents understand the
                 nuances of each village—from the parks and recreation amenities
                 of The Paseos parks to The Ridges estate streets. Affinity condo
                 square footage and Red Rock Country Club custom lots are
-                separate files. BHHS maps both from Suite 100.
+                separate files. Dr. Duffy maps both from Suite 100.
               </p>
 
               <CommunityHighlights path="/neighborhoods/summerlin" />
@@ -183,10 +183,10 @@ export default function SummerlinPage() {
                 proceeds — with no Nevada state income tax.
               </p>
               <p>
-                Working with a <strong>Berkshire Hathaway HomeServices</strong>{" "}
+                Working with <strong>Dr. Jan Duffy</strong>{" "}
                 agent gives you access to listings before they hit the market
                 and offer math written at 9406 W Lake Mead Blvd. Dr. Jan Duffy
-                has been serving Summerlin since 2008 — which streets have
+                is licensed since 2008 · 35 years in Las Vegas — which streets have
                 mountain views and which builder rows we register first are desk
                 facts, not a search screenshot.
               </p>

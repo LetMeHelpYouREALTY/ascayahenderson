@@ -17,9 +17,9 @@ import OfficeRealScout from "@/components/realscout/OfficeRealScout";
 
 export const metadata: Metadata = pageMetadata({
   path: "/neighborhoods",
-  title: "Las Vegas Neighborhoods | Berkshire Hathaway HomeServices",
+  title: "Las Vegas Neighborhoods | Dr. Jan Duffy",
   description:
-    "Explore Las Vegas and Henderson neighborhoods with Dr. Jan Duffy at Berkshire Hathaway HomeServices Nevada Properties. Summerlin, Henderson, The Ridges, Southern Highlands & more.",
+    "Explore Las Vegas and Henderson neighborhoods with Dr. Jan Duffy. Summerlin, Henderson, The Ridges, Southern Highlands & more.",
   keywords: [
     "Las Vegas neighborhoods",
     "Henderson communities",
@@ -194,7 +194,7 @@ export default function NeighborhoodsPage() {
 
             <p className="text-xl text-slate-600">
               Compare Las Vegas and Henderson neighborhoods with Dr. Jan Duffy,
-              your <strong>Berkshire Hathaway HomeServices</strong> neighborhood
+              your <strong>Dr. Jan Duffy</strong> neighborhood
               expert
             </p>
             <div className="mt-8">

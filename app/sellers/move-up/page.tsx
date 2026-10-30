@@ -21,7 +21,7 @@ import OfficeRealScout from "@/components/realscout/OfficeRealScout";
 
 export const metadata: Metadata = pageMetadata({
   path: "/sellers/move-up",
-  title: "Move-Up Sellers Las Vegas | Berkshire Hathaway HomeServices",
+  title: "Move-Up Sellers Las Vegas | Dr. Jan Duffy",
   description:
     "Ready for your next chapter? Dr. Jan Duffy helps Las Vegas homeowners leverage equity into their dream home. Sell and buy seamlessly. Call (702) 500-1955.",
   keywords: [
@@ -29,7 +29,7 @@ export const metadata: Metadata = pageMetadata({
     "sell and buy Las Vegas",
     "home equity Las Vegas",
     "upgrade home Las Vegas",
-    "Berkshire Hathaway HomeServices seller",
+    "Dr. Jan Duffy seller",
   ],
 });
 
@@ -193,7 +193,7 @@ export default function MoveUpSellerPage() {
                 The biggest concern move-up buyers have is timing. What happens
                 if you sell before finding your next home? What if you find your
                 dream home but can't sell in time?
-                <strong> Berkshire Hathaway HomeServices</strong> agents like
+                <strong> Dr. Jan Duffy</strong> agents like
                 Dr. Jan Duffy have strategies for every scenario, ensuring you
                 never end up homeless or paying two mortgages unnecessarily.
               </p>

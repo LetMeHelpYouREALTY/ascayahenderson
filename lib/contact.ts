@@ -1,7 +1,7 @@
 /**
  * Single source of truth for NAP, phones, hours, maps, and social.
  * CTA line: (702) 500-1955 — client-facing call buttons.
- * Main line: (702) 500-1955 (non-GBP site). 702-222-1964 is client email/text only.
+ * Main line: (702) 500-1955 (non-GBP site). The legacy client email/text line is not published.
  */
 
 /** Canonical production origin for heyberkshire (www, not apex). */
@@ -64,7 +64,7 @@ export const officePhone = {
 } as const;
 
 export const nap = {
-  name: "Dr. Jan Duffy - Berkshire Hathaway HomeServices Nevada Properties",
+  name: "Dr. Jan Duffy",
   shortName: "Dr. Jan Duffy",
   brokerage: "Berkshire Hathaway HomeServices Nevada Properties",
   license: "S.0197614.LLC",
