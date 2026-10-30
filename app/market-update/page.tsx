@@ -13,11 +13,11 @@ import OfficeRealScout from "@/components/realscout/OfficeRealScout";
 export const metadata: Metadata = pageMetadata({
   path: "/market-update",
   title:
-    "Berkshire Hathaway HomeServices Las Vegas Market Update | January 2026",
+    "Dr. Jan Duffy Market Update | January 2026",
   description:
-    "Weekly Las Vegas real estate market update from Berkshire Hathaway HomeServices Nevada Properties. Get the latest stats, notable sales, and expert analysis from Dr. Jan Duffy. Call (702) 500-1955.",
+    "Weekly Las Vegas real estate market update from Dr. Jan Duffy. Get the latest stats, notable sales, and expert analysis from Dr. Jan Duffy. Call (702) 500-1955.",
   keywords: [
-    "Berkshire Hathaway HomeServices Las Vegas market update",
+    "Dr. Jan Duffy market update",
     "Las Vegas real estate market",
     "Las Vegas housing market 2026",
     "Henderson real estate market",
@@ -30,7 +30,7 @@ const articleSchema = {
   "@type": "NewsArticle",
   headline: "Las Vegas Real Estate Market Update - Week of January 20, 2026",
   description:
-    "Weekly market analysis from Berkshire Hathaway HomeServices Nevada Properties covering Las Vegas Valley real estate trends, statistics, and expert insights.",
+    "Weekly market analysis from Dr. Jan Duffy covering Las Vegas Valley real estate trends, statistics, and expert insights.",
   datePublished: "2026-01-20",
   dateModified: "2026-01-24",
   author: {
@@ -39,12 +39,12 @@ const articleSchema = {
     jobTitle: "REALTOR®",
     worksFor: {
       "@type": "RealEstateAgent",
-      name: "Berkshire Hathaway HomeServices Nevada Properties",
+      name: "Dr. Jan Duffy",
     },
   },
   publisher: {
     "@type": "Organization",
-    name: "Berkshire Hathaway HomeServices Nevada Properties",
+    name: "Dr. Jan Duffy",
     url: absoluteUrl("/"),
   },
 };
@@ -65,21 +65,21 @@ export default function MarketUpdatePage() {
               Week of January 20, 2026
             </div>
             <h1 className="text-4xl md:text-5xl font-bold text-slate-900 mb-4">
-              Berkshire Hathaway HomeServices Las Vegas Market Update
+              Dr. Jan Duffy Market Update
             </h1>
             <HeadingPhoto
               path="/market-update"
               heading={
-                "Berkshire Hathaway HomeServices Las Vegas Market Update"
+                "Dr. Jan Duffy Market Update"
               }
             />
 
             <p className="text-xl text-slate-600">
               Your weekly insider report on Las Vegas Valley real estate from{" "}
-              <strong>Berkshire Hathaway HomeServices Nevada Properties</strong>
+              <strong>Dr. Jan Duffy</strong>
             </p>
             <div className="flex items-center justify-center mt-6 text-slate-500 text-sm">
-              <span>By Dr. Jan Duffy, REALTOR® | BHHS Nevada Properties</span>
+              <span>By Dr. Jan Duffy, REALTOR®</span>
             </div>
             <div className="mt-8">
               <CtaActions variant="onLight" />

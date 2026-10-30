@@ -22,7 +22,7 @@ import OfficeRealScout from "@/components/realscout/OfficeRealScout";
 
 export const metadata: Metadata = pageMetadata({
   path: "/sellers/downsizing",
-  title: "Downsizing in Las Vegas | Berkshire Hathaway HomeServices",
+  title: "Downsizing in Las Vegas | Dr. Jan Duffy",
   description:
     "Ready to simplify? Dr. Jan Duffy helps Las Vegas homeowners extract equity and transition to low-maintenance living. 55+ communities, condos, and more. Call (702) 500-1955.",
   keywords: [
@@ -30,7 +30,7 @@ export const metadata: Metadata = pageMetadata({
     "sell large home Las Vegas",
     "55 plus communities Las Vegas",
     "downsizer Las Vegas",
-    "Berkshire Hathaway HomeServices downsizing",
+    "Dr. Jan Duffy downsizing",
   ],
 });
 

@@ -19,11 +19,11 @@ import OfficeRealScout from "@/components/realscout/OfficeRealScout";
 export const metadata: Metadata = pageMetadata({
   path: "/neighborhoods/southern-highlands",
   title:
-    "Berkshire Hathaway HomeServices Southern Highlands | Las Vegas Golf Community",
+    "Dr. Jan Duffy Southern Highlands | Las Vegas Golf Community",
   description:
-    "Find Southern Highlands homes with Berkshire Hathaway HomeServices Nevada Properties. I-15 south, 25–35 minutes from Suite 100. January 2026 median $750K. Call (702) 500-1955.",
+    "Find Southern Highlands homes with Dr. Jan Duffy. I-15 south, 25–35 minutes from Suite 100. January 2026 median $750K. Call (702) 500-1955.",
   keywords: [
-    "Berkshire Hathaway HomeServices Southern Highlands",
+    "Dr. Jan Duffy Southern Highlands",
     "Southern Highlands homes for sale",
     "Southern Highlands golf",
     "Las Vegas golf community",
@@ -39,17 +39,17 @@ export default function SouthernHighlandsPage() {
           {/* Hero */}
           <div className="max-w-4xl mx-auto text-center mb-16">
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-slate-900 mb-6">
-              Berkshire Hathaway HomeServices Southern Highlands
+              Dr. Jan Duffy Southern Highlands
             </h1>
             <HeadingPhoto
               path="/neighborhoods/southern-highlands"
-              heading={"Berkshire Hathaway HomeServices Southern Highlands"}
+              heading={"Dr. Jan Duffy Southern Highlands"}
             />
 
             <p className="text-xl text-slate-600">
               Robert Trent Jones Jr. scorecard 74.1 / 140, then 25–35 minutes
               via I-15 south from Suite 100.{" "}
-              <strong>Berkshire Hathaway HomeServices</strong> and Dr. Jan
+              <strong>Dr. Jan Duffy</strong> and Dr. Jan
               Duffy.
             </p>
             <div className="mt-8">
@@ -112,7 +112,7 @@ export default function SouthernHighlandsPage() {
                 community centered around an award-winning championship golf
                 course. For buyers seeking luxury living with convenient access
                 to the Strip, airport, and I-15 corridor,{" "}
-                <strong>Berkshire Hathaway HomeServices</strong> considers
+                <strong>Dr. Jan Duffy</strong> considers
                 Southern Highlands among Las Vegas's finest residential options.
               </p>
               <p>
@@ -127,7 +127,7 @@ export default function SouthernHighlandsPage() {
               </p>
               <p>
                 <strong>
-                  Berkshire Hathaway HomeServices Nevada Properties
+                  Dr. Jan Duffy
                 </strong>{" "}
                 has represented buyers and sellers in Southern Highlands for
                 over two decades. Dr. Jan Duffy understands the community's
@@ -135,7 +135,7 @@ export default function SouthernHighlandsPage() {
                 the golf course to the residential neighborhoods with parks and
                 trails in the community's newer phases. Whether you're seeking a
                 golf course lot with Strip views or a 4-bedroom home near Elise
-                Wolff Elementary, BHHS has the local expertise to guide your
+                Wolff Elementary, Dr. Duffy has the local expertise to guide your
                 search.
               </p>
 
@@ -161,12 +161,12 @@ export default function SouthernHighlandsPage() {
                 course estates.
               </p>
               <p>
-                Choosing <strong>Berkshire Hathaway HomeServices</strong> for
+                Choosing <strong>Dr. Jan Duffy</strong> for
                 Southern Highlands means working with agents who understand the
                 community's unique value proposition. Dr. Jan Duffy can explain
                 the differences between various sections, which lots offer the
                 best views, and how HOA fees vary across the community. This
-                knowledge, combined with the BHHS reputation for excellence,
+                knowledge, combined with Dr. Jan Duffy's reputation for excellence,
                 ensures Southern Highlands buyers and sellers receive
                 exceptional service.
               </p>

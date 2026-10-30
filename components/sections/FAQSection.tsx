@@ -24,7 +24,7 @@ export const defaultFaqs: FAQ[] = [
   {
     question: "What makes you different from other real estate agents?",
     answer:
-      "Serving Las Vegas since 2008 with 500+ successful transactions, Dr. Jan Duffy combines local market knowledge with Berkshire Hathaway HomeServices resources and direct phone access.",
+      "Licensed since 2008 · 35 years in Las Vegas, with 500+ successful transactions, Dr. Jan Duffy combines local market knowledge with brokerage resources and direct phone access.",
   },
   {
     question: "Can you help with investment properties?",

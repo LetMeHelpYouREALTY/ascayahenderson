@@ -24,16 +24,16 @@ import OfficeRealScout from "@/components/realscout/OfficeRealScout";
 
 export const metadata: Metadata = pageMetadata({
   path: "/buyers/first-time-buyers",
-  title: "First-Time Home Buyers Las Vegas | Berkshire Hathaway HomeServices",
+  title: "First-Time Home Buyers Las Vegas | Dr. Jan Duffy",
   description:
-    "First-time buyer in Las Vegas? Down payment assistance, builder incentives, and expert guidance from Dr. Jan Duffy at Berkshire Hathaway HomeServices. Call (702) 500-1955.",
+    "First-time buyer in Las Vegas? Down payment assistance, builder incentives, and expert guidance from Dr. Jan Duffy. Call (702) 500-1955.",
   keywords: [
     "first time home buyer Las Vegas",
     "first time buyer Nevada",
     "down payment assistance Las Vegas",
     "FHA loans Las Vegas",
     "VA loans Las Vegas",
-    "Berkshire Hathaway HomeServices first time buyer",
+    "Dr. Jan Duffy first time buyer",
   ],
 });
 

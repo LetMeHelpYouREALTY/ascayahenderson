@@ -51,7 +51,7 @@ export const metadata: Metadata = pageMetadata({
   openGraph: {
     title: "Find Your Perfect 55+ Community in Las Vegas | Dr. Jan Duffy",
     description:
-      "Sun City, Del Webb, Heritage at Stonebridge & more—Dr. Duffy specializes in active adult living. Berkshire Hathaway HomeServices Nevada Properties.",
+      "Sun City, Del Webb, Heritage at Stonebridge & more—Dr. Duffy specializes in active adult living.",
     type: "website",
   },
 });
@@ -59,7 +59,7 @@ export const metadata: Metadata = pageMetadata({
 const localBusinessSchema = {
   "@context": "https://schema.org",
   "@type": "RealEstateAgent",
-  name: "Dr. Jan Duffy - Berkshire Hathaway HomeServices Nevada Properties",
+  name: "Dr. Jan Duffy",
   description:
     "55+ community specialist helping active adults find their perfect Las Vegas retirement home",
   telephone: "(702) 500-1955",
@@ -416,7 +416,7 @@ export default function FiftyFiveCommunitiesPage() {
           <ExpertQuote path="/55-plus-communities" />
           <FiftyFiveFaqs path="/55-plus-communities" />
 
-          {/* Why BHHS */}
+          {/* Why Dr. Duffy */}
           <section
             className="mb-16 max-w-4xl mx-auto"
             data-fifty-five-why="/55-plus-communities"
@@ -451,7 +451,7 @@ export default function FiftyFiveCommunitiesPage() {
                     Suite 100
                   </h3>
                   <p className="text-slate-600 text-sm">
-                    Virtual tours and BHHS destination intros start at 9406 W
+                    Virtual tours and Dr. Duffy destination intros start at 9406 W
                     Lake Mead Blvd. We do not stack a Summerlin 55+ morning with
                     a Henderson 55+ drive.
                   </p>
@@ -466,7 +466,7 @@ export default function FiftyFiveCommunitiesPage() {
                     Occupancy rules in writing before any clubhouse
                   </h3>
                   <p className="text-slate-600 text-sm">
-                    The Berkshire Hathaway name is on the paperwork at 9406 W
+                    Dr. Jan Duffy's name is on the paperwork at 9406 W
                     Lake Mead Blvd, Suite 100. We review age-qualification and
                     guest rules before the drive.
                   </p>
@@ -503,7 +503,7 @@ export default function FiftyFiveCommunitiesPage() {
             </p>
             <CtaActions variant="onDark" />
             <p className="mt-4 text-blue-300 text-sm">
-              Berkshire Hathaway HomeServices Nevada Properties · 9406 W Lake
+              Dr. Jan Duffy · 9406 W Lake
               Mead Blvd, Suite 100, Las Vegas, NV 89134
             </p>
           </section>

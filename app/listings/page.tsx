@@ -22,9 +22,9 @@ import OfficeRealScout from "@/components/realscout/OfficeRealScout";
 
 export const metadata: Metadata = pageMetadata({
   title:
-    "Las Vegas Homes for Sale | MLS Property Search | Berkshire Hathaway HomeServices",
+    "Las Vegas Homes for Sale | MLS Property Search | Dr. Jan Duffy",
   description:
-    "Browse all Las Vegas and Henderson homes for sale with live MLS listings. Search by neighborhood, price, and features. Dr. Jan Duffy, Berkshire Hathaway HomeServices. Call (702) 500-1955.",
+    "Browse all Las Vegas and Henderson homes for sale with live MLS listings. Search by neighborhood, price, and features. Dr. Jan Duffy. Call (702) 500-1955.",
   path: "/listings",
   keywords: [
     "Las Vegas homes for sale",
@@ -32,7 +32,7 @@ export const metadata: Metadata = pageMetadata({
     "MLS listings Las Vegas",
     "Summerlin homes",
     "houses for sale Las Vegas",
-    "Berkshire Hathaway listings",
+    "Dr. Jan Duffy listings",
   ],
 });
 
@@ -44,7 +44,7 @@ const listingsSchema = {
     "Live MLS property listings for Las Vegas, Henderson, and Summerlin homes for sale",
   provider: {
     "@type": "RealEstateAgent",
-    name: "Dr. Jan Duffy - Berkshire Hathaway HomeServices Nevada Properties",
+    name: "Dr. Jan Duffy",
     telephone: "+17025001955",
   },
   areaServed: [
@@ -125,7 +125,7 @@ export default function ListingsPage() {
               Search thousands of Las Vegas, Henderson, and Summerlin properties
               with live MLS listings updated every 15 minutes. Find your dream
               home with expert guidance from Dr. Jan Duffy at{" "}
-              <strong>Berkshire Hathaway HomeServices</strong>.
+              <strong>Dr. Jan Duffy</strong>.
             </p>
             <div className="flex flex-wrap justify-center gap-4 text-sm text-slate-500 mb-8">
               <span className="flex items-center">
@@ -242,7 +242,7 @@ export default function ListingsPage() {
                   Off-market windows from the desk
                 </h3>
                 <p className="text-slate-400 text-sm">
-                  Pocket listings come through the BHHS network. We do not text
+                  Pocket listings come through Dr. Jan Duffy's network. We do not text
                   addresses on unsecured threads.
                 </p>
               </div>
@@ -325,8 +325,7 @@ export default function ListingsPage() {
             </h2>
             <p className="text-xl text-blue-100 mb-8">
               Contact Dr. Jan Duffy for personalized guidance, off-market
-              listings, and expert representation backed by Berkshire Hathaway
-              HomeServices. Free buyer consultations available—the seller pays
+              listings, and expert representation backed by Dr. Jan Duffy. Free buyer consultations available—the seller pays
               the commission.
             </p>
             <CtaActions variant="onDark" />

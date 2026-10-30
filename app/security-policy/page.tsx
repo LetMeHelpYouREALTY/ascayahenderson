@@ -217,7 +217,7 @@ export default function SecurityPolicyPage() {
                 <strong>Dr. Jan Duffy</strong>
               </p>
               <p className="mb-2">
-                Berkshire Hathaway HomeServices Nevada Properties
+                Dr. Jan Duffy
               </p>
               <p className="mb-2">
                 Email:{" "}
@@ -235,8 +235,7 @@ export default function SecurityPolicyPage() {
                 </a>
               </p>
               <address className="not-italic mt-4 text-gray-700">
-                Dr. Jan Duffy — Berkshire Hathaway HomeServices Nevada
-                Properties
+                Dr. Jan Duffy
                 <br />
                 9406 W Lake Mead Blvd, Suite 100, Las Vegas, NV 89134
               </address>

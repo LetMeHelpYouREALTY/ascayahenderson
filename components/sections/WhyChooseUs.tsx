@@ -8,9 +8,9 @@ import { photos } from "@/lib/media";
 const features = [
   {
     icon: Shield,
-    title: "Berkshire Hathaway Backing",
+    title: "Dr. Jan Duffy Backing",
     description:
-      "The only real estate brand backed by Berkshire Hathaway Inc. Integrity you can verify.",
+      "Integrity you can verify.",
   },
   {
     icon: TrendingUp,
@@ -69,8 +69,7 @@ export default function WhyChooseUs() {
             }
           />
           <p className="text-xl text-slate-600 max-w-3xl mx-auto">
-            Appointments start at Berkshire Hathaway HomeServices Nevada
-            Properties, Suite 100. We sequence the tour from this desk — not a
+            Appointments start at Dr. Jan Duffy, Suite 100. We sequence the tour from this desk — not a
             call center.
           </p>
         </div>

@@ -23,7 +23,7 @@ import OfficeRealScout from "@/components/realscout/OfficeRealScout";
 
 export const metadata: Metadata = pageMetadata({
   path: "/55-plus-communities/del-webb-lake-las-vegas",
-  title: "Del Webb at Lake Las Vegas Homes | Berkshire Hathaway HomeServices",
+  title: "Del Webb at Lake Las Vegas Homes | Dr. Jan Duffy",
   description:
     "Lakefront 55+ living at Del Webb Lake Las Vegas. Homes from $400K-$900K. Resort amenities, stunning lake and mountain views. Dr. Jan Duffy. Call (702) 500-1955.",
   keywords: [
@@ -31,7 +31,7 @@ export const metadata: Metadata = pageMetadata({
     "Lake Las Vegas 55 plus",
     "Del Webb homes Henderson",
     "lakefront retirement community",
-    "Berkshire Hathaway Del Webb",
+    "Dr. Jan Duffy Del Webb",
   ],
 });
 
@@ -97,7 +97,7 @@ export default function DelWebbLakeLasVegasPage() {
               </p>
               <p>
                 <strong>
-                  Berkshire Hathaway HomeServices Nevada Properties
+                  Dr. Jan Duffy
                 </strong>{" "}
                 helps buyers navigate Del Webb's various floor plans and lot
                 positions. Dr. Jan Duffy provides guidance on which phases offer

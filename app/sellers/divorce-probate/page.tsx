@@ -23,7 +23,7 @@ import OfficeRealScout from "@/components/realscout/OfficeRealScout";
 export const metadata: Metadata = pageMetadata({
   path: "/sellers/divorce-probate",
   title:
-    "Divorce & Probate Home Sales Las Vegas | Berkshire Hathaway HomeServices",
+    "Divorce & Probate Home Sales Las Vegas | Dr. Jan Duffy",
   description:
     "Sensitive real estate situations handled with discretion. Dr. Jan Duffy helps with divorce sales, probate, estate liquidation, and court-ordered sales. Call (702) 500-1955.",
   keywords: [
@@ -31,7 +31,7 @@ export const metadata: Metadata = pageMetadata({
     "probate real estate Las Vegas",
     "estate sale Las Vegas",
     "court ordered sale Nevada",
-    "Berkshire Hathaway HomeServices divorce",
+    "Dr. Jan Duffy divorce",
   ],
 });
 
@@ -335,7 +335,7 @@ export default function DivorceProbatePage() {
 
           <LeftoverBand path="/sellers/divorce-probate" slot={4} />
 
-          {/* Why BHHS Matters */}
+          {/* Why Dr. Duffy Matters */}
           <section className="mb-16 max-w-5xl mx-auto">
             <div className="grid md:grid-cols-3 gap-6">
               <div className="bg-white border border-slate-200 rounded-xl p-6 text-center">
@@ -344,7 +344,7 @@ export default function DivorceProbatePage() {
                   Credibility & Trust
                 </h3>
                 <p className="text-slate-600 text-sm">
-                  The Berkshire Hathaway name carries weight with attorneys,
+                  Dr. Jan Duffy's name carries weight with attorneys,
                   judges, and opposing parties. Our valuations and processes are
                   respected because of the brand's reputation for integrity.
                 </p>
@@ -355,7 +355,7 @@ export default function DivorceProbatePage() {
                   Professional Standards
                 </h3>
                 <p className="text-slate-600 text-sm">
-                  BHHS agents follow strict ethical guidelines and documentation
+                  Dr. Jan Duffy follows strict ethical guidelines and documentation
                   standards. This protects all parties and provides a defensible
                   paper trail for legal proceedings.
                 </p>

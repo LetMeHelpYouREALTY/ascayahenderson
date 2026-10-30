@@ -76,14 +76,14 @@ export default async function Home() {
               <span>Transactions Closed</span>
             </div>
             <div className="flex items-center gap-2">
-              <span className="font-semibold text-white">Since 2008</span>
-              <span>Las Vegas Experience</span>
+              <span className="font-semibold text-white">Licensed since 2008</span>
+              <span>35 years in Las Vegas</span>
             </div>
             <div className="flex items-center gap-2">
               <span className="font-semibold text-white tabular-nums">
-                4.9★
+                5.0★
               </span>
-              <span>Client Rating</span>
+              <span>Realtor.com · 50 reviews</span>
             </div>
           </div>
           <div className="mt-8">

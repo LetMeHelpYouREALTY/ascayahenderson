@@ -26,13 +26,13 @@ import OfficeRealScout from "@/components/realscout/OfficeRealScout";
 
 export const metadata: Metadata = pageMetadata({
   path: "/sellers",
-  title: "Sell Your Las Vegas Home | Berkshire Hathaway HomeServices",
+  title: "Sell Your Las Vegas Home | Dr. Jan Duffy",
   description:
-    "Sell your Las Vegas or Henderson home with Dr. Jan Duffy at Berkshire Hathaway HomeServices Nevada Properties. Free home valuation. World-class marketing priced to recent comps. Call (702) 500-1955.",
+    "Sell your Las Vegas or Henderson home with Dr. Jan Duffy. Free home valuation. World-class marketing priced to recent comps. Call (702) 500-1955.",
   keywords: [
     "sell home Las Vegas",
     "Las Vegas listing agent",
-    "Berkshire Hathaway sell house",
+    "Dr. Jan Duffy sell house",
     "Henderson home selling",
     "what is my home worth Las Vegas",
     "Las Vegas real estate agent",
@@ -46,7 +46,7 @@ const sellerSchema = {
   name: "Home Selling Services Las Vegas",
   provider: {
     "@type": "RealEstateAgent",
-    name: "Dr. Jan Duffy - Berkshire Hathaway HomeServices Nevada Properties",
+    name: "Dr. Jan Duffy",
     telephone: "+17025001955",
   },
   areaServed: "Las Vegas, Henderson, Summerlin, Clark County NV",
@@ -58,7 +58,7 @@ const includedServices = [
   "Drone video for properties with views or large lots",
   "Comprehensive market analysis & pricing strategy",
   "MLS listing syndicated to 100+ websites",
-  "Berkshire Hathaway global network exposure",
+  "Dr. Jan Duffy global network exposure",
   "Social media marketing campaign",
   "Targeted digital advertising",
   "Open house coordination",
@@ -89,9 +89,9 @@ export default function SellersPage() {
 
             <p className="text-xl text-slate-600 mb-8">
               When you list with{" "}
-              <strong>Berkshire Hathaway HomeServices</strong>, you get
+              <strong>Dr. Jan Duffy</strong>, you get
               world-class marketing, expert pricing, and a name that buyers
-              trust. Dr. Jan Duffy has been serving Las Vegas since 2008—helping
+              trust. Dr. Jan Duffy, licensed since 2008 · 35 years in Las Vegas, has been helping
               sellers achieve top-dollar results with proven marketing
               strategies and skilled negotiation.
             </p>
@@ -203,8 +203,7 @@ export default function SellersPage() {
             </h2>
             <p className="text-xl text-slate-300 mb-8">
               Schedule a free listing consultation with Dr. Jan Duffy and
-              discover what your home could sell for with Berkshire Hathaway
-              HomeServices. No obligation, no pressure—just honest advice and
+              discover what your home could sell for. No obligation, no pressure—just honest advice and
               expert analysis.
             </p>
             <CtaActions variant="onDark" />

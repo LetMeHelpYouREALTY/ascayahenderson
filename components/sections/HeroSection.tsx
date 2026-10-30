@@ -67,8 +67,7 @@ export default function HeroSection() {
           <span className="text-blue-400">Las Vegas &amp; Henderson</span>
         </h1>
         <p className="text-lg md:text-xl text-white/90 mb-8 max-w-2xl">
-          Search live MLS listings with Dr. Jan Duffy, Berkshire Hathaway
-          HomeServices Nevada Properties. Call or text (702) 500-1955.
+          Search live MLS listings with Dr. Jan Duffy. Call or text (702) 500-1955.
         </p>
 
         <div className="realscout-wrapper mb-4">
@@ -85,12 +84,12 @@ export default function HeroSection() {
             <span>Transactions Closed</span>
           </div>
           <div className="flex items-center gap-2">
-            <span className="font-semibold">Since 2008</span>
-            <span>Serving Las Vegas</span>
+            <span className="font-semibold">Licensed since 2008</span>
+            <span>35 years in Las Vegas</span>
           </div>
           <div className="flex items-center gap-2">
-            <span className="font-semibold tabular-nums">4.9★</span>
-            <span>Average Rating</span>
+            <span className="font-semibold tabular-nums">5.0★</span>
+            <span>Realtor.com · 50 reviews</span>
           </div>
         </div>
       </div>

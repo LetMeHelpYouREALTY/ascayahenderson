@@ -18,11 +18,11 @@ import OfficeRealScout from "@/components/realscout/OfficeRealScout";
 
 export const metadata: Metadata = pageMetadata({
   path: "/neighborhoods/centennial-hills",
-  title: "Berkshire Hathaway HomeServices Centennial Hills | Las Vegas Homes",
+  title: "Dr. Jan Duffy Centennial Hills | Las Vegas Homes",
   description:
-    "Find Centennial Hills homes with Berkshire Hathaway HomeServices Nevada Properties. Dr. Jan Duffy covers this northwest Las Vegas area near Arbor View High School and Centennial Hills Park. Median price $495K. Call (702) 500-1955.",
+    "Find Centennial Hills homes with Dr. Jan Duffy. Dr. Jan Duffy covers this northwest Las Vegas area near Arbor View High School and Centennial Hills Park. Median price $495K. Call (702) 500-1955.",
   keywords: [
-    "Berkshire Hathaway HomeServices Centennial Hills",
+    "Dr. Jan Duffy Centennial Hills",
     "Centennial Hills homes for sale",
     "Centennial Hills Las Vegas",
     "northwest Las Vegas real estate",
@@ -38,17 +38,17 @@ export default function CentennialHillsPage() {
           {/* Hero */}
           <div className="max-w-4xl mx-auto text-center mb-16">
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-slate-900 mb-6">
-              Berkshire Hathaway HomeServices Centennial Hills
+              Dr. Jan Duffy Centennial Hills
             </h1>
             <HeadingPhoto
               path="/neighborhoods/centennial-hills"
-              heading={"Berkshire Hathaway HomeServices Centennial Hills"}
+              heading={"Dr. Jan Duffy Centennial Hills"}
             />
 
             <p className="text-xl text-slate-600">
               Arbor View High School commute and Centennial Hills Park, 15–20
               minutes from Suite 100. $495K median, 25 DOM, 203 listings with{" "}
-              <strong>Berkshire Hathaway HomeServices</strong> and Dr. Jan
+              <strong>Dr. Jan Duffy</strong> and Dr. Jan
               Duffy.
             </p>
             <div className="mt-8">
@@ -111,7 +111,7 @@ export default function CentennialHillsPage() {
                 attract attention, Centennial Hills offers something they can't:
                 mature street trees, named campuses such as Arbor View High
                 School, and landscaping that has had nearly two decades to grow.
-                <strong> Berkshire Hathaway HomeServices</strong> helps buyers
+                <strong> Dr. Jan Duffy</strong> helps buyers
                 discover why Centennial Hills remains a frequently compared
                 northwest Las Vegas address.
               </p>
@@ -126,13 +126,13 @@ export default function CentennialHillsPage() {
               </p>
               <p>
                 <strong>
-                  Berkshire Hathaway HomeServices Nevada Properties
+                  Dr. Jan Duffy
                 </strong>{" "}
                 has represented Centennial Hills buyers and sellers since the
                 community's earliest phases. Dr. Jan Duffy knows which streets
                 offer the strongest mountain views, commute times to the Strip
                 and Downtown Summerlin, and which HOAs publish current reserve
-                studies. This local knowledge, combined with the BHHS commitment
+                studies. This local knowledge, combined with Dr. Jan Duffy's commitment
                 to client service, ensures Centennial Hills buyers and sellers
                 receive exceptional representation.
               </p>
@@ -163,7 +163,7 @@ export default function CentennialHillsPage() {
                 views.
               </p>
               <p>
-                Working with <strong>Berkshire Hathaway HomeServices</strong> in
+                Working with <strong>Dr. Jan Duffy</strong> in
                 Centennial Hills means partnering with agents who understand the
                 community's evolution and can identify properties that represent
                 genuine value. Dr. Jan Duffy helps buyers look beyond surface

@@ -29,19 +29,19 @@ export const metadata: Metadata = pageMetadata({
   title:
     "Trilogy at Summerlin Homes for Sale | Luxury Resort 55+ Living | Dr. Jan Duffy",
   description:
-    "Trilogy at Summerlin - luxury resort-style 55+ community. Homes from $500K-$1.1M. On-site farm-to-table restaurant, spa, contemporary designs. Dr. Jan Duffy, BHHS. Call (702) 500-1955.",
+    "Trilogy at Summerlin - luxury resort-style 55+ community. Homes from $500K-$1.1M. On-site farm-to-table restaurant, spa, contemporary designs. Dr. Jan Duffy. Call (702) 500-1955.",
   keywords: [
     "Trilogy at Summerlin homes for sale",
     "Trilogy Summerlin Las Vegas",
     "luxury 55+ community Las Vegas",
     "resort style 55+ Las Vegas",
     "Shea Homes Trilogy",
-    "Berkshire Hathaway Trilogy Summerlin",
+    "Dr. Jan Duffy Trilogy Summerlin",
   ],
   openGraph: {
     title: "Trilogy at Summerlin - Luxury Resort 55+ Living",
     description:
-      "Where resort living meets 55+ community. Farm-to-table dining, spa, contemporary homes. From $500K. Dr. Jan Duffy, BHHS.",
+      "Where resort living meets 55+ community. Farm-to-table dining, spa, contemporary homes. From $500K. Dr. Jan Duffy.",
     type: "website",
   },
 });

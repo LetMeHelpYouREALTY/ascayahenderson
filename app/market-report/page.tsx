@@ -22,15 +22,15 @@ import OfficeRealScout from "@/components/realscout/OfficeRealScout";
 export const metadata: Metadata = pageMetadata({
   path: "/market-report",
   title:
-    "Las Vegas Real Estate Market Report January 2026 | Berkshire Hathaway HomeServices",
+    "Las Vegas Real Estate Market Report January 2026 | Dr. Jan Duffy",
   description:
-    "Get the latest Las Vegas real estate market statistics for January 2026. Median prices, days on market, inventory levels, and expert analysis from Berkshire Hathaway HomeServices Nevada Properties.",
+    "Get the latest Las Vegas real estate market statistics for January 2026. Median prices, days on market, inventory levels, and expert analysis from Dr. Jan Duffy.",
   keywords: [
     "Las Vegas real estate market",
     "Las Vegas home prices 2026",
     "Henderson real estate market",
     "Nevada housing market",
-    "Berkshire Hathaway market report",
+    "Dr. Jan Duffy market report",
   ],
 });
 
@@ -72,7 +72,7 @@ export default function MarketReportPage() {
 
             <p className="text-xl text-slate-600">
               January 2026 | Expert analysis from{" "}
-              <strong>Berkshire Hathaway HomeServices Nevada Properties</strong>
+              <strong>Dr. Jan Duffy</strong>
             </p>
             <div className="mt-8">
               <CtaActions variant="onLight" />
