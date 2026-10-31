@@ -22,6 +22,7 @@ import {
 import { generateLocalBusinessSchema } from "@/lib/gbp-schema";
 import { realscout, nap, resolveSiteUrl } from "@/lib/contact";
 import { gaEnabled, gaMeasurementId } from "@/lib/runtime-config";
+import { SpeedInsights as VercelSpeedInsights } from "@vercel/speed-insights/next";
 
 export async function generateMetadata(): Promise<Metadata> {
   const domain = (await headers()).get("x-domain") || "";
@@ -125,6 +126,7 @@ export default async function RootLayout({
           window.widgetTracker("create","WT-XQHVYQWW");
           window.widgetTracker("send","pageview");
         `}</Script>
+        <VercelSpeedInsights />
       </body>
     </html>
   );
